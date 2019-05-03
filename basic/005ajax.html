@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>前后端之间的数据交互 | 方圆几里</title>
+    <meta name="description" content="welcome">
+    <link rel="icon" href="/img/logo.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.621ebca9.css" as="style"><link rel="preload" href="/assets/js/app.7872c906.js" as="script"><link rel="preload" href="/assets/js/9.ec36b522.js" as="script"><link rel="prefetch" href="/assets/js/10.6d686ed4.js"><link rel="prefetch" href="/assets/js/11.3187c72f.js"><link rel="prefetch" href="/assets/js/12.59a929fc.js"><link rel="prefetch" href="/assets/js/13.616c064b.js"><link rel="prefetch" href="/assets/js/14.74ebb9cf.js"><link rel="prefetch" href="/assets/js/15.6c3f355a.js"><link rel="prefetch" href="/assets/js/16.65b782a0.js"><link rel="prefetch" href="/assets/js/17.f87a8402.js"><link rel="prefetch" href="/assets/js/18.52084189.js"><link rel="prefetch" href="/assets/js/19.17582d3c.js"><link rel="prefetch" href="/assets/js/2.35c6e003.js"><link rel="prefetch" href="/assets/js/20.d01178aa.js"><link rel="prefetch" href="/assets/js/21.421d1065.js"><link rel="prefetch" href="/assets/js/22.d0254776.js"><link rel="prefetch" href="/assets/js/23.a1894d00.js"><link rel="prefetch" href="/assets/js/24.d4e630e1.js"><link rel="prefetch" href="/assets/js/25.6aead7e2.js"><link rel="prefetch" href="/assets/js/26.66ef46ea.js"><link rel="prefetch" href="/assets/js/27.3782555a.js"><link rel="prefetch" href="/assets/js/28.d1860ef4.js"><link rel="prefetch" href="/assets/js/29.82ac7f92.js"><link rel="prefetch" href="/assets/js/3.a5c682bc.js"><link rel="prefetch" href="/assets/js/30.473c6fbb.js"><link rel="prefetch" href="/assets/js/4.824d6cdb.js"><link rel="prefetch" href="/assets/js/5.ec25364e.js"><link rel="prefetch" href="/assets/js/6.24b5352a.js"><link rel="prefetch" href="/assets/js/7.a9995c4f.js"><link rel="prefetch" href="/assets/js/8.a55d88f0.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.621ebca9.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">方圆几里</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">react</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">vue</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link router-link-active">基础</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">es6</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">htmlcss</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">react</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">vue</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link router-link-active">基础</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">es6</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">htmlcss</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/basic/" class="sidebar-link">列表</a></li><li><a href="/basic/001callapply.html" class="sidebar-link">call apply bind</a></li><li><a href="/basic/002prototype.html" class="sidebar-link">对象原型</a></li><li><a href="/basic/003import.html" class="sidebar-link">es6和commonjs导入导出</a></li><li><a href="/basic/004closure.html" class="sidebar-link">闭包</a></li><li><a href="/basic/005ajax.html" class="active sidebar-link">content-type</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/basic/005ajax.html#前后端之间的数据交互" class="sidebar-link">前后端之间的数据交互</a></li><li class="sidebar-sub-header"><a href="/basic/005ajax.html#ajax方式提交表单的常见编码类型总结" class="sidebar-link">Ajax方式提交表单的常见编码类型总结</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/basic/005ajax.html#xmlhttprequest-方式" class="sidebar-link">XMLHttpRequest 方式</a></li><li class="sidebar-sub-header"><a href="/basic/005ajax.html#jquery-方式" class="sidebar-link">jQuery 方式</a></li><li class="sidebar-sub-header"><a href="/basic/005ajax.html#axios方式" class="sidebar-link">axios方式</a></li></ul></li></ul></li><li><a href="/basic/006axios.html" class="sidebar-link">axios</a></li></ul> </div> <div class="page"> <div class="content"><h2 id="前后端之间的数据交互"><a href="#前后端之间的数据交互" aria-hidden="true" class="header-anchor">#</a> 前后端之间的数据交互</h2> <ul><li>fetch</li> <li>ajax</li> <li>axios</li></ul> <h2 id="ajax方式提交表单的常见编码类型总结"><a href="#ajax方式提交表单的常见编码类型总结" aria-hidden="true" class="header-anchor">#</a> Ajax方式提交表单的常见编码类型总结</h2> <p>用Ajax方式提交表单，决定编码类型的是请求头中 <strong>Content-Type</strong> ，不同的值对应不同的提交和回调处理方式。而且，在项目中我们会用到前端的库或者框架，他们对于不同的Content-Type也有不同的参数写法，本文将以jQuery和XMLHttpRequest共两种方式为例(axios只说其中的若干)，详细介绍不同Content-Type的发送请求的方式。
+本文考虑的Content-Type类型，共有如下几种：</p> <ul><li>application/x-www-form-urlencoded</li> <li>multipart/form-data</li> <li>text/plain</li> <li>application/json</li> <li>text/xml</li></ul> <h3 id="xmlhttprequest-方式"><a href="#xmlhttprequest-方式" aria-hidden="true" class="header-anchor">#</a> XMLHttpRequest 方式</h3> <p>XMLHttpRequest对象用于向后端收发数据请求，现代浏览器都支持（IE要用<code>ActiveXObject</code>实现相同功能，本文就不讨论了）。</p> <p>后续代码将假设已经获得了XMLHttpRequest对象，其名为req。下面将介绍XMLHttpRequest对象用常见的五种Content-Type发送数据的方式。</p> <p><code>application/x-www-form-urlencoded</code></p> <p>这种Content-Type要求数据按照key1=value1&amp;key2=value2的格式发送给后端，且其中的特殊字符需要转义成%HH的形式。</p> <p>首先，需要用 __encodeURIComponent()__函数编码表单数据，代码如下。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* data参数为表单数据组成的对象，dataToSend为待发送给后端的数据 */</span>
+<span class="token keyword">var</span> tempArr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> key <span class="token keyword">in</span> data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        tempArr<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token function">encodeURIComponent</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token string">'='</span> <span class="token operator">+</span> <span class="token function">encodeURIComponent</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">var</span> dataToSend <span class="token operator">=</span> tempArr<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">'&amp;'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>   
+
+<span class="token comment">//接着，设置请求头部的Content-Type，发送数据，代码如下。</span>
+req<span class="token punctuation">.</span><span class="token function">setRequestHeader</span><span class="token punctuation">(</span><span class="token string">'Content-Type'</span><span class="token punctuation">,</span> <span class="token string">'application/x-www-form-urlencoded'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+req<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>dataTosend<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>multipart/form-data</code></p> <p>这种Content-Type类型多用来提交文件，我们采用HTML5的FormData对象来构建提交的数据。</p> <p>基本上现代浏览器都支持，IE11以下不支持，不支持的建议用ajaxForm之类的jquery的文件提交插件吧。</p> <p>首先，用FormData对象构建欲提交的数据，代码如下。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* data参数为表单数据组成的对象，dataToSend为待发送给后端的数据 */</span>
+
+<span class="token keyword">var</span> dataToSend <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FormData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment">// HTML5对象, IE11以下不支持</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> key <span class="token keyword">in</span> data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        dataToSend<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> data<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">// dataToSend就是FormData对象，可直接传给后端</span>
+dataToSend
+<span class="token comment">//接着，直接发送给后端，注意这种类型的发送方式，</span>
+<span class="token comment">//不能设置请求头部的Content-Type，应交给浏览器来处理（设定Boundary等工作）。</span>
+
+req<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>dataToSend<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>text/plain</code></p> <p>如果请求头部没有设定Content-Type，且数据既不是FormData也不是XML Document（将在xml小节中介绍），则Content-Type默认为text/plain。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//这种方式的代码很简单，直接发送字符串即可，代码如下。</span>
+req<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token string">'...(此处是字符串格式的数据)'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>application/json</code></p> <p>JSON格式的数据，后端和各种移动端都很方便处理，用这种MIME类型时，需要将数据对象转换成JSON串。
+首先，转换数据成JSON串；然后，设定请求头部的Content-Type，就可以发数据了。代码如下。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* data参数为表单数据组成的对象 */</span>
+
+req<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>text/xml</code></p> <p>首先，构建XML文档对象，存入表单数据，代码如下。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* data参数为表单数据组成的对象，dataToSend为待发送给后端的数据 */</span>
+
+<span class="token keyword">var</span> dataToSend <span class="token operator">=</span> document<span class="token punctuation">.</span>implementation<span class="token punctuation">.</span><span class="token function">createDocument</span><span class="token punctuation">(</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;formdata&quot;</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> tempData <span class="token operator">=</span> dataToSend<span class="token punctuation">.</span>documentElement<span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> key <span class="token keyword">in</span> data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> keyElement <span class="token operator">=</span> doc<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        keyElement<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>doc<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        tempData<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>keyElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/*
+xml文档格式示意：
+&lt;formdata&gt;
+    &lt;key1&gt; value1 &lt;/key1&gt;
+    &lt;key2&gt; value2 &lt;/key2&gt;
+&lt;/formdata&gt;
+*/</span>
+之后，与multipart<span class="token operator">/</span>form<span class="token operator">-</span>data一样，直接发送数据，不需设置Content<span class="token operator">-</span>Type。
+
+req<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span>dataToSend<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">小结</p> <p><strong>multipart/form-data与text/xml不需要设置请求头的Content-Type</strong>；
+关于method，以上都是POST方式，若是GET方式是没有请求数据体的，数据直接加在URL后面；</p> <p>附：接收请求时的解析方式
+text/xml：用responseXML
+application/json：需要先JSON化，JSON.parse( responseText )
+其他：就直接用responseText</p></div> <h3 id="jquery-方式"><a href="#jquery-方式" aria-hidden="true" class="header-anchor">#</a> jQuery 方式</h3> <p><code>application/x-www-form-urlencoded</code></p> <p><strong>jQuery中默认的表单提交方式</strong>，与XMLHttpRequest不同的地方在于：数据的URL方式编码，由jQuery来做，只需要在$.ajax({})参数中设置processData = true（这也是默认，可省略）。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* dataToSend为Object类型的表单数据，否则jQuery会抛出异常 */</span>
+
+$<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    method<span class="token punctuation">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+    url<span class="token punctuation">:</span> <span class="token string">'...'</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> dataToSend<span class="token punctuation">,</span>
+    contentType<span class="token punctuation">:</span> <span class="token string">'application/x-www-form-urlencoded'</span><span class="token punctuation">,</span>    <span class="token comment">// 可省略</span>
+    processData<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>        <span class="token comment">// 可省略 用于对data参数进行序列化处理</span>
+    success<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token operator">...</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+注意：若采用<span class="token constant">GET</span>方式，则将method改为<span class="token constant">GET</span>即可，不需要在url后面加上数据。
+</code></pre></div><p><code>multipart/form-data</code></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* dataToSend 是FormData对象，可直接作为数据传输到后端 */</span>
+
+<span class="token keyword">var</span> dataToSend<span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">FormData</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>      <span class="token comment">// HTML5对象, IE11以下不支持</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> key <span class="token keyword">in</span> data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        dataToSend<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span>key<span class="token punctuation">,</span> data<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//之后，用$.ajax()方法传输数据。</span>
+<span class="token comment">//注意：processData与contentType必须设定为false，前者是因为避免FormData对象被转换成URL编码，</span>
+<span class="token comment">//后者则是因为需要浏览器添加multipart/form-data类型的boundary。</span>
+
+$<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    method<span class="token punctuation">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+    url<span class="token punctuation">:</span> <span class="token string">'...'</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> dataToSend<span class="token punctuation">,</span>          <span class="token comment">// dataToSend 是FormData对象</span>
+    contentType<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>        <span class="token comment">// contentType 必须设置为false</span>
+    processData<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>        <span class="token comment">// processData 必须设置为false</span>
+    success<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>text/plain</code></p> <p>用该类型提交，则直接传输字符串。</p> <div class="language-js extra-class"><pre class="language-js"><code>$<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    method<span class="token punctuation">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+    url<span class="token punctuation">:</span> <span class="token string">'...'</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> dataToSend<span class="token punctuation">,</span>         
+    contentType<span class="token punctuation">:</span> <span class="token string">'text/plain'</span><span class="token punctuation">,</span>       
+    processData<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>        <span class="token comment">// processData 设置为false则不会转换成URL编码</span>
+    success<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>application/json</code> <strong>用该类型提交，则传输JSON字符串，所以要用函数JSON.stringify()处理表单数据。</strong></p> <p>/* data 为表单Object类型的数据 */</p> <div class="language-js extra-class"><pre class="language-js"><code>dataToSend <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+$<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    method<span class="token punctuation">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+    url<span class="token punctuation">:</span> <span class="token string">'...'</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> dataToSend<span class="token punctuation">,</span>         
+    contentType<span class="token punctuation">:</span> <span class="token string">'application/json'</span><span class="token punctuation">,</span>       
+    processData<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>        <span class="token comment">// processData 设置为false则不会转换成URL编码</span>
+    success<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//注意：若后端也返回JSON字符串时，success回调函数里接受到的数据参数仍为字符串，</span>
+<span class="token comment">//需要转换成Object类型。（而Angular,vue使用的axios也不需要）</span>
+
+$<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+<span class="token operator">...</span>
+    success<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> jsonData <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token operator">...</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p><code>text/xml</code></p> <p>首先，构建XML文档对象，存入表单数据，代码如下。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">/* data参数为表单数据组成的对象，dataToSend为待发送给后端的数据 */</span>
+
+<span class="token keyword">var</span> dataToSend <span class="token operator">=</span> document<span class="token punctuation">.</span>implementation<span class="token punctuation">.</span><span class="token function">createDocument</span><span class="token punctuation">(</span><span class="token string">&quot;&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;formdata&quot;</span><span class="token punctuation">,</span> <span class="token keyword">null</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> tempData <span class="token operator">=</span> dataToSend<span class="token punctuation">.</span>documentElement<span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> key <span class="token keyword">in</span> data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">hasOwnProperty</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">var</span> keyElement <span class="token operator">=</span> doc<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        keyElement<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>doc<span class="token punctuation">.</span><span class="token function">createTextNode</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span>key<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        tempData<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>keyElement<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token comment">/*
+xml文档格式示意：
+&lt;formdata&gt;
+    &lt;key1&gt; value1 &lt;/key1&gt;
+    &lt;key2&gt; value2 &lt;/key2&gt;
+&lt;/formdata&gt;
+*/</span>
+<span class="token comment">//之后，发送数据dataToSend，代码如下。</span>
+
+$<span class="token punctuation">.</span><span class="token function">ajax</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    method<span class="token punctuation">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+    url<span class="token punctuation">:</span> <span class="token string">'...'</span><span class="token punctuation">,</span>
+    data<span class="token punctuation">:</span> dataToSend<span class="token punctuation">,</span>
+    contentType<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>    <span class="token comment">// contentType 可设为false也可写成具体的'text/xml'等    </span>
+    processData<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>    <span class="token comment">// processData 必须设为false</span>
+    
+    success<span class="token punctuation">:</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token operator">...</span> <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="axios方式"><a href="#axios方式" aria-hidden="true" class="header-anchor">#</a> axios方式</h3> <p>这里我们先系统的默认axios的content-type的方式为application/x-www-form-urlencoded</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> axios <span class="token keyword">from</span> <span class="token string">'axios'</span>
+<span class="token keyword">import</span> VueAxios <span class="token keyword">from</span> <span class="token string">'vue-axios'</span>
+
+axios<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>baseURL<span class="token operator">=</span><span class="token string">'http://xxxxx/xxx'</span>
+axios<span class="token punctuation">.</span>defaults<span class="token punctuation">.</span>headers<span class="token punctuation">.</span>post<span class="token punctuation">[</span><span class="token string">'Content-Type'</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">'application/x-www-form-urlencoded'</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>$axios <span class="token operator">=</span> axios<span class="token punctuation">;</span>
+</code></pre></div><h4 id="get"><a href="#get" aria-hidden="true" class="header-anchor">#</a> get</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//get请求：</span>
+<span class="token comment">//params: {</span>
+<span class="token comment">//             usrId:that.$store.state.id</span>
+<span class="token comment">//         }</span>
+<span class="token comment">//get的参数放在params里包裹着</span>
+that<span class="token punctuation">.</span>$axios<span class="token punctuation">.</span><span class="token keyword">get</span><span class="token punctuation">(</span><span class="token string">'/contact/selectCom'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+            params<span class="token punctuation">:</span> <span class="token punctuation">{</span>
+                usrId<span class="token punctuation">:</span>that<span class="token punctuation">.</span>$store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>id
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                  Indicator<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span>
+                <span class="token keyword">if</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>success<span class="token operator">==</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                      that<span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'updateUsuallyList'</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                      Stroage<span class="token punctuation">.</span><span class="token function">change</span><span class="token punctuation">(</span><span class="token string">&quot;state&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;usuallyList&quot;</span><span class="token punctuation">,</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                      router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`/index`</span></span><span class="token punctuation">)</span>
+                <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+                      that<span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'updateUsuallyList'</span><span class="token punctuation">,</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+                      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;1111&quot;</span><span class="token punctuation">)</span>
+                      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>that<span class="token punctuation">.</span>$store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>usuallyList<span class="token punctuation">)</span>
+                      Stroage<span class="token punctuation">.</span><span class="token function">change</span><span class="token punctuation">(</span><span class="token string">&quot;state&quot;</span><span class="token punctuation">,</span><span class="token string">&quot;usuallyList&quot;</span><span class="token punctuation">,</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>data<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                       router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`/index`</span></span><span class="token punctuation">)</span>
+
+                    <span class="token comment">// that.$store.state.usuallyList=response.data.data</span>
+                    <span class="token comment">// that.usuallyList=response.data.data;</span>
+                <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                Indicator<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+                that<span class="token punctuation">.</span><span class="token function">$messagebox</span><span class="token punctuation">(</span><span class="token string">'温馨提示'</span><span class="token punctuation">,</span><span class="token string">&quot;网络出现故障，请稍后再试&quot;</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+</code></pre></div><h4 id="post"><a href="#post" aria-hidden="true" class="header-anchor">#</a> post</h4> <div class="language-js extra-class"><pre class="language-js"><code>  <span class="token comment">//post请求：</span>
+  <span class="token comment">//需要安装qs模块</span>
+  <span class="token keyword">let</span> postData <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$qs<span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            name<span class="token punctuation">:</span> that<span class="token punctuation">.</span>name<span class="token punctuation">,</span>
+            phone<span class="token punctuation">:</span>that<span class="token punctuation">.</span>tele<span class="token punctuation">,</span>
+            password<span class="token punctuation">:</span>md5pass<span class="token punctuation">,</span>
+        
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>$axios<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/user/register'</span><span class="token punctuation">,</span> 
+        postData
+        <span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>response<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            Indicator<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">if</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>success<span class="token operator">==</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            that<span class="token punctuation">.</span><span class="token function">$messagebox</span><span class="token punctuation">(</span><span class="token string">'温馨提示'</span><span class="token punctuation">,</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>message<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+                that<span class="token punctuation">.</span><span class="token function">$toast</span><span class="token punctuation">(</span><span class="token string">'注册成功！'</span><span class="token punctuation">)</span>
+                router<span class="token punctuation">.</span><span class="token function">push</span><span class="token punctuation">(</span><span class="token template-string"><span class="token string">`/`</span></span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span>error<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            Indicator<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            that<span class="token punctuation">.</span><span class="token function">$messagebox</span><span class="token punctuation">(</span><span class="token string">'温馨提示'</span><span class="token punctuation">,</span><span class="token string">&quot;网络出现故障，请稍后再试&quot;</span><span class="token punctuation">)</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>error<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//JSON格式传</span>
+ <span class="token keyword">let</span> postData<span class="token operator">=</span><span class="token punctuation">{</span>
+                    conOrgInfo<span class="token punctuation">:</span><span class="token punctuation">{</span>
+                        bank<span class="token punctuation">:</span>that<span class="token punctuation">.</span>bank<span class="token punctuation">,</span>
+                        bankAccount<span class="token punctuation">:</span>that<span class="token punctuation">.</span>banknumber<span class="token punctuation">,</span>
+                        name<span class="token punctuation">:</span>that<span class="token punctuation">.</span>company<span class="token punctuation">,</span>
+                        taxNumber<span class="token punctuation">:</span>that<span class="token punctuation">.</span>numbers<span class="token punctuation">,</span>
+                        telephone<span class="token punctuation">:</span>that<span class="token punctuation">.</span>telephone<span class="token punctuation">,</span>
+                        orgAddress<span class="token punctuation">:</span>that<span class="token punctuation">.</span>orgAddress
+                    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+                    decMoney<span class="token punctuation">:</span>that<span class="token punctuation">.</span>money<span class="token punctuation">,</span>
+                    address<span class="token punctuation">:</span>that<span class="token punctuation">.</span>address<span class="token punctuation">,</span>
+                    chargeID<span class="token punctuation">:</span>that<span class="token punctuation">.</span>$route<span class="token punctuation">.</span>query<span class="token punctuation">.</span>id<span class="token punctuation">,</span>
+                    post<span class="token punctuation">:</span>that<span class="token punctuation">.</span>zipcode<span class="token punctuation">,</span>
+                    telephone<span class="token punctuation">:</span>that<span class="token punctuation">.</span>phone<span class="token punctuation">,</span>
+                    picID<span class="token punctuation">:</span>that<span class="token punctuation">.</span>picid<span class="token punctuation">,</span>
+                    usrID<span class="token punctuation">:</span>a
+                <span class="token punctuation">}</span>
+
+                <span class="token keyword">let</span> config <span class="token operator">=</span> <span class="token punctuation">{</span>
+                    headers<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token string">'Content-Type'</span><span class="token punctuation">:</span> <span class="token string">'application/json'</span><span class="token punctuation">}</span>
+                <span class="token punctuation">}</span>
+                <span class="token comment">//postData=JSON.stringify(postData)</span>
+
+<span class="token keyword">this</span><span class="token punctuation">.</span>$axios<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/invoice/insertInvoices'</span><span class="token punctuation">,</span>
+    postData<span class="token punctuation">,</span>config
+    <span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        Indicator<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span>
+        <span class="token keyword">if</span><span class="token punctuation">(</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>success<span class="token operator">==</span><span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            that<span class="token punctuation">.</span><span class="token function">$messagebox</span><span class="token punctuation">(</span><span class="token string">'温馨提示'</span><span class="token punctuation">,</span>response<span class="token punctuation">.</span>data<span class="token punctuation">.</span>meta<span class="token punctuation">.</span>message<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            that<span class="token punctuation">.</span><span class="token function">$messagebox</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+                  title<span class="token punctuation">:</span> <span class="token string">'申请成功'</span><span class="token punctuation">,</span>
+                  message<span class="token punctuation">:</span> <span class="token string">'我们会尽快将发票邮寄到您手中'</span><span class="token punctuation">,</span>
+                  showCancelButton<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+                  confirmButtonText<span class="token punctuation">:</span><span class="token string">&quot;点击返回充值页面&quot;</span><span class="token punctuation">,</span>
+                <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span>action <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                      <span class="token keyword">if</span><span class="token punctuation">(</span>action <span class="token operator">==</span> <span class="token string">'confirm'</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                            history<span class="token punctuation">.</span><span class="token function">go</span><span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">2</span><span class="token punctuation">)</span>
+            <span class="token comment">//              router.push(`/test`)</span>
+                      <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+                        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'查看订单'</span><span class="token punctuation">)</span>
+                      <span class="token punctuation">}</span>
+
+                <span class="token punctuation">}</span><span class="token punctuation">)</span>   
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token keyword">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        Indicator<span class="token punctuation">.</span><span class="token function">close</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>response<span class="token punctuation">)</span>
+        that<span class="token punctuation">.</span><span class="token function">$messagebox</span><span class="token punctuation">(</span><span class="token string">'温馨提示'</span><span class="token punctuation">,</span><span class="token string">'网络出现故障，请重试'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span> 
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/basic/004closure.html" class="prev">
+          闭包
+        </a></span> <span class="next"><a href="/basic/006axios.html">
+          axios
+        </a>
+        →
+      </span></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.7872c906.js" defer></script><script src="/assets/js/9.ec36b522.js" defer></script>
+  </body>
+</html>
