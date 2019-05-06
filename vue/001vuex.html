@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>vuex简单使用 | 方圆几里</title>
+    <meta name="description" content="welcome">
+    <link rel="icon" href="/img/logo.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.431d0c84.css" as="style"><link rel="preload" href="/assets/js/app.51aacb50.js" as="script"><link rel="preload" href="/assets/js/36.5377ca8a.js" as="script"><link rel="prefetch" href="/assets/js/10.d41afa68.js"><link rel="prefetch" href="/assets/js/11.dab2c456.js"><link rel="prefetch" href="/assets/js/12.17e4f04e.js"><link rel="prefetch" href="/assets/js/13.e54d4c3b.js"><link rel="prefetch" href="/assets/js/14.50e3e951.js"><link rel="prefetch" href="/assets/js/15.3ec6ae9c.js"><link rel="prefetch" href="/assets/js/16.4d106ffe.js"><link rel="prefetch" href="/assets/js/17.b0267a02.js"><link rel="prefetch" href="/assets/js/18.b6322cd4.js"><link rel="prefetch" href="/assets/js/19.0243417a.js"><link rel="prefetch" href="/assets/js/2.e0732252.js"><link rel="prefetch" href="/assets/js/20.12dacd1b.js"><link rel="prefetch" href="/assets/js/21.b5290bc0.js"><link rel="prefetch" href="/assets/js/22.960abbcc.js"><link rel="prefetch" href="/assets/js/23.98b53301.js"><link rel="prefetch" href="/assets/js/24.40b2c206.js"><link rel="prefetch" href="/assets/js/25.fc60c7e4.js"><link rel="prefetch" href="/assets/js/26.ae153d2a.js"><link rel="prefetch" href="/assets/js/27.e452fc7a.js"><link rel="prefetch" href="/assets/js/28.089b662b.js"><link rel="prefetch" href="/assets/js/29.f8785819.js"><link rel="prefetch" href="/assets/js/3.81ed56d0.js"><link rel="prefetch" href="/assets/js/30.26453f63.js"><link rel="prefetch" href="/assets/js/31.2a6a2391.js"><link rel="prefetch" href="/assets/js/32.99e904b5.js"><link rel="prefetch" href="/assets/js/33.146ceef3.js"><link rel="prefetch" href="/assets/js/34.bb5b87c6.js"><link rel="prefetch" href="/assets/js/35.d8a0a4ff.js"><link rel="prefetch" href="/assets/js/37.03e7be27.js"><link rel="prefetch" href="/assets/js/38.bba4b981.js"><link rel="prefetch" href="/assets/js/4.6784d391.js"><link rel="prefetch" href="/assets/js/5.5d69b42e.js"><link rel="prefetch" href="/assets/js/6.3600d4df.js"><link rel="prefetch" href="/assets/js/7.df317091.js"><link rel="prefetch" href="/assets/js/8.4edaa1ae.js"><link rel="prefetch" href="/assets/js/9.0303059b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.431d0c84.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">方圆几里</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">react</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link router-link-active">vue</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link">基础</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">es6</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">htmlcss</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">react</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link router-link-active">vue</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link">基础</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">es6</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">htmlcss</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/vue/" class="sidebar-link">vue</a></li><li><a href="/vue/001vuex.html" class="active sidebar-link">vuex</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue/001vuex.html#vuex简单使用" class="sidebar-link">vuex简单使用</a></li><li class="sidebar-sub-header"><a href="/vue/001vuex.html#安装vuex" class="sidebar-link">安装vuex</a></li><li class="sidebar-sub-header"><a href="/vue/001vuex.html#使用vuex" class="sidebar-link">使用vuex</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/vue/001vuex.html#创建一个store-js用来存取数据" class="sidebar-link">创建一个store.js用来存取数据</a></li><li class="sidebar-sub-header"><a href="/vue/001vuex.html#在main-js里引用" class="sidebar-link">在main.js里引用</a></li><li class="sidebar-sub-header"><a href="/vue/001vuex.html#在vue文件中使用" class="sidebar-link">在vue文件中使用</a></li></ul></li></ul></li></ul> </div> <div class="page"> <div class="content"><h2 id="vuex简单使用"><a href="#vuex简单使用" aria-hidden="true" class="header-anchor">#</a> vuex简单使用</h2> <p>每一个 Vuex 应用的核心就是 store（仓库）。“store”基本上就是一个容器，它包含着你的应用中大部分的状态 (state)。
+当页面刷新的时候，vuex的数据会丢失(重置)，所以，有的数据刷新可以丢失，有的不可以，如果不可以的话，需要配合localstorage来存储。</p> <h2 id="安装vuex"><a href="#安装vuex" aria-hidden="true" class="header-anchor">#</a> 安装vuex</h2> <div class="language-node extra-class"><pre class="language-text"><code>npm install vuex --save 
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">理解</p> <p>vuex理解
+官方解释：vuex是一个专为vue.js应用程序开发的 状态管理模式。它采用集中式存储管理应用的所有的状态，并以相应的规则保证状态以一种可预测的方式发生变化。
+可以理解为是一个  全局变量</p></div> <h2 id="使用vuex"><a href="#使用vuex" aria-hidden="true" class="header-anchor">#</a> 使用vuex</h2> <h3 id="创建一个store-js用来存取数据"><a href="#创建一个store-js用来存取数据" aria-hidden="true" class="header-anchor">#</a> 创建一个store.js用来存取数据</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> vue <span class="token keyword">from</span> <span class="token string">&quot;vue&quot;</span><span class="token comment">//引入vuex和vue</span>
+<span class="token keyword">import</span> vuex <span class="token keyword">from</span> <span class="token string">&quot;vuex&quot;</span>
+
+vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>vuex<span class="token punctuation">)</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token keyword">new</span> <span class="token class-name">vuex<span class="token punctuation">.</span>Store</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+
+    state <span class="token punctuation">:</span>localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'state'</span><span class="token punctuation">)</span> <span class="token operator">?</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>localStorage<span class="token punctuation">.</span><span class="token function">getItem</span><span class="token punctuation">(</span><span class="token string">'state'</span><span class="token punctuation">)</span><span class="token punctuation">)</span> 
+    <span class="token comment">// state </span>
+     <span class="token punctuation">:</span> <span class="token punctuation">{</span>
+        <span class="token comment">//  通讯录</span>
+        linkman<span class="token punctuation">:</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        selfmes<span class="token punctuation">:</span><span class="token string">&quot;&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token comment">//基本数据存放</span>
+     
+    getters<span class="token punctuation">:</span><span class="token punctuation">{</span>
+        <span class="token comment">// usuallyLists(state){</span>
+        <span class="token comment">//     return state.usuallyList</span>
+        <span class="token comment">// },</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    mutations<span class="token punctuation">:</span><span class="token punctuation">{</span>
+        <span class="token function">getlinkman</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span>value<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            state<span class="token punctuation">.</span>linkman<span class="token operator">=</span>value<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">getmes</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span>value<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            state<span class="token punctuation">.</span>selfmes<span class="token operator">=</span>value<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        <span class="token function">getphoto</span><span class="token punctuation">(</span>state<span class="token punctuation">,</span>value<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            state<span class="token punctuation">.</span>selfmes<span class="token punctuation">.</span>photo<span class="token operator">=</span>value
+        <span class="token punctuation">}</span>
+
+ 
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    actions<span class="token punctuation">:</span><span class="token punctuation">{</span>
+        <span class="token function">switch_d</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span><span class="token punctuation">{</span><span class="token comment">//这里的context和我们使用的$store拥有相同的对象和方法</span>
+           
+            <span class="token comment">//你还可以在这里触发其他的mutations方法</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="在main-js里引用"><a href="#在main-js里引用" aria-hidden="true" class="header-anchor">#</a> 在main.js里引用</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">import</span> store <span class="token keyword">from</span> <span class="token string">'./store'</span>
+<span class="token keyword">import</span> Vuex <span class="token keyword">from</span> <span class="token string">'vuex'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>Vuex<span class="token punctuation">)</span>
+<span class="token keyword">new</span> <span class="token class-name">Vue</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  el<span class="token punctuation">:</span> <span class="token string">'#app'</span><span class="token punctuation">,</span>
+  router<span class="token punctuation">,</span>
+  store<span class="token punctuation">,</span>
+  components<span class="token punctuation">:</span> <span class="token punctuation">{</span> App <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  template<span class="token punctuation">:</span> <span class="token string">'&lt;App/&gt;'</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="在vue文件中使用"><a href="#在vue文件中使用" aria-hidden="true" class="header-anchor">#</a> 在vue文件中使用</h3> <div class="language-js extra-class"><pre class="language-js"><code> methods<span class="token punctuation">:</span><span class="token punctuation">{</span>
+            <span class="token function">increment</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+              <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'increment'</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            <span class="token function">decrement</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+              <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span><span class="token function">commit</span><span class="token punctuation">(</span><span class="token string">'decrement'</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        computed<span class="token punctuation">:</span><span class="token punctuation">{</span>
+            <span class="token function">count</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+                <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>$store<span class="token punctuation">.</span>state<span class="token punctuation">.</span>count
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+</code></pre></div></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/vue/" class="prev router-link-active">
+          vue
+        </a></span> <!----></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.51aacb50.js" defer></script><script src="/assets/js/36.5377ca8a.js" defer></script>
+  </body>
+</html>
