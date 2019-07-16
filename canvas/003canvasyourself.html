@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使鼠标和屏幕互动 | 方圆几里</title>
+    <meta name="description" content="welcome">
+    <link rel="icon" href="/img/logo.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4e01b77.css" as="style"><link rel="preload" href="/assets/js/app.90db4e06.js" as="script"><link rel="preload" href="/assets/js/47.c185aed1.js" as="script"><link rel="preload" href="/assets/js/4.6b6c7a54.js" as="script"><link rel="preload" href="/assets/js/7.8db8a7d0.js" as="script"><link rel="prefetch" href="/assets/js/10.f204836f.js"><link rel="prefetch" href="/assets/js/100.874e78d3.js"><link rel="prefetch" href="/assets/js/101.48f24b18.js"><link rel="prefetch" href="/assets/js/102.c3cf1954.js"><link rel="prefetch" href="/assets/js/103.98811193.js"><link rel="prefetch" href="/assets/js/104.ca793b14.js"><link rel="prefetch" href="/assets/js/105.3075769f.js"><link rel="prefetch" href="/assets/js/106.64971110.js"><link rel="prefetch" href="/assets/js/107.d477fbc8.js"><link rel="prefetch" href="/assets/js/108.b6bfbe60.js"><link rel="prefetch" href="/assets/js/109.d4aa8926.js"><link rel="prefetch" href="/assets/js/11.354781e8.js"><link rel="prefetch" href="/assets/js/110.78b01b2b.js"><link rel="prefetch" href="/assets/js/111.bc387d91.js"><link rel="prefetch" href="/assets/js/112.fda58804.js"><link rel="prefetch" href="/assets/js/113.88eebd53.js"><link rel="prefetch" href="/assets/js/114.bf195395.js"><link rel="prefetch" href="/assets/js/115.66b6eba3.js"><link rel="prefetch" href="/assets/js/116.11e52c5b.js"><link rel="prefetch" href="/assets/js/117.a75a85b3.js"><link rel="prefetch" href="/assets/js/118.72833056.js"><link rel="prefetch" href="/assets/js/119.2491b587.js"><link rel="prefetch" href="/assets/js/12.33bfec3f.js"><link rel="prefetch" href="/assets/js/120.91764be7.js"><link rel="prefetch" href="/assets/js/121.38160cb0.js"><link rel="prefetch" href="/assets/js/122.062e4a82.js"><link rel="prefetch" href="/assets/js/123.215807ca.js"><link rel="prefetch" href="/assets/js/124.17cb11b5.js"><link rel="prefetch" href="/assets/js/125.3e85052c.js"><link rel="prefetch" href="/assets/js/126.74a18a68.js"><link rel="prefetch" href="/assets/js/127.3c5702de.js"><link rel="prefetch" href="/assets/js/128.779cdd45.js"><link rel="prefetch" href="/assets/js/129.31a29a83.js"><link rel="prefetch" href="/assets/js/13.fd1b7c01.js"><link rel="prefetch" href="/assets/js/130.6dde3ea3.js"><link rel="prefetch" href="/assets/js/131.c69e5791.js"><link rel="prefetch" href="/assets/js/132.e92d16b9.js"><link rel="prefetch" href="/assets/js/133.641aaac2.js"><link rel="prefetch" href="/assets/js/134.30e8ef57.js"><link rel="prefetch" href="/assets/js/135.efb6d58e.js"><link rel="prefetch" href="/assets/js/136.c8360bc8.js"><link rel="prefetch" href="/assets/js/137.ab47be6b.js"><link rel="prefetch" href="/assets/js/138.b0984680.js"><link rel="prefetch" href="/assets/js/139.cbca8204.js"><link rel="prefetch" href="/assets/js/14.77abf8b1.js"><link rel="prefetch" href="/assets/js/140.4ea73cc2.js"><link rel="prefetch" href="/assets/js/141.742db2d2.js"><link rel="prefetch" href="/assets/js/142.6aceb30f.js"><link rel="prefetch" href="/assets/js/143.e6578a99.js"><link rel="prefetch" href="/assets/js/144.c3dc05cf.js"><link rel="prefetch" href="/assets/js/145.b80fdde2.js"><link rel="prefetch" href="/assets/js/146.3fa19875.js"><link rel="prefetch" href="/assets/js/147.599e17b5.js"><link rel="prefetch" href="/assets/js/148.457e2788.js"><link rel="prefetch" href="/assets/js/149.bcf12341.js"><link rel="prefetch" href="/assets/js/15.566360b6.js"><link rel="prefetch" href="/assets/js/150.a6ecacb1.js"><link rel="prefetch" href="/assets/js/151.84050a71.js"><link rel="prefetch" href="/assets/js/152.53914e0d.js"><link rel="prefetch" href="/assets/js/153.2ed101de.js"><link rel="prefetch" href="/assets/js/154.7073a790.js"><link rel="prefetch" href="/assets/js/155.0a990986.js"><link rel="prefetch" href="/assets/js/156.9d1df63a.js"><link rel="prefetch" href="/assets/js/157.79ba1cc4.js"><link rel="prefetch" href="/assets/js/158.6dc06107.js"><link rel="prefetch" href="/assets/js/159.9b0b603b.js"><link rel="prefetch" href="/assets/js/16.b16aa550.js"><link rel="prefetch" href="/assets/js/160.daf4d918.js"><link rel="prefetch" href="/assets/js/161.eb3e6552.js"><link rel="prefetch" href="/assets/js/162.3fb28d5e.js"><link rel="prefetch" href="/assets/js/163.cd6d3449.js"><link rel="prefetch" href="/assets/js/164.e2652a37.js"><link rel="prefetch" href="/assets/js/165.199b11c3.js"><link rel="prefetch" href="/assets/js/166.ff17540f.js"><link rel="prefetch" href="/assets/js/167.7fe74c70.js"><link rel="prefetch" href="/assets/js/168.6108cf18.js"><link rel="prefetch" href="/assets/js/169.1ab5dcca.js"><link rel="prefetch" href="/assets/js/17.66e2c235.js"><link rel="prefetch" href="/assets/js/170.1acb6897.js"><link rel="prefetch" href="/assets/js/18.e35bb187.js"><link rel="prefetch" href="/assets/js/19.30bdff4f.js"><link rel="prefetch" href="/assets/js/2.a56687ff.js"><link rel="prefetch" href="/assets/js/20.0c1623bf.js"><link rel="prefetch" href="/assets/js/21.158fde1a.js"><link rel="prefetch" href="/assets/js/22.9336d57c.js"><link rel="prefetch" href="/assets/js/23.74bee67d.js"><link rel="prefetch" href="/assets/js/24.09089787.js"><link rel="prefetch" href="/assets/js/25.fb510708.js"><link rel="prefetch" href="/assets/js/26.4f3996bc.js"><link rel="prefetch" href="/assets/js/27.0c1df8b1.js"><link rel="prefetch" href="/assets/js/28.307a2743.js"><link rel="prefetch" href="/assets/js/29.9d474893.js"><link rel="prefetch" href="/assets/js/3.4898553a.js"><link rel="prefetch" href="/assets/js/30.5ccad0de.js"><link rel="prefetch" href="/assets/js/31.abf0ee3c.js"><link rel="prefetch" href="/assets/js/32.497155fa.js"><link rel="prefetch" href="/assets/js/33.379f26de.js"><link rel="prefetch" href="/assets/js/34.c2109c1d.js"><link rel="prefetch" href="/assets/js/35.9849fdd4.js"><link rel="prefetch" href="/assets/js/36.609fa639.js"><link rel="prefetch" href="/assets/js/37.c67dc0f1.js"><link rel="prefetch" href="/assets/js/38.ca34f7d1.js"><link rel="prefetch" href="/assets/js/39.a955cb9a.js"><link rel="prefetch" href="/assets/js/40.47efa09a.js"><link rel="prefetch" href="/assets/js/41.4bb497dd.js"><link rel="prefetch" href="/assets/js/42.9278462d.js"><link rel="prefetch" href="/assets/js/43.5ea1ba41.js"><link rel="prefetch" href="/assets/js/44.07f706d5.js"><link rel="prefetch" href="/assets/js/45.772d884b.js"><link rel="prefetch" href="/assets/js/46.ad2e6bca.js"><link rel="prefetch" href="/assets/js/48.f1fde066.js"><link rel="prefetch" href="/assets/js/49.fe3d3ca0.js"><link rel="prefetch" href="/assets/js/5.e4f87f58.js"><link rel="prefetch" href="/assets/js/50.b576209a.js"><link rel="prefetch" href="/assets/js/51.ea26a107.js"><link rel="prefetch" href="/assets/js/52.ffbde178.js"><link rel="prefetch" href="/assets/js/53.0908a388.js"><link rel="prefetch" href="/assets/js/54.fe7cc1e8.js"><link rel="prefetch" href="/assets/js/55.a1d8eb88.js"><link rel="prefetch" href="/assets/js/56.cf15b3cd.js"><link rel="prefetch" href="/assets/js/57.cc40bce8.js"><link rel="prefetch" href="/assets/js/58.d58efd91.js"><link rel="prefetch" href="/assets/js/59.e02d2a68.js"><link rel="prefetch" href="/assets/js/6.da853a08.js"><link rel="prefetch" href="/assets/js/60.c13b9102.js"><link rel="prefetch" href="/assets/js/61.ce1ffa61.js"><link rel="prefetch" href="/assets/js/62.cbde77fc.js"><link rel="prefetch" href="/assets/js/63.6a6e76bb.js"><link rel="prefetch" href="/assets/js/64.719c6e82.js"><link rel="prefetch" href="/assets/js/65.35ffed46.js"><link rel="prefetch" href="/assets/js/66.7750d245.js"><link rel="prefetch" href="/assets/js/67.2e46c893.js"><link rel="prefetch" href="/assets/js/68.a9a0563c.js"><link rel="prefetch" href="/assets/js/69.b1cc861a.js"><link rel="prefetch" href="/assets/js/70.ed81d19d.js"><link rel="prefetch" href="/assets/js/71.a30e32d5.js"><link rel="prefetch" href="/assets/js/72.25fe76e6.js"><link rel="prefetch" href="/assets/js/73.bd35c7aa.js"><link rel="prefetch" href="/assets/js/74.f75ff811.js"><link rel="prefetch" href="/assets/js/75.7f289885.js"><link rel="prefetch" href="/assets/js/76.8253abd5.js"><link rel="prefetch" href="/assets/js/77.536e3412.js"><link rel="prefetch" href="/assets/js/78.65aa86c3.js"><link rel="prefetch" href="/assets/js/79.67020995.js"><link rel="prefetch" href="/assets/js/8.3a57be75.js"><link rel="prefetch" href="/assets/js/80.17142b68.js"><link rel="prefetch" href="/assets/js/81.e86b994b.js"><link rel="prefetch" href="/assets/js/82.cf9d4a77.js"><link rel="prefetch" href="/assets/js/83.859cfe56.js"><link rel="prefetch" href="/assets/js/84.a9a0063a.js"><link rel="prefetch" href="/assets/js/85.e015759e.js"><link rel="prefetch" href="/assets/js/86.b6c88722.js"><link rel="prefetch" href="/assets/js/87.049e0474.js"><link rel="prefetch" href="/assets/js/88.2d0a99b0.js"><link rel="prefetch" href="/assets/js/89.e0245d91.js"><link rel="prefetch" href="/assets/js/9.92b11c75.js"><link rel="prefetch" href="/assets/js/90.3a31bcb4.js"><link rel="prefetch" href="/assets/js/91.9dea8d08.js"><link rel="prefetch" href="/assets/js/92.dcd5acf4.js"><link rel="prefetch" href="/assets/js/93.35464dce.js"><link rel="prefetch" href="/assets/js/94.17b5e6ad.js"><link rel="prefetch" href="/assets/js/95.f29ad3e1.js"><link rel="prefetch" href="/assets/js/96.98bf15bc.js"><link rel="prefetch" href="/assets/js/97.2b80db27.js"><link rel="prefetch" href="/assets/js/98.39d79113.js"><link rel="prefetch" href="/assets/js/99.be7492e9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4e01b77.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">方圆几里</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">react</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">vue</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link">基础</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">es6</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">htmlcss</a></li><li class="dropdown-item"><!----> <a href="/typescript/" class="nav-link">Typescript</a></li><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">webpack</a></li><li class="dropdown-item"><!----> <a href="/test/" class="nav-link">test</a></li><li class="dropdown-item"><!----> <a href="/webdb/" class="nav-link">浏览器存储</a></li><li class="dropdown-item"><!----> <a href="/everyday/" class="nav-link">everyday</a></li><li class="dropdown-item"><!----> <a href="/jsstore/" class="nav-link">js功能库</a></li><li class="dropdown-item"><!----> <a href="/canvas/" class="nav-link router-link-active">canvas</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">node</a></li><li class="dropdown-item"><!----> <a href="/koa/" class="nav-link">koa</a></li><li class="dropdown-item"><!----> <a href="/mongo/" class="nav-link">mongo</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">mysql</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">http</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">other</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">移动端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">reactnative</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">react</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">vue</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link">基础</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">es6</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">htmlcss</a></li><li class="dropdown-item"><!----> <a href="/typescript/" class="nav-link">Typescript</a></li><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">webpack</a></li><li class="dropdown-item"><!----> <a href="/test/" class="nav-link">test</a></li><li class="dropdown-item"><!----> <a href="/webdb/" class="nav-link">浏览器存储</a></li><li class="dropdown-item"><!----> <a href="/everyday/" class="nav-link">everyday</a></li><li class="dropdown-item"><!----> <a href="/jsstore/" class="nav-link">js功能库</a></li><li class="dropdown-item"><!----> <a href="/canvas/" class="nav-link router-link-active">canvas</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">node</a></li><li class="dropdown-item"><!----> <a href="/koa/" class="nav-link">koa</a></li><li class="dropdown-item"><!----> <a href="/mongo/" class="nav-link">mongo</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">mysql</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">http</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">other</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">移动端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">reactnative</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/canvas/" class="sidebar-link">1 canvas</a></li><li><a href="/canvas/001canvas.html" class="sidebar-link">2 canvas开始</a></li><li><a href="/canvas/002canvastexiao.html" class="sidebar-link">3 canvas特效</a></li><li><a href="/canvas/003canvasyourself.html" class="active sidebar-link">4 canvas互动</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/canvas/003canvasyourself.html#使鼠标和屏幕互动" class="sidebar-link">使鼠标和屏幕互动</a></li><li class="sidebar-sub-header"><a href="/canvas/003canvasyourself.html#创建-canvas-元素" class="sidebar-link">创建 Canvas 元素</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/canvas/003canvasyourself.html#小结" class="sidebar-link">小结</a></li></ul></li><li class="sidebar-sub-header"><a href="/canvas/003canvasyourself.html#常见的-canvas-优化方法" class="sidebar-link">常见的 Canvas 优化方法</a></li></ul></li></ul> </div> <div class="page"> <div class="content"><h2 id="使鼠标和屏幕互动"><a href="#使鼠标和屏幕互动" aria-hidden="true" class="header-anchor">#</a> 使鼠标和屏幕互动</h2> <h2 id="创建-canvas-元素"><a href="#创建-canvas-元素" aria-hidden="true" class="header-anchor">#</a> 创建 Canvas 元素</h2> <p>首先我们还是要创建并获取 Canvas 元素，相信大家对此步骤应该很熟悉了吧。</p> <p>这里也顺带将需要的参数直接写好了，我们将一些可以控制的变量直接写在参数中，这样在后面就可以获取参数直接使用。设置参数主要是为了更改方便。</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+    &lt;style&gt;
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #canvas {
+            background: #000;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;canvas id=&quot;canvas&quot;&gt;&lt;/canvas&gt;
+&lt;script&gt;
+        var canvas = document.getElementById('canvas'),
+            ctx = canvas.getContext('2d'),
+            WIDTH = canvas.width = document.documentElement.clientWidth,
+            HEIGHT = canvas.height = document.documentElement.clientHeight,
+            para = {
+                num: 100,
+                color: false,    //  颜色  如果是false 则是随机渐变颜色
+                r: 0.9,          //   圆每次增加的半径 
+                o: 0.09,         //      判断圆消失的条件，数值越大，消失的越快
+                a: 1
+            },
+            color,
+            color2,
+            round_arr = [];     // 存放圆的数组 
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre></div><p>我们就创建一个黑色的全屏 Canvas 元素。</p> <h4 id="onmousemove-事件"><a href="#onmousemove-事件" aria-hidden="true" class="header-anchor">#</a> onmousemove 事件</h4> <p>我们在 Canvas 中创建动画的方式就是不断地清除屏幕内容然后重绘。</p> <p>我们可以看出来，移动的轨迹是由一个一个的圆构成的，如果移动的速度过快的话，那么就可以明显看出一个一个的圆。</p> <p>既然轨迹是由很多圆构成，那么我们就应该使用数组储存圆的信息（坐标、半径），然后在鼠标移动的时候将鼠标的位置信息储存在数组中。</p> <p>所以在鼠标移动的过程我们首先要获得鼠标的坐标，然后将鼠标的坐标以及其他信息 push 到数组中去：</p> <div class="language- extra-class"><pre class="language-text"><code>   
+    window.onmousemove = function (event) {
+
+        mouseX = event.clientX;
+        mouseY = event.clientY;
+
+        round_arr.push({
+            mouseX: mouseX,
+            mouseY: mouseY,
+            r: para.r,  // 设置半径每次增大的数值        
+            o: 1,    //  判断圆消失的条件，数值越大，消失得越快
+        })
+    };
+
+
+</code></pre></div><h4 id="设置-color"><a href="#设置-color" aria-hidden="true" class="header-anchor">#</a> 设置 color</h4> <p>我们已经将圆的相关信息储存在 <code>round_arr</code> 数组中了，现在要在 <code>animate()</code> 函数中将圆显示出来。</p> <p>创建圆需要的坐标信息以及半径，我们在鼠标移动的事件中都已经将其 push 到 <code>round_arr</code> 数组中了，还有一个条件是需要设置的，那就是颜色。</p> <p>怎么对颜色进行处理呢？在 <code>para</code> 参数中，我们可以看出，其中有设置 <code>color</code> 值。如果 <code>color</code> 值不为 <code>false</code>，那么设置的圆的颜色就是设置的 <code>color</code> 值；如果设置的 <code>color</code> 值为 <code>false</code>，那么圆的颜色就是随机的。</p> <div class="language- extra-class"><pre class="language-text"><code>
+if (para.color) {
+    color2 = para.color;
+} else {
+    color = Math.random() * 360;
+}
+
+</code></pre></div><p>那么怎么设置颜色的渐变呢？我们将 <code>color</code> 的颜色值依次增加一个增量。</p> <div class="language- extra-class"><pre class="language-text"><code>
+if (!para.color) {
+    color += .1;
+    color2 = 'hsl(' + color + ',100%,80%)';
+}
+
+
+</code></pre></div><p>要让颜色一直改变，我们要将上面颜色改变的代码放在一个一直执行的函数。我们将上面改变颜色的代码放在下面我们要介绍的 <code>animate()</code> 函数中。</p> <h4 id="animate-函数"><a href="#animate-函数" aria-hidden="true" class="header-anchor">#</a> animate() 函数</h4> <p>我们需要一个一直在执行的函数，这个函数主要负责动画的 <code>animate()</code> 函数。从函数名就可以看出这个函数的作用，的确，我们需要在该函数中写动画。</p> <p>我们先来清除屏幕。</p> <div class="language- extra-class"><pre class="language-text"><code>
+ctx.clearRect(0, 0, WIDTH, HEIGHT);
+
+
+</code></pre></div><p>接着使用 <code>round_arr</code> 数组中的数据将一个一个的圆绘制出来。</p> <div class="language- extra-class"><pre class="language-text"><code>for (var i = 0; i &lt; round_arr.length; i++) {
+
+    ctx.fillStyle = color2;
+    ctx.beginPath();
+    ctx.arc( round_arr[i].mouseX ,round_arr[i].mouseY,round_arr[i].r,0, Math.PI * 2);
+    ctx.closePath();
+    ctx.fill();
+    round_arr[i].r += para.r;
+    round_arr[i].o -= para.o;
+
+    if( round_arr[i].o &lt;= 0){
+        round_arr.splice(i,1);
+        i--;
+    }
+    
+}
+
+</code></pre></div><p>然后我们还需要一直执行这个函数：</p> <div class="language- extra-class"><pre class="language-text"><code>window.requestAnimationFrame(animate);
+
+</code></pre></div><p>我们来看下完整的 <code>animate()</code> 函数：</p> <div class="language- extra-class"><pre class="language-text"><code>
+function animate() {
+
+    if (!para.color) {
+        color += .1;
+        color2 = 'hsl(' + color + ',100%,80%)';
+    }
+
+    ctx.clearRect(0, 0, WIDTH, HEIGHT);
+
+    for (var i = 0; i &lt; round_arr.length; i++) {
+
+        ctx.fillStyle = color2;
+        ctx.beginPath();
+         ctx.arc( round_arr[i].mouseX ,round_arr[i].mouseY,round_arr[i].r,0, Math.PI * 2);
+        ctx.closePath();
+        ctx.fill();
+        round_arr[i].r += para.r;
+        round_arr[i].o -= para.o;
+
+        if( round_arr[i].o &lt;= 0){
+            round_arr.splice(i,1);
+            i--;
+        }
+    }
+
+    window.requestAnimationFrame(animate);
+};
+
+
+</code></pre></div><h3 id="小结"><a href="#小结" aria-hidden="true" class="header-anchor">#</a> 小结</h3> <p>以上，我们就写完了一个完整的鼠标跟随效果的例子，让我们来看一下主要的有哪些步骤：</p> <ol><li>创建 Canvas 元素，设置参数</li> <li>鼠标移动事件，将坐标信息 push 到数组</li> <li>设置颜色</li> <li>设置动画 <code>animate()</code> 函数</li></ol> <p>我们来看一下这个例子的完整代码：</p> <div class="language- extra-class"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+    &lt;style&gt;
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #canvas {
+            background: #000;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;canvas id=&quot;canvas&quot;&gt;&lt;/canvas&gt;
+&lt;script&gt;
+
+
+        var canvas = document.getElementById('canvas'),
+            ctx = canvas.getContext('2d'),
+            WIDTH = canvas.width = document.documentElement.clientWidth,
+            HEIGHT = canvas.height = document.documentElement.clientHeight,
+            para = {
+                num: 100,
+                color: false,    //  颜色  如果是false 则是随机渐变颜色
+                r: 0.9,
+                o: 0.09,         //  判断圆消失的条件，数值越大，消失的越快
+                a: 1,
+
+            },
+            color,
+            color2,
+            round_arr = [];
+
+
+
+
+
+        window.onmousemove = function (event) {
+
+            mouseX = event.clientX;
+            mouseY = event.clientY;
+
+            round_arr.push({
+                mouseX: mouseX,
+                mouseY: mouseY,
+                r: para.r,
+                o: 1
+            })
+        };
+
+
+        // 判断参数中是否设置了 color，如果设置了 color，就使用该值、
+        // 如果参数中的 color 为 false，那么就使用随机的颜色
+        if (para.color) {
+            color2 = para.color;
+        } else {
+            color = Math.random() * 360;
+        }
+
+        function animate() {
+
+            if (!para.color) {
+                color += .1;
+                color2 = 'hsl(' + color + ',100%,80%)';
+            }
+
+            ctx.clearRect(0, 0, WIDTH, HEIGHT);
+
+            for (var i = 0; i &lt; round_arr.length; i++) {
+
+                ctx.fillStyle = color2;
+                ctx.beginPath();
+                ctx.arc( round_arr[i].mouseX ,round_arr[i].mouseY,round_arr[i].r,0, Math.PI * 2);
+                ctx.closePath();
+                ctx.fill();
+                round_arr[i].r += para.r;
+                round_arr[i].o -= para.o;
+
+                if( round_arr[i].o &lt;= 0){
+                    round_arr.splice(i,1);
+                    i--;
+                }
+            }
+
+            window.requestAnimationFrame(animate);
+        };
+
+        animate();
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre></div><h2 id="常见的-canvas-优化方法"><a href="#常见的-canvas-优化方法" aria-hidden="true" class="header-anchor">#</a> 常见的 Canvas 优化方法</h2> <h4 id="避免浮点数的坐标点"><a href="#避免浮点数的坐标点" aria-hidden="true" class="header-anchor">#</a> 避免浮点数的坐标点</h4> <p>绘制图形时，长度与坐标应选取整数而不是浮点数，原因在于 Canvas 支持半个像素绘制。</p> <p>会根据小数位实现插值算法实现绘制图像的反锯齿效果，如果没有必要请不要选择浮点数值。</p> <h4 id="使用多层画布去画一个复杂的场景"><a href="#使用多层画布去画一个复杂的场景" aria-hidden="true" class="header-anchor">#</a> 使用多层画布去画一个复杂的场景</h4> <p>一般在游戏中这个优化方式会经常使用，但是在我们的背景特效中不经常使用，这个优化方式是将经常移动的元素和不经常移动的元素分层，避免不必要的重绘。</p> <p>比如在游戏中，背景不经常变换和人物这些经常变换的元素分成不同的层，这样需要重绘的资源就会少很多。</p> <h4 id="用-css-transform-特性缩放画布"><a href="#用-css-transform-特性缩放画布" aria-hidden="true" class="header-anchor">#</a> 用 CSS <code>transform</code> 特性缩放画布</h4> <p>如果你使用 <code>left</code>、<code>top</code> 这些 CSS 属性来写动画的话，那么会触发整个像素渲染流程 —— <code>paint</code>、<code>layout</code> 和 <code>composition</code>。</p> <p>但是使用 <code>transform</code> 中的 <code>translateX/Y</code> 来切换动画，你将会发现，这并不会触发 <code>paint</code> 和 <code>layout</code>，仅仅会触发 <code>composition</code> 的阶段。</p> <p>这是因为 <strong><code>transform</code> 调用的是 GPU 而不是 CPU。</strong></p> <h4 id="离屏渲染"><a href="#离屏渲染" aria-hidden="true" class="header-anchor">#</a> 离屏渲染</h4> <p>名字听起来很复杂，什么离屏渲染，其实就是设置缓存，绘制图像的时候在屏幕之外的地方绘制好，然后再直接拿过来用，这不就是缓存的概念吗?!︿(￣︶￣)︿.</p> <p>建立两个 Canvas 标签，大小一致，一个正常显示，一个隐藏（缓存用的，不插入 DOM 中）。先将结果 draw 到缓存用的 canvas 上下文中，因为游离 Canvas 不会造成 UI 的渲染，所以它不会展现出来；再把缓存的内容整个裁剪再 draw 到正常显示用的 Canvas 上，这样能优化不少。</p> <p>我们首先要在全局设置一个变量 <code>useCache</code> 来存放我们是否使用离屏渲染这种优化方式。</p> <div class="language- extra-class"><pre class="language-text"><code>var useCache = true;
+
+</code></pre></div><h4 id="round-item-方法"><a href="#round-item-方法" aria-hidden="true" class="header-anchor">#</a> <code>Round_item</code> 方法</h4> <p>然后我们在 <code>Round_item</code> 原型的 <code>draw()</code> 方法中创建每一个离屏的小的 <code>canvas</code>。</p> <div class="language- extra-class"><pre class="language-text"><code>    function Round_item(index, x, y) {
+        this.index = index;
+        this.x = x;
+        this.y = y;
+        this.useCache = useChache;
+        
+        this.cacheCanvas = document.createElement(&quot;canvas&quot;);
+        this.cacheCtx = this.cacheCanvas.getContext(&quot;2d&quot;);
+
+        this.r = Math.random() * 2 + 1;
+        
+        this.cacheCtx.width = 6 * this.r;
+        this.cacheCtx.height = 6 * this.r;
+        
+        var alpha = (Math.floor(Math.random() * 10) + 1) / 10 / 2;
+        this.color = &quot;rgba(255,255,255,&quot; + alpha + &quot;)&quot;;
+
+        if(useChache){
+            this.cache();
+        }
+    }
+
+</code></pre></div><p>有人会产生疑问，为什么这里的 <code>cacheCanvas</code> 画布的宽度要设置为 6 倍的半径？那是因为，我们创建的 <code>cacheCanvas</code> 不仅仅是有圆，还包括圆的阴影，所以我们要将 <code>cacheCanvas</code> 的面积设置得稍微大一些，这样才能将圆带阴影一起剪切到我们的主 Canvas 中。</p> <p>在 <code>draw()</code> 方法中，我们新创建了 <code>cacheCanvas</code>，并获取到了 <code>cacheCanvas</code> 的上下文环境，然后设置其宽高。</p> <p>然后我们判断了 <code>useChache</code> 变量的值，也就是说，如果我们将 <code>useChache</code> 设置为 <code>true</code>，也就是使用缓存，我们就调用 <code>this.cache()</code> 方法。接下来，我们来看一下 <code>this.cache()</code> 方法。</p> <h4 id="this-cache-方法"><a href="#this-cache-方法" aria-hidden="true" class="header-anchor">#</a> <code>this.cache()</code> 方法</h4> <p>同样的，我们也是在 <code>Round_item</code> 的原型中设置 <code>this.cache()</code> 方法。</p> <p>在 <code>this.cache()</code> 方法中，我们的主要任务是在每一个 <code>cacheCanvas</code> 中都绘制一个圆。</p> <div class="language- extra-class"><pre class="language-text"><code>    Round_item.prototype.cache = function () {
+        this.cacheCtx.save();
+        this.cacheCtx.fillStyle = this.color;
+        this.cacheCtx.shadowColor = &quot;white&quot;;
+        this.cacheCtx.shadowBlur = this.r * 2;
+        this.cacheCtx.beginPath();
+        this.cacheCtx.arc(this.r * 3, this.r * 3, this.r, 0, 2 * Math.PI);
+        this.cacheCtx.closePath();
+        this.cacheCtx.fill();
+        this.cacheCtx.restore();
+    };
+
+</code></pre></div><p>这里需要注意的是，和在 <code>draw()</code> 方法中画的圆不同之处是，要注意这里设置的圆心坐标，是 <code>this.r * 3</code>，因为我们创建的 <code>cacheCanvas</code> 的宽度和高度都是 <code>6 * this.r</code>，我们的圆是要显示在 <code>cacheCanvas</code> 的正中心，所以设置圆心的坐标应该是 <code>this.r * 3,this.r * 3</code>。</p> <h4 id="draw-方法"><a href="#draw-方法" aria-hidden="true" class="header-anchor">#</a> <code>draw()</code> 方法</h4> <p>既然设置了 <code>cacheCanvas</code>，那么我们在 <code>draw()</code> 中，就需要使用 Canvas 的 <code>drawImage</code> 方法将 <code>cacheCanvas</code> 中的内容显示在屏幕上。</p> <div class="language- extra-class"><pre class="language-text"><code>    Round_item.prototype.draw = function () {
+
+        if( !useChache){
+            content.fillStyle = this.color;
+            content.shadowBlur = this.r * 2;
+            content.beginPath();
+            content.arc(this.x, this.y, this.r, 0, 2 * Math.PI, false);
+            content.closePath();
+            content.fill();
+        }else{
+            content.drawImage(this.cacheCanvas, this.x - this.r, this.y - this.r);
+        }
+
+    };
+
+</code></pre></div><p>这里也是要判断下，如果没有使用缓存的话，还是使用最原始的创建圆的方式。</p> <p>这样，我们就完成了离屏渲染的优化，我们来一起看一下完整的代码：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+        <span class="token selector">html, body</span> <span class="token punctuation">{</span>
+            <span class="token property">margin</span><span class="token punctuation">:</span> 0<span class="token punctuation">;</span>
+            <span class="token property">overflow</span><span class="token punctuation">:</span> hidden<span class="token punctuation">;</span>
+            <span class="token property">width</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+            <span class="token property">height</span><span class="token punctuation">:</span> 100%<span class="token punctuation">;</span>
+            <span class="token property">cursor</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+            <span class="token property">background</span><span class="token punctuation">:</span> black<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>canvas</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>canvas<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>canvas</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+    <span class="token keyword">var</span> ctx <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'canvas'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        content <span class="token operator">=</span> ctx<span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token string">'2d'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        round <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+        <span class="token constant">WIDTH</span><span class="token punctuation">,</span>
+        <span class="token constant">HEIGHT</span><span class="token punctuation">,</span>
+        initRoundPopulation <span class="token operator">=</span> <span class="token number">80</span><span class="token punctuation">,</span>
+        useChache <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+
+
+
+    <span class="token constant">WIDTH</span> <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientWidth<span class="token punctuation">;</span>
+    <span class="token constant">HEIGHT</span> <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>clientHeight<span class="token punctuation">;</span>
+
+    ctx<span class="token punctuation">.</span>width <span class="token operator">=</span> <span class="token constant">WIDTH</span><span class="token punctuation">;</span>
+    ctx<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token constant">HEIGHT</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">function</span> <span class="token function">Round_item</span><span class="token punctuation">(</span>index<span class="token punctuation">,</span> x<span class="token punctuation">,</span> y<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>index <span class="token operator">=</span> index<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">=</span> x<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> y<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>useCache <span class="token operator">=</span> useChache<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>cacheCanvas <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&quot;canvas&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>cacheCtx <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>cacheCanvas<span class="token punctuation">.</span><span class="token function">getContext</span><span class="token punctuation">(</span><span class="token string">&quot;2d&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">this</span><span class="token punctuation">.</span>cacheCtx<span class="token punctuation">.</span>width <span class="token operator">=</span> <span class="token number">6</span> <span class="token operator">*</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>cacheCtx<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token number">6</span> <span class="token operator">*</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>r <span class="token operator">=</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">2</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> alpha <span class="token operator">=</span> <span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">floor</span><span class="token punctuation">(</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token number">10</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">/</span> <span class="token number">10</span> <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>color <span class="token operator">=</span> <span class="token string">&quot;rgba(255,255,255,&quot;</span> <span class="token operator">+</span> alpha <span class="token operator">+</span> <span class="token string">&quot;)&quot;</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span>useChache<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">cache</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+
+    Round_item<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">draw</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+        <span class="token keyword">if</span><span class="token punctuation">(</span> <span class="token operator">!</span>useChache<span class="token punctuation">)</span><span class="token punctuation">{</span>
+            content<span class="token punctuation">.</span>fillStyle <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>color<span class="token punctuation">;</span>
+            content<span class="token punctuation">.</span>shadowBlur <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+            content<span class="token punctuation">.</span><span class="token function">beginPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            content<span class="token punctuation">.</span><span class="token function">arc</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>x<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>y<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token operator">*</span> Math<span class="token punctuation">.</span><span class="token constant">PI</span><span class="token punctuation">,</span> <span class="token boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            content<span class="token punctuation">.</span><span class="token function">closePath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            content<span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+            content<span class="token punctuation">.</span><span class="token function">drawImage</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>cacheCanvas<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>x <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r<span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+    Round_item<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">cache</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>cacheCtx<span class="token punctuation">.</span><span class="token function">save</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>cacheCtx<span class="token punctuation">.</span>fillStyle <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>color<span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>cacheCtx<span class="token punctuation">.</span>shadowColor <span class="token operator">=</span> <span class="token string">&quot;white&quot;</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>cacheCtx<span class="token punctuation">.</span>shadowBlur <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>cacheCtx<span class="token punctuation">.</span><span class="token function">beginPath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>cacheCtx<span class="token punctuation">.</span><span class="token function">arc</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>r <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r <span class="token operator">*</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token keyword">this</span><span class="token punctuation">.</span>r<span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">2</span> <span class="token operator">*</span> Math<span class="token punctuation">.</span><span class="token constant">PI</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>cacheCtx<span class="token punctuation">.</span><span class="token function">closePath</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>cacheCtx<span class="token punctuation">.</span><span class="token function">fill</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>cacheCtx<span class="token punctuation">.</span><span class="token function">restore</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">function</span> <span class="token function">animate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        content<span class="token punctuation">.</span><span class="token function">clearRect</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token constant">WIDTH</span><span class="token punctuation">,</span> <span class="token constant">HEIGHT</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token keyword">in</span> round<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            round<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">move</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">requestAnimationFrame</span><span class="token punctuation">(</span>animate<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+
+    Round_item<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span><span class="token function-variable function">move</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">-=</span> <span class="token number">0.15</span><span class="token punctuation">;</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">&lt;=</span> <span class="token operator">-</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">this</span><span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token constant">HEIGHT</span> <span class="token operator">+</span> <span class="token number">10</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+
+    <span class="token keyword">function</span> <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token keyword">var</span> i <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> i <span class="token operator">&lt;</span> initRoundPopulation<span class="token punctuation">;</span> i<span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            round<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Round_item</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token constant">WIDTH</span><span class="token punctuation">,</span> Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">*</span> <span class="token constant">HEIGHT</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            round<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">draw</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">animate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token punctuation">}</span>
+
+    <span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><div><canvas id="canvas11"></canvas></div> <!----></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/canvas/002canvastexiao.html" class="prev">
+          3 canvas特效
+        </a></span> <!----></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.90db4e06.js" defer></script><script src="/assets/js/47.c185aed1.js" defer></script><script src="/assets/js/4.6b6c7a54.js" defer></script><script src="/assets/js/7.8db8a7d0.js" defer></script>
+  </body>
+</html>
