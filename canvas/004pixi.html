@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>pixi | 方圆几里</title>
+    <meta name="description" content="welcome">
+    <link rel="icon" href="/img/logo.ico">
+    
+    <link rel="preload" href="/assets/css/0.styles.954748c6.css" as="style"><link rel="preload" href="/assets/js/app.ca8deedc.js" as="script"><link rel="preload" href="/assets/js/48.f100add4.js" as="script"><link rel="preload" href="/assets/js/4.4132e362.js" as="script"><link rel="preload" href="/assets/js/7.8db8a7d0.js" as="script"><link rel="prefetch" href="/assets/js/10.e6583c20.js"><link rel="prefetch" href="/assets/js/100.b29c8dfa.js"><link rel="prefetch" href="/assets/js/101.c43dae9a.js"><link rel="prefetch" href="/assets/js/102.3f83bce1.js"><link rel="prefetch" href="/assets/js/103.8f0de7c5.js"><link rel="prefetch" href="/assets/js/104.a3176925.js"><link rel="prefetch" href="/assets/js/105.86918d27.js"><link rel="prefetch" href="/assets/js/106.cd9a269c.js"><link rel="prefetch" href="/assets/js/107.be505883.js"><link rel="prefetch" href="/assets/js/108.47e763cf.js"><link rel="prefetch" href="/assets/js/109.41de818b.js"><link rel="prefetch" href="/assets/js/11.98457873.js"><link rel="prefetch" href="/assets/js/110.9dd6c946.js"><link rel="prefetch" href="/assets/js/111.dc36f26c.js"><link rel="prefetch" href="/assets/js/112.e26d530c.js"><link rel="prefetch" href="/assets/js/113.ab9c88ff.js"><link rel="prefetch" href="/assets/js/114.b27e0c3b.js"><link rel="prefetch" href="/assets/js/115.30a472c6.js"><link rel="prefetch" href="/assets/js/116.27dd1099.js"><link rel="prefetch" href="/assets/js/117.d130ba3d.js"><link rel="prefetch" href="/assets/js/118.d2a77234.js"><link rel="prefetch" href="/assets/js/119.abe15af0.js"><link rel="prefetch" href="/assets/js/12.a182207b.js"><link rel="prefetch" href="/assets/js/120.2808c659.js"><link rel="prefetch" href="/assets/js/121.3024ca0f.js"><link rel="prefetch" href="/assets/js/122.0c0e7540.js"><link rel="prefetch" href="/assets/js/123.e2dbe0a4.js"><link rel="prefetch" href="/assets/js/124.073ff6bc.js"><link rel="prefetch" href="/assets/js/125.ba5accbd.js"><link rel="prefetch" href="/assets/js/126.f1bc98f9.js"><link rel="prefetch" href="/assets/js/127.6ff5041c.js"><link rel="prefetch" href="/assets/js/128.98f66d18.js"><link rel="prefetch" href="/assets/js/129.47efb733.js"><link rel="prefetch" href="/assets/js/13.d274abda.js"><link rel="prefetch" href="/assets/js/130.470b8754.js"><link rel="prefetch" href="/assets/js/131.ac095c71.js"><link rel="prefetch" href="/assets/js/132.6e9bda6d.js"><link rel="prefetch" href="/assets/js/133.562ca1c9.js"><link rel="prefetch" href="/assets/js/134.2b3be0d6.js"><link rel="prefetch" href="/assets/js/135.8d53ebeb.js"><link rel="prefetch" href="/assets/js/136.a53249c4.js"><link rel="prefetch" href="/assets/js/137.9c84b05a.js"><link rel="prefetch" href="/assets/js/138.f18db50e.js"><link rel="prefetch" href="/assets/js/139.a4129ace.js"><link rel="prefetch" href="/assets/js/14.ee53224d.js"><link rel="prefetch" href="/assets/js/140.7d3ce606.js"><link rel="prefetch" href="/assets/js/141.9313eab4.js"><link rel="prefetch" href="/assets/js/142.da1c7cf7.js"><link rel="prefetch" href="/assets/js/143.a3f8ebed.js"><link rel="prefetch" href="/assets/js/144.4feaef35.js"><link rel="prefetch" href="/assets/js/145.7fbb67a8.js"><link rel="prefetch" href="/assets/js/146.ad8698ad.js"><link rel="prefetch" href="/assets/js/147.1d432923.js"><link rel="prefetch" href="/assets/js/148.ef43b095.js"><link rel="prefetch" href="/assets/js/149.8f72fa28.js"><link rel="prefetch" href="/assets/js/15.8d82ca10.js"><link rel="prefetch" href="/assets/js/150.a4bc6f5b.js"><link rel="prefetch" href="/assets/js/151.b8199457.js"><link rel="prefetch" href="/assets/js/152.33fb252e.js"><link rel="prefetch" href="/assets/js/153.516fb036.js"><link rel="prefetch" href="/assets/js/154.5d2bb6c9.js"><link rel="prefetch" href="/assets/js/155.21c24d46.js"><link rel="prefetch" href="/assets/js/156.96cfd9fc.js"><link rel="prefetch" href="/assets/js/157.874bce95.js"><link rel="prefetch" href="/assets/js/158.73baa135.js"><link rel="prefetch" href="/assets/js/159.fab70108.js"><link rel="prefetch" href="/assets/js/16.c2e2a3a3.js"><link rel="prefetch" href="/assets/js/160.37cc449b.js"><link rel="prefetch" href="/assets/js/161.b5140154.js"><link rel="prefetch" href="/assets/js/162.98eddd24.js"><link rel="prefetch" href="/assets/js/163.be675e19.js"><link rel="prefetch" href="/assets/js/164.835c29aa.js"><link rel="prefetch" href="/assets/js/165.850c18e4.js"><link rel="prefetch" href="/assets/js/166.e2fc87d4.js"><link rel="prefetch" href="/assets/js/167.135028e4.js"><link rel="prefetch" href="/assets/js/168.4645df95.js"><link rel="prefetch" href="/assets/js/169.4cd8c96f.js"><link rel="prefetch" href="/assets/js/17.451c5fd5.js"><link rel="prefetch" href="/assets/js/170.89af4e17.js"><link rel="prefetch" href="/assets/js/171.a5134764.js"><link rel="prefetch" href="/assets/js/18.aaefe34f.js"><link rel="prefetch" href="/assets/js/19.d73c2908.js"><link rel="prefetch" href="/assets/js/2.a56687ff.js"><link rel="prefetch" href="/assets/js/20.6722c5ab.js"><link rel="prefetch" href="/assets/js/21.3b764a32.js"><link rel="prefetch" href="/assets/js/22.50300ec1.js"><link rel="prefetch" href="/assets/js/23.40cc4f80.js"><link rel="prefetch" href="/assets/js/24.7dbd9f26.js"><link rel="prefetch" href="/assets/js/25.6cd91f5e.js"><link rel="prefetch" href="/assets/js/26.968b434c.js"><link rel="prefetch" href="/assets/js/27.77043cfa.js"><link rel="prefetch" href="/assets/js/28.e7a3be3d.js"><link rel="prefetch" href="/assets/js/29.94381462.js"><link rel="prefetch" href="/assets/js/3.7b436630.js"><link rel="prefetch" href="/assets/js/30.1780f5a2.js"><link rel="prefetch" href="/assets/js/31.81d99799.js"><link rel="prefetch" href="/assets/js/32.f23e1f6b.js"><link rel="prefetch" href="/assets/js/33.b5b82d36.js"><link rel="prefetch" href="/assets/js/34.afdf13f8.js"><link rel="prefetch" href="/assets/js/35.a15a73bc.js"><link rel="prefetch" href="/assets/js/36.fb437647.js"><link rel="prefetch" href="/assets/js/37.1f9c57b7.js"><link rel="prefetch" href="/assets/js/38.466f1ad5.js"><link rel="prefetch" href="/assets/js/39.5a4d9b28.js"><link rel="prefetch" href="/assets/js/40.2238ee0d.js"><link rel="prefetch" href="/assets/js/41.bf96494f.js"><link rel="prefetch" href="/assets/js/42.ea586830.js"><link rel="prefetch" href="/assets/js/43.7946e913.js"><link rel="prefetch" href="/assets/js/44.ede9c405.js"><link rel="prefetch" href="/assets/js/45.d1a894f1.js"><link rel="prefetch" href="/assets/js/46.f063eb0a.js"><link rel="prefetch" href="/assets/js/47.3bf838cc.js"><link rel="prefetch" href="/assets/js/49.2eb8b74e.js"><link rel="prefetch" href="/assets/js/5.e4f87f58.js"><link rel="prefetch" href="/assets/js/50.11f81ba0.js"><link rel="prefetch" href="/assets/js/51.0e8a5bb6.js"><link rel="prefetch" href="/assets/js/52.30bb7f02.js"><link rel="prefetch" href="/assets/js/53.3b79a2f9.js"><link rel="prefetch" href="/assets/js/54.b80d688a.js"><link rel="prefetch" href="/assets/js/55.2cea9c4b.js"><link rel="prefetch" href="/assets/js/56.8fde000e.js"><link rel="prefetch" href="/assets/js/57.c6ca1cd9.js"><link rel="prefetch" href="/assets/js/58.585d633b.js"><link rel="prefetch" href="/assets/js/59.740ef423.js"><link rel="prefetch" href="/assets/js/6.2e92cde9.js"><link rel="prefetch" href="/assets/js/60.1a110c1c.js"><link rel="prefetch" href="/assets/js/61.a62d179f.js"><link rel="prefetch" href="/assets/js/62.32352acc.js"><link rel="prefetch" href="/assets/js/63.4a48b79f.js"><link rel="prefetch" href="/assets/js/64.72ae2012.js"><link rel="prefetch" href="/assets/js/65.918464d6.js"><link rel="prefetch" href="/assets/js/66.47e5049b.js"><link rel="prefetch" href="/assets/js/67.9805c00a.js"><link rel="prefetch" href="/assets/js/68.86472834.js"><link rel="prefetch" href="/assets/js/69.55147231.js"><link rel="prefetch" href="/assets/js/70.9270ea63.js"><link rel="prefetch" href="/assets/js/71.ceb6a7fd.js"><link rel="prefetch" href="/assets/js/72.4b4176bf.js"><link rel="prefetch" href="/assets/js/73.57d95f70.js"><link rel="prefetch" href="/assets/js/74.d5d0e1fd.js"><link rel="prefetch" href="/assets/js/75.6037b9b9.js"><link rel="prefetch" href="/assets/js/76.7bec851c.js"><link rel="prefetch" href="/assets/js/77.f659bc81.js"><link rel="prefetch" href="/assets/js/78.6c09c16a.js"><link rel="prefetch" href="/assets/js/79.a991568b.js"><link rel="prefetch" href="/assets/js/8.00c90d6d.js"><link rel="prefetch" href="/assets/js/80.c3088346.js"><link rel="prefetch" href="/assets/js/81.4ce08bae.js"><link rel="prefetch" href="/assets/js/82.095ca695.js"><link rel="prefetch" href="/assets/js/83.8498bee2.js"><link rel="prefetch" href="/assets/js/84.74256bf4.js"><link rel="prefetch" href="/assets/js/85.6587b12a.js"><link rel="prefetch" href="/assets/js/86.93dcf885.js"><link rel="prefetch" href="/assets/js/87.f0f6654d.js"><link rel="prefetch" href="/assets/js/88.4e52e821.js"><link rel="prefetch" href="/assets/js/89.afb19940.js"><link rel="prefetch" href="/assets/js/9.971a024e.js"><link rel="prefetch" href="/assets/js/90.a3f257eb.js"><link rel="prefetch" href="/assets/js/91.bb3ced7f.js"><link rel="prefetch" href="/assets/js/92.6c34609a.js"><link rel="prefetch" href="/assets/js/93.3152eaaf.js"><link rel="prefetch" href="/assets/js/94.a4109997.js"><link rel="prefetch" href="/assets/js/95.f7faf2e8.js"><link rel="prefetch" href="/assets/js/96.9b0fb022.js"><link rel="prefetch" href="/assets/js/97.456a7c6d.js"><link rel="prefetch" href="/assets/js/98.ccdff07e.js"><link rel="prefetch" href="/assets/js/99.2c0a8f2d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.954748c6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">方圆几里</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">react</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">vue</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link">基础</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">es6</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">htmlcss</a></li><li class="dropdown-item"><!----> <a href="/typescript/" class="nav-link">Typescript</a></li><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">webpack</a></li><li class="dropdown-item"><!----> <a href="/test/" class="nav-link">test</a></li><li class="dropdown-item"><!----> <a href="/webdb/" class="nav-link">浏览器存储</a></li><li class="dropdown-item"><!----> <a href="/everyday/" class="nav-link">everyday</a></li><li class="dropdown-item"><!----> <a href="/jsstore/" class="nav-link">js功能库</a></li><li class="dropdown-item"><!----> <a href="/canvas/" class="nav-link router-link-active">canvas</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">node</a></li><li class="dropdown-item"><!----> <a href="/koa/" class="nav-link">koa</a></li><li class="dropdown-item"><!----> <a href="/mongo/" class="nav-link">mongo</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">mysql</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">http</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">other</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">移动端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">reactnative</a></li><li class="dropdown-item"><!----> <a href="https://github.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">react</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">vue</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link">基础</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">es6</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">htmlcss</a></li><li class="dropdown-item"><!----> <a href="/typescript/" class="nav-link">Typescript</a></li><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">webpack</a></li><li class="dropdown-item"><!----> <a href="/test/" class="nav-link">test</a></li><li class="dropdown-item"><!----> <a href="/webdb/" class="nav-link">浏览器存储</a></li><li class="dropdown-item"><!----> <a href="/everyday/" class="nav-link">everyday</a></li><li class="dropdown-item"><!----> <a href="/jsstore/" class="nav-link">js功能库</a></li><li class="dropdown-item"><!----> <a href="/canvas/" class="nav-link router-link-active">canvas</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">node</a></li><li class="dropdown-item"><!----> <a href="/koa/" class="nav-link">koa</a></li><li class="dropdown-item"><!----> <a href="/mongo/" class="nav-link">mongo</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">mysql</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">http</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">other</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title">移动端</span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">reactnative</a></li><li class="dropdown-item"><!----> <a href="https://github.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/canvas/" class="sidebar-link">1 canvas</a></li><li><a href="/canvas/001canvas.html" class="sidebar-link">2 canvas开始</a></li><li><a href="/canvas/002canvastexiao.html" class="sidebar-link">3 canvas特效</a></li><li><a href="/canvas/003canvasyourself.html" class="sidebar-link">4 canvas互动</a></li><li><a href="/canvas/004pixi.html" class="active sidebar-link">5 pixi</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/canvas/004pixi.html#pixi" class="sidebar-link">pixi</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/canvas/004pixi.html#创建" class="sidebar-link">创建</a></li><li class="sidebar-sub-header"><a href="/canvas/004pixi.html#pixi-精灵" class="sidebar-link">Pixi 精灵</a></li><li class="sidebar-sub-header"><a href="/canvas/004pixi.html#使用别名" class="sidebar-link">使用别名</a></li><li class="sidebar-sub-header"><a href="/canvas/004pixi.html#监视加载进程" class="sidebar-link">监视加载进程</a></li><li class="sidebar-sub-header"><a href="/canvas/004pixi.html#精灵位置" class="sidebar-link">精灵位置</a></li><li class="sidebar-sub-header"><a href="/canvas/004pixi.html#大小和比例-旋转" class="sidebar-link">大小和比例 旋转</a></li><li class="sidebar-sub-header"><a href="/canvas/004pixi.html#雪碧图创建精灵" class="sidebar-link">雪碧图创建精灵</a></li><li class="sidebar-sub-header"><a href="/canvas/004pixi.html#三种方式从已经加载的纹理贴图集中创建精灵：" class="sidebar-link">三种方式从已经加载的纹理贴图集中创建精灵：</a></li><li class="sidebar-sub-header"><a href="/canvas/004pixi.html#给精灵分组" class="sidebar-link">给精灵分组</a></li><li class="sidebar-sub-header"><a href="/canvas/004pixi.html#绘制图形" class="sidebar-link">绘制图形</a></li></ul></li></ul></li></ul> </div> <div class="page"> <div class="content"><h2 id="pixi"><a href="#pixi" aria-hidden="true" class="header-anchor">#</a> pixi</h2> <p>Pixi是一个超快的2D渲染引擎</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>zn<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Pixi JS 置换滤镜效果<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+        <span class="token selector">.start-btn,
+        .stop-btn</span> <span class="token punctuation">{</span>
+            <span class="token property">display</span><span class="token punctuation">:</span> inline-block<span class="token punctuation">;</span>
+            <span class="token property">color</span><span class="token punctuation">:</span> #fff<span class="token punctuation">;</span>
+            <span class="token property">border-radius</span><span class="token punctuation">:</span> 4px<span class="token punctuation">;</span>
+            <span class="token property">border</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+            <span class="token property">cursor</span><span class="token punctuation">:</span> pointer<span class="token punctuation">;</span>
+            <span class="token property">outline</span><span class="token punctuation">:</span> none<span class="token punctuation">;</span>
+            <span class="token property">padding</span><span class="token punctuation">:</span> 10px 20px<span class="token punctuation">;</span>
+            <span class="token property">margin-bottom</span><span class="token punctuation">:</span> 30px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.start-btn</span> <span class="token punctuation">{</span>
+            <span class="token property">background-color</span><span class="token punctuation">:</span> #ff0081<span class="token punctuation">;</span>
+            <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 2px 25px <span class="token function">rgba</span><span class="token punctuation">(</span>255, 0, 130, 0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token selector">.stop-btn</span> <span class="token punctuation">{</span>
+            <span class="token property">background-image</span><span class="token punctuation">:</span> <span class="token function">linear-gradient</span><span class="token punctuation">(</span>to right, #4facfe 0%, #00f2fe 100%<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token property">margin-left</span><span class="token punctuation">:</span> 20px<span class="token punctuation">;</span>
+            <span class="token property">box-shadow</span><span class="token punctuation">:</span> 0 2px 25px <span class="token function">rgba</span><span class="token punctuation">(</span>22, 217, 227, 0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>start-btn<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>开始<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>stop-btn<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>停止<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>px-render<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://www.kkkk1000.com/js/pixi4.8.2.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+        <span class="token comment">// 创建一个 Pixi应用 需要的一些参数</span>
+        <span class="token keyword">var</span> option <span class="token operator">=</span> <span class="token punctuation">{</span>
+            width<span class="token punctuation">:</span> <span class="token number">400</span><span class="token punctuation">,</span>
+            height<span class="token punctuation">:</span> <span class="token number">300</span><span class="token punctuation">,</span>
+            transparent<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token comment">// 创建一个 Pixi应用</span>
+        <span class="token keyword">var</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Application</span><span class="token punctuation">(</span>option<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token comment">// 获取渲染器</span>
+        <span class="token keyword">var</span> renderer <span class="token operator">=</span> app<span class="token punctuation">.</span>renderer<span class="token punctuation">;</span>
+        <span class="token comment">// 图片精灵</span>
+        <span class="token keyword">var</span> preview<span class="token punctuation">;</span>
+        <span class="token comment">// 置换图精灵</span>
+        <span class="token keyword">var</span> displacementSprite<span class="token punctuation">;</span>
+        <span class="token comment">// 滤镜</span>
+        <span class="token keyword">var</span> displacementFilter<span class="token punctuation">;</span>
+        <span class="token comment">// 舞台（一个容器），这里面包括了图片精灵、置换图精灵</span>
+        <span class="token keyword">var</span> stage<span class="token punctuation">;</span>
+        <span class="token keyword">var</span> playground <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'px-render'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">function</span> <span class="token function">setScene</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// renderer.view 是 Pixi 创建的一个canvas</span>
+            <span class="token comment">// 把 Pixi 创建的 canvas 添加到页面上</span>
+            playground<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>renderer<span class="token punctuation">.</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 创建一个容器 </span>
+            stage <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Container</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 根据图片的 url，创建图片精灵</span>
+            preview <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Sprite<span class="token punctuation">.</span><span class="token function">fromImage</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 创建置换图精灵，在创建置换滤镜时会用到这个精灵 </span>
+            displacementSprite <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Sprite<span class="token punctuation">.</span><span class="token function">fromImage</span><span class="token punctuation">(</span>
+			<span class="token string">'https://www.kkkk1000.com/images/learnPixiJS/sprite.png'</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+
+            <span class="token comment">// 设置置换图精灵为平铺模式</span>
+            displacementSprite<span class="token punctuation">.</span>texture<span class="token punctuation">.</span>baseTexture<span class="token punctuation">.</span>wrapMode <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span><span class="token constant">WRAP_MODES</span><span class="token punctuation">.</span><span class="token constant">REPEAT</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 创建一个置换滤镜</span>
+            displacementFilter <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>filters<span class="token punctuation">.</span>DisplacementFilter</span><span class="token punctuation">(</span>displacementSprite<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 添加 图片精灵 到舞台</span>
+            stage<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>preview<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 添加 置换图精灵 到舞台 </span>
+            stage<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>displacementSprite<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+            <span class="token comment">// 把 stage 添加到根容器上</span>
+            app<span class="token punctuation">.</span>stage<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>stage<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+
+        <span class="token comment">// 置换图精灵的移动速度</span>
+        <span class="token keyword">var</span> velocity <span class="token operator">=</span> <span class="token number">.8</span><span class="token punctuation">;</span>
+        <span class="token comment">// raf 是调用 requestAnimationFrame方法的返回值，停止动画效果时需要用到</span>
+        <span class="token keyword">var</span> raf<span class="token punctuation">;</span>
+        <span class="token keyword">function</span> <span class="token function">animate</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            raf <span class="token operator">=</span> <span class="token function">requestAnimationFrame</span><span class="token punctuation">(</span>animate<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token comment">// 改变置换图精灵的位置</span>
+            displacementSprite<span class="token punctuation">.</span>x <span class="token operator">+=</span> velocity<span class="token punctuation">;</span>
+            displacementSprite<span class="token punctuation">.</span>y <span class="token operator">+=</span> velocity<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token function">setScene</span><span class="token punctuation">(</span><span class="token string">'https://www.kkkk1000.com/images/learnPixiJS/view.jpg'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+        <span class="token keyword">var</span> start <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.start-btn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token keyword">var</span> stop <span class="token operator">=</span> document<span class="token punctuation">.</span><span class="token function">querySelector</span><span class="token punctuation">(</span><span class="token string">'.stop-btn'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        start<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 设置舞台的滤镜</span>
+            stage<span class="token punctuation">.</span>filters <span class="token operator">=</span> <span class="token punctuation">[</span>displacementFilter<span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token comment">// 开始动画</span>
+            <span class="token function">animate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+
+        stop<span class="token punctuation">.</span><span class="token function-variable function">onclick</span> <span class="token operator">=</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token comment">// 取消滤镜</span>
+            stage<span class="token punctuation">.</span>filters <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+            <span class="token comment">// 停止动画</span>
+            <span class="token function">cancelAnimationFrame</span><span class="token punctuation">(</span>raf<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h3 id="创建"><a href="#创建" aria-hidden="true" class="header-anchor">#</a> 创建</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//Create a Pixi Application</span>
+<span class="token keyword">let</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Application</span><span class="token punctuation">(</span><span class="token punctuation">{</span>width<span class="token punctuation">:</span> <span class="token number">256</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">256</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//Add the canvas that Pixi automatically created for you to the HTML document</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>PIXI.Application算出了应该使用Canvas还是WebGL去渲染图象，它取决于你正在使用的浏览器支持哪一个。它的参数是一个被称作options的对象。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Application</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    width<span class="token punctuation">:</span> <span class="token number">256</span><span class="token punctuation">,</span>         <span class="token comment">// default: 800</span>
+    height<span class="token punctuation">:</span> <span class="token number">256</span><span class="token punctuation">,</span>        <span class="token comment">// default: 600</span>
+    antialias<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>    <span class="token comment">// default: false</span>
+    transparent<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span> <span class="token comment">// default: false</span>
+    resolution<span class="token punctuation">:</span> <span class="token number">1</span>       <span class="token comment">// default: 1</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>如果你需要在你创建canvas标签之后改变它的背景色，设置 app.renderer对象的backgroundColor属性为一个任何的十六进制颜色：</p> <div class="language-js extra-class"><pre class="language-js"><code>app<span class="token punctuation">.</span>renderer<span class="token punctuation">.</span>backgroundColor <span class="token operator">=</span> <span class="token number">0x061639</span><span class="token punctuation">;</span>
+</code></pre></div><p>画布的宽高，使用app.renderer.view.width 和app.renderer.view.height。</p> <p>使用画布的resize方法可以改变canvas的大小，提供任何新的width 和 height变量给他都行。但是为了确认宽高的格式正确，将autoResize设置为true。</p> <div class="language-JS extra-class"><pre class="language-js"><code>app<span class="token punctuation">.</span>renderer<span class="token punctuation">.</span>autoResize <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span>renderer<span class="token punctuation">.</span><span class="token function">resize</span><span class="token punctuation">(</span><span class="token number">512</span><span class="token punctuation">,</span> <span class="token number">512</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="pixi-精灵"><a href="#pixi-精灵" aria-hidden="true" class="header-anchor">#</a> Pixi 精灵</h3> <p>在画布上显示的东西必须被加进一个被称作 舞台的Pixi对象中。你能够像这样使用舞台对象：</p> <div class="language-js extra-class"><pre class="language-js"><code>app<span class="token punctuation">.</span>stage
+</code></pre></div><p>这个舞台是一个Pixi 容器对象。你能把它理解成一种将放进去的东西分组并存储的空箱子。 舞台对象是在你的场景中所有可见对象的根容器。所有放进去的东西都会被渲染到canvas中。</p> <p>所以可以放些什么到舞台上呢？那就是被称作 精灵 的特殊图像对象。精灵是你能用代码控制图像的基础。你能够控制他们的位置，大小，和许多其他有用的属性来产生交互和动画。如果知道怎么创建精灵和把他们添加进舞台，离做出一个游戏就仅仅剩下一步之遥！</p> <p>Pixi拥有一个精灵类来创建游戏精灵。有三种主要的方法来创建它：</p> <ul><li>用一个单图像文件创建。</li> <li>用一个 雪碧图 来创建。雪碧图是一个放入了你游戏所需的所有图像的大图。</li> <li>从一个纹理贴图集中创建。（纹理贴图集就是用JSON定义了图像大小和位置的雪碧图）</li> <li></li></ul> <h4 id="将图片加载到纹理缓存中"><a href="#将图片加载到纹理缓存中" aria-hidden="true" class="header-anchor">#</a> 将图片加载到纹理缓存中</h4> <p>因为Pixi用WebGL和GPU去渲染图像，所以图像需要转化成GPU可以处理的版本。可以被GPU处理的图像被称作 纹理 。在让精灵显示图片之前，需要将普通的图片转化成WebGL纹理。为了让所有工作执行的快速有效率，Pixi使用 纹理缓存 来存储和引用所有你的精灵需要的纹理。纹理的名称字符串就是图像的地址。这意味着如果有从&quot;images/cat.png&quot;加载的图像，你可以在纹理缓存中这样找到他：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">PIXI</span><span class="token punctuation">.</span>utils<span class="token punctuation">.</span>TextureCache<span class="token punctuation">[</span><span class="token string">&quot;images/cat.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><p>纹理被以WEBGL兼容的格式存储起来，它可以使Pixi的渲染有效率的进行。你现在可以使用Pixi的精灵类来创建一个新的精灵，让它使用纹理。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> texture <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>utils<span class="token punctuation">.</span>TextureCache<span class="token punctuation">[</span><span class="token string">&quot;images/anySpriteImage.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> sprite <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Sprite</span><span class="token punctuation">(</span>texture<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>但是该怎么加载图像并将它转化成纹理？答案是用Pixi已经构建好的loader对象。</p> <p>Pixi强大的loader对象可以加载任何你需要种类的图像资源。这里展示了怎么加载一个图像并在加载完成时用一个叫做setup的方法来使用它。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">PIXI</span><span class="token punctuation">.</span>loader
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;images/anyImage.png&quot;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>setup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">//This code will run when the loader has finished loading the image</span>
+<span class="token punctuation">}</span><span class="token punctuation">]</span>
+</code></pre></div><p>Pixi的最佳实践 如果使用了Loader，你就应该创建一个精灵来连接loader的resources对象，像下面这样：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> sprite <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Sprite</span><span class="token punctuation">(</span>
+  <span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">.</span>resources<span class="token punctuation">[</span><span class="token string">&quot;images/anyImage.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span>texture
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>这里是一个完整的加载图像的代码。调用setup方法，并为加载的图像创建一个精灵。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">PIXI</span><span class="token punctuation">.</span>loader
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;images/anyImage.png&quot;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>setup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> sprite <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Sprite</span><span class="token punctuation">(</span>
+    <span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">.</span>resources<span class="token punctuation">[</span><span class="token string">&quot;images/anyImage.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span>texture
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>这是这个教程之中用来加载图像和创建精灵的通用方法。</p> <p>你可以链式调用add方法来加载一系列图像，像下面这样：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">PIXI</span><span class="token punctuation">.</span>loader
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;images/imageOne.png&quot;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;images/imageTwo.png&quot;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;images/imageThree.png&quot;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>setup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>更好的方式则是用数组给一个add方法传参，像这样：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">PIXI</span><span class="token punctuation">.</span>loader
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token string">&quot;images/imageOne.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;images/imageTwo.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;images/imageThree.png&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>setup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>这个loader也允许你使用JSON文件，关于JSON文件你应该已经在前面学过了。</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>utf-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+			<span class="token selector">*</span><span class="token punctuation">{</span>
+				<span class="token property">margin</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span>
+				<span class="token property">padding</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+		
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>./pixi.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">
+<span class="token keyword">let</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Application</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    width<span class="token punctuation">:</span> <span class="token number">256</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token number">256</span><span class="token punctuation">,</span>                       
+    antialias<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    transparent<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    resolution<span class="token punctuation">:</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//Add the canvas that Pixi automatically created for you to the HTML document</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//load an image and run the `setup` function when it's done</span>
+<span class="token constant">PIXI</span><span class="token punctuation">.</span>loader
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;./cat.png&quot;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>setup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//This `setup` function will run when the image has loaded</span>
+<span class="token keyword">function</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">//Create the cat sprite</span>
+  <span class="token keyword">let</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Sprite</span><span class="token punctuation">(</span><span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">.</span>resources<span class="token punctuation">[</span><span class="token string">&quot;./cat.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span>texture<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Add the cat to the stage</span>
+  app<span class="token punctuation">.</span>stage<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>cat<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token function">setInterval</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+	app<span class="token punctuation">.</span>stage<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>cat<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token number">5000</span><span class="token punctuation">)</span>
+  
+<span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+
+</code></pre></div><p>如果想把一个精灵从舞台上挪走，就可以使用removeChild方法：</p> <div class="language-JS extra-class"><pre class="language-js"><code>app<span class="token punctuation">.</span>stage<span class="token punctuation">.</span><span class="token function">removeChild</span><span class="token punctuation">(</span>anySprite<span class="token punctuation">)</span>
+</code></pre></div><p>但是通常，我们都把精灵的visible属性设置成false来让精灵简单的隐藏。</p> <div class="language-JS extra-class"><pre class="language-js"><code>anySprite<span class="token punctuation">.</span>visible <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="使用别名"><a href="#使用别名" aria-hidden="true" class="header-anchor">#</a> 使用别名</h3> <p>使用频繁的Pixi对象和方法设置一些简略的可读性更强的别名</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//Aliases</span>
+<span class="token keyword">let</span> Application <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Application<span class="token punctuation">,</span>
+    loader <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">,</span>
+    resources <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">.</span>resources<span class="token punctuation">,</span>
+    Sprite <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Sprite<span class="token punctuation">;</span>
+
+<span class="token comment">//Create a Pixi Application</span>
+<span class="token keyword">let</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Application</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    width<span class="token punctuation">:</span> <span class="token number">256</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token number">256</span><span class="token punctuation">,</span>                       
+    antialias<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    transparent<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    resolution<span class="token punctuation">:</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//Add the canvas that Pixi automatically created for you to the HTML document</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//load an image and run the `setup` function when it's done</span>
+loader
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;images/cat.png&quot;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>setup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//This `setup` function will run when the image has loaded</span>
+<span class="token keyword">function</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">//Create the cat sprite</span>
+  <span class="token keyword">let</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sprite</span><span class="token punctuation">(</span>resources<span class="token punctuation">[</span><span class="token string">&quot;images/cat.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span>texture<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Add the cat to the stage</span>
+  app<span class="token punctuation">.</span>stage<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>cat<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h5 id="使用普通的javascript-img对象或canvas创建一个精灵"><a href="#使用普通的javascript-img对象或canvas创建一个精灵" aria-hidden="true" class="header-anchor">#</a> 使用普通的javaScript Img对象或canvas创建一个精灵</h5> <p>为了优化和效率我们常常选择从预加载的纹理缓存的纹理之中创建精灵。但是如果因为某些原因你需要从JavaScript的Image对象之中创建，可以使用Pixi的BaseTexture和Texture类：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> base <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>BaseTexture</span><span class="token punctuation">(</span>anyImageObject<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    texture <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Texture</span><span class="token punctuation">(</span>base<span class="token punctuation">)</span><span class="token punctuation">,</span>
+    sprite <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Sprite</span><span class="token punctuation">(</span>texture<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>使用BaseTexture.fromCanvas从任何已经存在canvas标签中创建纹理：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> base <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>BaseTexture<span class="token punctuation">.</span>fromCanvas</span><span class="token punctuation">(</span>anyCanvasElement<span class="token punctuation">)</span>
+</code></pre></div><p>想改变已经显示的精灵的纹理，使用texture属性，可以设置任何Texture对象，像下面这样：</p> <div class="language-js extra-class"><pre class="language-js"><code>anySprite<span class="token punctuation">.</span>texture <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>utils<span class="token punctuation">.</span>TextureCache<span class="token punctuation">[</span><span class="token string">&quot;anyTexture.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+</code></pre></div><h5 id="给加载的文件设置别名"><a href="#给加载的文件设置别名" aria-hidden="true" class="header-anchor">#</a> 给加载的文件设置别名</h5> <p>只需要在add方法中第一个参数位置传进去这个别名就行了，举例来说，下面实现了怎么给这个猫的图片重命名为catImage。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">PIXI</span><span class="token punctuation">.</span>loader
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;catImage&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;images/cat.png&quot;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>setup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">let</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Sprite</span><span class="token punctuation">(</span><span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">.</span>resources<span class="token punctuation">.</span>catImage<span class="token punctuation">.</span>texture<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>然而，建议永远别用这个操作！使用路径命名，处理的更简单和更少错误。</p> <h3 id="监视加载进程"><a href="#监视加载进程" aria-hidden="true" class="header-anchor">#</a> 监视加载进程</h3> <p>Pixi的加载器有一个特殊的 <code>progress</code> 事件，它将会调用一个可以定制的函数，这个函数将在每次文件加载时调用。progress事件将会被loader的on方法调用，像是这样：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;progress&quot;</span><span class="token punctuation">,</span> loadProgressHandler<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>这里展示了怎么将on方法注入加载链中，并且每当文件加载时调用一个用户定义的名叫loadProgressHandler的函数。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">PIXI</span><span class="token punctuation">.</span>loader
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token string">&quot;images/one.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;images/two.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;images/three.png&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;progress&quot;</span><span class="token punctuation">,</span> loadProgressHandler<span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>setup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">loadProgressHandler</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;loading&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;setup&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>每一个文件加载，progress事件调用loadProgressHandler函数在控制台输出 &quot;loading&quot;。当三个文件都加载完毕，setup方法将会运行，下面是控制台的输出：</p> <div class="language- extra-class"><pre class="language-text"><code>loading
+loading
+loading
+setup
+</code></pre></div><p>这就不错了，不过还能变的更好。你可以知道哪个文件被加载了以及有百分之多少的文件被加载了。你可以在loadProgressHandler增加loader参数和resource参数实现这个功能，像下面这样：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">loadProgressHandler</span><span class="token punctuation">(</span>loader<span class="token punctuation">,</span> resource<span class="token punctuation">)</span> <span class="token punctuation">{</span> <span class="token comment">/*...*/</span> <span class="token punctuation">}</span>
+</code></pre></div><p>你现在可以使用 resource.url变量来找到现在已经被加载的文件。（如果你想找到你定义的别名，使用resource.name参数。）你可以使用loader.progress来找到现在有百分之多少的文件被加载了，这里有一些关于上面描述的代码：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token constant">PIXI</span><span class="token punctuation">.</span>loader
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+    <span class="token string">&quot;images/one.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;images/two.png&quot;</span><span class="token punctuation">,</span>
+    <span class="token string">&quot;images/three.png&quot;</span>
+  <span class="token punctuation">]</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">&quot;progress&quot;</span><span class="token punctuation">,</span> loadProgressHandler<span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>setup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">loadProgressHandler</span><span class="token punctuation">(</span>loader<span class="token punctuation">,</span> resource<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">//Display the file `url` currently being loaded</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;loading: &quot;</span> <span class="token operator">+</span> resource<span class="token punctuation">.</span>url<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Display the percentage of files currently loaded</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;progress: &quot;</span> <span class="token operator">+</span> loader<span class="token punctuation">.</span>progress <span class="token operator">+</span> <span class="token string">&quot;%&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//If you gave your files names as the first argument</span>
+  <span class="token comment">//of the `add` method, you can access them like this</span>
+  <span class="token comment">//console.log(&quot;loading: &quot; + resource.name);</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;All files loaded&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token comment">//这里是程序运行后的控制台显示：</span>
+
+<span class="token comment">//loading: images/one.png</span>
+<span class="token comment">//progress: 33.333333333333336%</span>
+<span class="token comment">//loading: images/two.png</span>
+<span class="token comment">//progress: 66.66666666666667%</span>
+<span class="token comment">//loading: images/three.png</span>
+<span class="token comment">//progress: 100%</span>
+<span class="token comment">//All files loaded</span>
+</code></pre></div><p>这实在太酷了！因为你能用这个玩意做个进度条出来。 （注意：还有一些额外的resource对象属性， resource.error会告诉你有哪些加载时候的错误，resource.data将会给你文件的原始二进制数据。）</p> <h5 id="一些关于pixi的加载器的其他知识"><a href="#一些关于pixi的加载器的其他知识" aria-hidden="true" class="header-anchor">#</a> 一些关于Pixi的加载器的其他知识</h5> <p>Pixi的加载器有很多可以设置的功能：</p> <p>add 方法有四个基础参数:</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">add</span><span class="token punctuation">(</span>name<span class="token punctuation">,</span> url<span class="token punctuation">,</span> optionObject<span class="token punctuation">,</span> callbackFunction<span class="token punctuation">)</span>
+</code></pre></div><p>这里有文档里面对这些参数的描述：</p> <ul><li>name (string): 加载源文件的别名,如果没设置，url就会被放在这.</li> <li>url (string): 源文件的地址，是加载器 baseUrl的相对地址.</li> <li>options (object literal): 加载设置.</li> <li>options.crossOrigin (Boolean): 源文件请求跨域不？默认是自动设定的。</li> <li>options.loadType: 源文件是怎么加载进来的？默认是Resource.LOAD_TYPE.XHR。options.xhrType: 用XHR的时候该怎么处理数据？ 默认是Resource.XHR_RESPONSE_TYPE.DEFAULT。
+callbackFunction: 当这个特定的函数加载完，这个特定的函数将会被执行。</li></ul> <p>只有url必填（你总得加载个文件吧。）</p> <p>这里有点用了add方法加载文件的例子。第一个就是文档里所谓的“正常语法”：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'key'</span><span class="token punctuation">,</span> <span class="token string">'http://...'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'http://...'</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">'http://...'</span><span class="token punctuation">)</span>
+</code></pre></div><p>这些就是所谓“对象语法”啦：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">'key2'</span><span class="token punctuation">,</span>
+  url<span class="token punctuation">:</span> <span class="token string">'http://...'</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  url<span class="token punctuation">:</span> <span class="token string">'http://...'</span>
+<span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  name<span class="token punctuation">:</span> <span class="token string">'key3'</span><span class="token punctuation">,</span>
+  url<span class="token punctuation">:</span> <span class="token string">'http://...'</span>
+  onComplete<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  url<span class="token punctuation">:</span> <span class="token string">'https://...'</span><span class="token punctuation">,</span>
+  onComplete<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  crossOrigin<span class="token punctuation">:</span> <span class="token boolean">true</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><p>你也可以给add方法传一个对象的数组，或者既使用对象数组，又使用链式加载：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>name<span class="token punctuation">:</span> <span class="token string">'key4'</span><span class="token punctuation">,</span> url<span class="token punctuation">:</span> <span class="token string">'http://...'</span><span class="token punctuation">,</span> onComplete<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>url<span class="token punctuation">:</span> <span class="token string">'http://...'</span><span class="token punctuation">,</span> onComplete<span class="token punctuation">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token punctuation">}</span> <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token string">'http://...'</span>
+<span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>（注意：如果你需要重新加载一批文件，调用加载器的reset方法：PIXI.loader.reset();）</p> <h3 id="精灵位置"><a href="#精灵位置" aria-hidden="true" class="header-anchor">#</a> 精灵位置</h3> <p>可以通过改变它的x和y坐标的值来改变他们的位置。下面的例子就是你通过设置x和y为96坐标让它在舞台上居中。</p> <div class="language-js extra-class"><pre class="language-js"><code>cat<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token number">96</span><span class="token punctuation">;</span>
+cat<span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token number">96</span><span class="token punctuation">;</span>
+</code></pre></div><p>在你创建这个精灵之后，把这两行代码放进setup方法。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">//Create the `cat` sprite</span>
+  <span class="token keyword">let</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sprite</span><span class="token punctuation">(</span>resources<span class="token punctuation">[</span><span class="token string">&quot;images/cat.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span>texture<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Change the sprite's position</span>
+  cat<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token number">96</span><span class="token punctuation">;</span>
+  cat<span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token number">96</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Add the cat to the stage so you can see it</span>
+  app<span class="token punctuation">.</span>stage<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>cat<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>（注意：在这个例子里，Sprite是 PIXI.Sprite的别名，TextureCache是PIXI.utils.TextureCache的别名，resources是PIXI.loader.resources的别名，我从现在开始在代码中使用这些别名。）</p> <p>这两行代码将把猫往右移动96像素，往下移动96像素。
+可以一句话设置精灵的x和y:</p> <div class="language-js extra-class"><pre class="language-js"><code>sprite<span class="token punctuation">.</span>position<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+</code></pre></div><h3 id="大小和比例-旋转"><a href="#大小和比例-旋转" aria-hidden="true" class="header-anchor">#</a> 大小和比例 旋转</h3> <p>控制宽高</p> <div class="language-js extra-class"><pre class="language-js"><code>cat<span class="token punctuation">.</span>width <span class="token operator">=</span> <span class="token number">80</span><span class="token punctuation">;</span>
+cat<span class="token punctuation">.</span>height <span class="token operator">=</span> <span class="token number">120</span><span class="token punctuation">;</span>
+</code></pre></div><p>精灵都有scale.x 和 scale.y属性，他们可以成比例的改变精灵的宽高。这里的例子把猫的大小变成了一半：</p> <div class="language-js extra-class"><pre class="language-js"><code>cat<span class="token punctuation">.</span>scale<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
+cat<span class="token punctuation">.</span>scale<span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
+</code></pre></div><p>Pixi可以用一行代码缩放你的精灵，那要用到scale.set方法。</p> <div class="language-js extra-class"><pre class="language-js"><code>cat<span class="token punctuation">.</span>scale<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token number">0.5</span><span class="token punctuation">,</span> <span class="token number">0.5</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>可以通过对一个精灵的rotation设定一个角度来旋转它。</p> <div class="language-js extra-class"><pre class="language-js"><code>cat<span class="token punctuation">.</span>rotation <span class="token operator">=</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
+</code></pre></div><p>精灵的左上角代表它的位置，这个点被称之为 锚点 。如果你用像0.5这种值设定rotation，这个旋转将会 围绕着锚点发生 。</p> <p>通过改变精灵的anchor属性的xy值来实现。像下面这样：</p> <div class="language-js extra-class"><pre class="language-js"><code>cat<span class="token punctuation">.</span>anchor<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
+cat<span class="token punctuation">.</span>anchor<span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token number">0.5</span><span class="token punctuation">;</span>
+</code></pre></div><p>anchor.x和anchor.y的值如果是从0到1，就会被认为是整个纹理的长度或宽度百分比。设置他们都为0.5，锚点就处在了图像中心。精灵定位的依据点不会改变，锚点的改变是另外一回事。</p> <img src="/beifen/012canvas.png"> <p>像是position和scale属性一样，你也可以在一行内像这样设置锚点的位置：</p> <div class="language-js extra-class"><pre class="language-js"><code>cat<span class="token punctuation">.</span>anchor<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">)</span>
+</code></pre></div><p>精灵也提供和anchor差不多的pivot属性来设置精灵的原点。如果你改变了它的值之后旋转精灵，它将会围绕着你设置的原点来旋转。举个例子，下面的代码将精灵的pivot.x和pivot.y设置为了32。</p> <p>cat.pivot.set(32, 32)
+假设精灵图是64x64像素，它将绕着它的中心点旋转。但是记住：你如果改变了精灵的pivot属性，你也就改变了它的原点位置。</p> <p>所以anchor 和 pivot的不同之处在哪里呢？他们真的很像！anchor改变了精灵纹理的图像原点，用0到1的数据来填充。pivot则改变了精灵的原点，用像素的值来填充。</p> <h3 id="雪碧图创建精灵"><a href="#雪碧图创建精灵" aria-hidden="true" class="header-anchor">#</a> 雪碧图创建精灵</h3> <img src="/beifen/013sprit.png"> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>utf-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+			<span class="token selector">*</span><span class="token punctuation">{</span>
+				<span class="token property">margin</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span>
+				<span class="token property">padding</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+		
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>./pixi.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">	
+<span class="token comment">//Aliases</span>
+<span class="token keyword">let</span> Application <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Application<span class="token punctuation">,</span>
+    loader <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">,</span>
+    resources <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">.</span>resources<span class="token punctuation">,</span>
+	Rectangle <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Rectangle<span class="token punctuation">,</span>
+	TextureCache<span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>TextureCache<span class="token punctuation">,</span>
+    Sprite <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Sprite<span class="token punctuation">;</span>	
+	
+	
+	
+<span class="token keyword">let</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Application</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    width<span class="token punctuation">:</span> <span class="token number">256</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token number">256</span><span class="token punctuation">,</span>                       
+    antialias<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    transparent<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    resolution<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+	backgroundColor<span class="token punctuation">:</span><span class="token number">0XFFFFFF</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//Add the canvas that Pixi automatically created for you to the HTML document</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//load an image and run the `setup` function when it's done</span>
+<span class="token constant">PIXI</span><span class="token punctuation">.</span>loader
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;./09.png&quot;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>setup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  
+<span class="token keyword">function</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+ <span class="token comment">//Create the `tileset` sprite from the texture</span>
+  <span class="token keyword">let</span> texture <span class="token operator">=</span> TextureCache<span class="token punctuation">[</span><span class="token string">&quot;./09.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Create a rectangle object that defines the position and</span>
+  <span class="token comment">//size of the sub-image you want to extract from the texture</span>
+  <span class="token comment">//(`Rectangle` is an alias for `PIXI.Rectangle`)</span>
+  <span class="token keyword">let</span> rectangle <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token number">96</span><span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">32</span><span class="token punctuation">,</span> <span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token comment">//(x位置，y位置，width，height)</span>
+
+  <span class="token comment">//Tell the texture to use that rectangular section</span>
+  texture<span class="token punctuation">.</span>frame <span class="token operator">=</span> rectangle<span class="token punctuation">;</span>
+
+  <span class="token comment">//Create the sprite from the texture</span>
+  <span class="token keyword">let</span> rocket <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sprite</span><span class="token punctuation">(</span>texture<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Position the rocket sprite on the canvas</span>
+  rocket<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token number">32</span><span class="token punctuation">;</span>
+  rocket<span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token number">32</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Add the rocket to the stage</span>
+  app<span class="token punctuation">.</span>stage<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>rocket<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  
+<span class="token punctuation">}</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><p>Pixi内置了一个通用的Rectangle对象 (PIXI.Rectangle)，他是一个用于定义矩形形状的通用对象。他需要一些参数，前两个参数定义了x 和y轴坐标位置，后两个参数定义了矩形的width 和 height，下面是新建一个Rectangle对象的格式。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> rectangle <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">PIXI<span class="token punctuation">.</span>Rectangle</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> width<span class="token punctuation">,</span> height<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>这个矩形对象仅仅是一个 数据对象，如何使用它完全取决于你。在我们的例子里，我们用它来定义子图像在雪碧图中的位置和大小。Pixi的纹理中有一个叫做frame的很有用的属性，它可以被设置成任何的Rectangle对象。frame将纹理映射到Rectangle的维度。下面是怎么用frame来定义火箭的大小和位置。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> rectangle <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token number">192</span><span class="token punctuation">,</span> <span class="token number">128</span><span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+texture<span class="token punctuation">.</span>frame <span class="token operator">=</span> rectangle<span class="token punctuation">;</span>
+</code></pre></div><p>你现在可以用它裁切纹理来创建精灵了：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> rocket <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sprite</span><span class="token punctuation">(</span>texture<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h4 id="移动精灵"><a href="#移动精灵" aria-hidden="true" class="header-anchor">#</a> 移动精灵</h4> <p>使用Pixi的ticker。这被称为 游戏循环 。任何在游戏循环里的代码都会1秒更新60次。你可以用下面的代码让 cat 精灵以每帧1像素的速率移动。</p> <div class="language-JS extra-class"><pre class="language-js"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token constant">DOCTYPE</span> html<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>html<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>head<span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span>meta charset<span class="token operator">=</span><span class="token string">&quot;utf-8&quot;</span> <span class="token operator">/</span><span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span>meta name<span class="token operator">=</span><span class="token string">&quot;viewport&quot;</span> content<span class="token operator">=</span><span class="token string">&quot;width=device-width, initial-scale=1&quot;</span><span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span>title<span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span>style<span class="token operator">&gt;</span>
+			<span class="token operator">*</span><span class="token punctuation">{</span>
+				margin<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>
+				padding<span class="token punctuation">:</span><span class="token number">0</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
+		
+	<span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">&gt;</span>
+ <span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">&quot;./pixi.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string">&quot;text/javascript&quot;</span><span class="token operator">&gt;</span>	
+<span class="token comment">//Aliases</span>
+<span class="token keyword">let</span> Application <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Application<span class="token punctuation">,</span>
+    Container <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Container<span class="token punctuation">,</span>
+    loader <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">,</span>
+    resources <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">.</span>resources<span class="token punctuation">,</span>
+    TextureCache <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>utils<span class="token punctuation">.</span>TextureCache<span class="token punctuation">,</span>
+    Sprite <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Sprite<span class="token punctuation">,</span>
+    Rectangle <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Rectangle<span class="token punctuation">;</span>
+
+<span class="token comment">//Create a Pixi Application</span>
+<span class="token keyword">let</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Application</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    width<span class="token punctuation">:</span> <span class="token number">256</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token number">256</span><span class="token punctuation">,</span>                       
+    antialias<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    transparent<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    resolution<span class="token punctuation">:</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//Add the canvas that Pixi automatically created for you to the HTML document</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+loader
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;./cat.png&quot;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>setup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//Define any variables that are used in more than one function</span>
+<span class="token keyword">let</span> cat<span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">//Create the `cat` sprite</span>
+  cat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sprite</span><span class="token punctuation">(</span>resources<span class="token punctuation">[</span><span class="token string">&quot;./cat.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span>texture<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  cat<span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token number">96</span><span class="token punctuation">;</span>
+  app<span class="token punctuation">.</span>stage<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>cat<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Start the game loop</span>
+  app<span class="token punctuation">.</span>ticker<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>delta <span class="token operator">=&gt;</span> <span class="token function">gameLoop</span><span class="token punctuation">(</span>delta<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">gameLoop</span><span class="token punctuation">(</span>delta<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+  <span class="token comment">//Move the cat 1 pixel</span>
+  cat<span class="token punctuation">.</span>x <span class="token operator">+=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Optionally use the `delta` value</span>
+  <span class="token comment">//cat.x += 1 + delta;</span>
+<span class="token punctuation">}</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+
+</code></pre></div><h4 id="速度属性"><a href="#速度属性" aria-hidden="true" class="header-anchor">#</a> 速度属性</h4> <p>vx和 vy去控制精灵的运动速度。 vx被用来设置精灵在x轴（水平）的速度和方向。vy被用来设置精灵在y轴（垂直）的速度和方向。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">//Create the `cat` sprite</span>
+  cat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sprite</span><span class="token punctuation">(</span>resources<span class="token punctuation">[</span><span class="token string">&quot;images/cat.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span>texture<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  cat<span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token number">96</span><span class="token punctuation">;</span>
+  cat<span class="token punctuation">.</span>vx <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  cat<span class="token punctuation">.</span>vy <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  app<span class="token punctuation">.</span>stage<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>cat<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Start the game loop</span>
+  app<span class="token punctuation">.</span>ticker<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>delta <span class="token operator">=&gt;</span> <span class="token function">gameLoop</span><span class="token punctuation">(</span>delta<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">gameLoop</span><span class="token punctuation">(</span>delta<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+  <span class="token comment">//Update the cat's velocity</span>
+  cat<span class="token punctuation">.</span>vx <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+  cat<span class="token punctuation">.</span>vy <span class="token operator">=</span> <span class="token number">1</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Apply the velocity values to the cat's</span>
+  <span class="token comment">//position to make it move</span>
+  cat<span class="token punctuation">.</span>x <span class="token operator">+=</span> cat<span class="token punctuation">.</span>vx<span class="token punctuation">;</span>
+  cat<span class="token punctuation">.</span>y <span class="token operator">+=</span> cat<span class="token punctuation">.</span>vy<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+</code></pre></div><h4 id="键盘控制"><a href="#键盘控制" aria-hidden="true" class="header-anchor">#</a> 键盘控制</h4> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>utf-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style language-css">
+			<span class="token selector">*</span><span class="token punctuation">{</span>
+				<span class="token property">margin</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span>
+				<span class="token property">padding</span><span class="token punctuation">:</span>0<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+		
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>./pixi.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script language-javascript">	
+<span class="token comment">//Define any variables that are used in more than one function</span>
+<span class="token keyword">let</span> cat<span class="token punctuation">,</span> state<span class="token punctuation">;</span>
+<span class="token keyword">let</span> Application <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Application<span class="token punctuation">,</span>
+    Container <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Container<span class="token punctuation">,</span>
+    loader <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">,</span>
+    resources <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">.</span>resources<span class="token punctuation">,</span>
+    TextureCache <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>utils<span class="token punctuation">.</span>TextureCache<span class="token punctuation">,</span>
+    Sprite <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Sprite<span class="token punctuation">,</span>
+    Rectangle <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Rectangle<span class="token punctuation">;</span>
+
+<span class="token comment">//Create a Pixi Application</span>
+<span class="token keyword">let</span> app <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Application</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    width<span class="token punctuation">:</span> <span class="token number">256</span><span class="token punctuation">,</span>
+    height<span class="token punctuation">:</span> <span class="token number">256</span><span class="token punctuation">,</span>                       
+    antialias<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+    transparent<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+    resolution<span class="token punctuation">:</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//Add the canvas that Pixi automatically created for you to the HTML document</span>
+document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>app<span class="token punctuation">.</span>view<span class="token punctuation">)</span><span class="token punctuation">;</span>
+loader
+  <span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span><span class="token string">&quot;./cat.png&quot;</span><span class="token punctuation">)</span>
+  <span class="token punctuation">.</span><span class="token function">load</span><span class="token punctuation">(</span>setup<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">function</span> <span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">//Create the `cat` sprite</span>
+  cat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sprite</span><span class="token punctuation">(</span>resources<span class="token punctuation">[</span><span class="token string">&quot;./cat.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span>texture<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  cat<span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token number">96</span><span class="token punctuation">;</span>
+  cat<span class="token punctuation">.</span>vx <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  cat<span class="token punctuation">.</span>vy <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  app<span class="token punctuation">.</span>stage<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>cat<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Capture the keyboard arrow keys</span>
+  <span class="token keyword">let</span> left <span class="token operator">=</span> <span class="token function">keyboard</span><span class="token punctuation">(</span><span class="token number">37</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      up <span class="token operator">=</span> <span class="token function">keyboard</span><span class="token punctuation">(</span><span class="token number">38</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      right <span class="token operator">=</span> <span class="token function">keyboard</span><span class="token punctuation">(</span><span class="token number">39</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+      down <span class="token operator">=</span> <span class="token function">keyboard</span><span class="token punctuation">(</span><span class="token number">40</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Left arrow key `press` method</span>
+  left<span class="token punctuation">.</span><span class="token function-variable function">press</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">//Change the cat's velocity when the key is pressed</span>
+    cat<span class="token punctuation">.</span>vx <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">;</span>
+    cat<span class="token punctuation">.</span>vy <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Left arrow key `release` method</span>
+  left<span class="token punctuation">.</span><span class="token function-variable function">release</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">//If the left arrow has been released, and the right arrow isn't down,</span>
+    <span class="token comment">//and the cat isn't moving vertically:</span>
+    <span class="token comment">//Stop the cat</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>right<span class="token punctuation">.</span>isDown <span class="token operator">&amp;&amp;</span> cat<span class="token punctuation">.</span>vy <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      cat<span class="token punctuation">.</span>vx <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Up</span>
+  up<span class="token punctuation">.</span><span class="token function-variable function">press</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    cat<span class="token punctuation">.</span>vy <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">5</span><span class="token punctuation">;</span>
+    cat<span class="token punctuation">.</span>vx <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  up<span class="token punctuation">.</span><span class="token function-variable function">release</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>down<span class="token punctuation">.</span>isDown <span class="token operator">&amp;&amp;</span> cat<span class="token punctuation">.</span>vx <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      cat<span class="token punctuation">.</span>vy <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Right</span>
+  right<span class="token punctuation">.</span><span class="token function-variable function">press</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    cat<span class="token punctuation">.</span>vx <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    cat<span class="token punctuation">.</span>vy <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  right<span class="token punctuation">.</span><span class="token function-variable function">release</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>left<span class="token punctuation">.</span>isDown <span class="token operator">&amp;&amp;</span> cat<span class="token punctuation">.</span>vy <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      cat<span class="token punctuation">.</span>vx <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Down</span>
+  down<span class="token punctuation">.</span><span class="token function-variable function">press</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    cat<span class="token punctuation">.</span>vy <span class="token operator">=</span> <span class="token number">5</span><span class="token punctuation">;</span>
+    cat<span class="token punctuation">.</span>vx <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+  down<span class="token punctuation">.</span><span class="token function-variable function">release</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>up<span class="token punctuation">.</span>isDown <span class="token operator">&amp;&amp;</span> cat<span class="token punctuation">.</span>vx <span class="token operator">===</span> <span class="token number">0</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      cat<span class="token punctuation">.</span>vy <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Set the game state</span>
+  state <span class="token operator">=</span> play<span class="token punctuation">;</span>
+
+  <span class="token comment">//Start the game loop</span>
+  app<span class="token punctuation">.</span>ticker<span class="token punctuation">.</span><span class="token function">add</span><span class="token punctuation">(</span>delta <span class="token operator">=&gt;</span> <span class="token function">gameLoop</span><span class="token punctuation">(</span>delta<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">gameLoop</span><span class="token punctuation">(</span>delta<span class="token punctuation">)</span><span class="token punctuation">{</span>
+
+  <span class="token comment">//Update the current game state:</span>
+  <span class="token function">state</span><span class="token punctuation">(</span>delta<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">keyboard</span><span class="token punctuation">(</span>keyCode<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">let</span> key <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  key<span class="token punctuation">.</span>code <span class="token operator">=</span> keyCode<span class="token punctuation">;</span>
+  key<span class="token punctuation">.</span>isDown <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+  key<span class="token punctuation">.</span>isUp <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+  key<span class="token punctuation">.</span>press <span class="token operator">=</span> undefined<span class="token punctuation">;</span>
+  key<span class="token punctuation">.</span>release <span class="token operator">=</span> undefined<span class="token punctuation">;</span>
+  <span class="token comment">//The `downHandler`</span>
+  key<span class="token punctuation">.</span><span class="token function-variable function">downHandler</span> <span class="token operator">=</span> event <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>event<span class="token punctuation">.</span>keyCode <span class="token operator">===</span> key<span class="token punctuation">.</span>code<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>key<span class="token punctuation">.</span>isUp <span class="token operator">&amp;&amp;</span> key<span class="token punctuation">.</span>press<span class="token punctuation">)</span> key<span class="token punctuation">.</span><span class="token function">press</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      key<span class="token punctuation">.</span>isDown <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+      key<span class="token punctuation">.</span>isUp <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    event<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//The `upHandler`</span>
+  key<span class="token punctuation">.</span><span class="token function-variable function">upHandler</span> <span class="token operator">=</span> event <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>event<span class="token punctuation">.</span>keyCode <span class="token operator">===</span> key<span class="token punctuation">.</span>code<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>key<span class="token punctuation">.</span>isDown <span class="token operator">&amp;&amp;</span> key<span class="token punctuation">.</span>release<span class="token punctuation">)</span> key<span class="token punctuation">.</span><span class="token function">release</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+      key<span class="token punctuation">.</span>isDown <span class="token operator">=</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+      key<span class="token punctuation">.</span>isUp <span class="token operator">=</span> <span class="token boolean">true</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+    event<span class="token punctuation">.</span><span class="token function">preventDefault</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+
+  <span class="token comment">//Attach event listeners</span>
+  window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span>
+    <span class="token string">&quot;keydown&quot;</span><span class="token punctuation">,</span> key<span class="token punctuation">.</span>downHandler<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token boolean">false</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  window<span class="token punctuation">.</span><span class="token function">addEventListener</span><span class="token punctuation">(</span>
+    <span class="token string">&quot;keyup&quot;</span><span class="token punctuation">,</span> key<span class="token punctuation">.</span>upHandler<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span>key<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token boolean">false</span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> key<span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+
+<span class="token keyword">function</span> <span class="token function">play</span><span class="token punctuation">(</span>delta<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+
+  <span class="token comment">//Use the cat's velocity to make it move</span>
+  cat<span class="token punctuation">.</span>x <span class="token operator">+=</span> cat<span class="token punctuation">.</span>vx<span class="token punctuation">;</span>
+  cat<span class="token punctuation">.</span>y <span class="token operator">+=</span> cat<span class="token punctuation">.</span>vy
+<span class="token punctuation">}</span>
+<span class="token function">setup</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+
+</code></pre></div><h3 id="三种方式从已经加载的纹理贴图集中创建精灵："><a href="#三种方式从已经加载的纹理贴图集中创建精灵：" aria-hidden="true" class="header-anchor">#</a> 三种方式从已经加载的纹理贴图集中创建精灵：</h3> <ul><li>使用 TextureCache:</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> texture <span class="token operator">=</span> TextureCache<span class="token punctuation">[</span><span class="token string">&quot;frameId.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    sprite <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sprite</span><span class="token punctuation">(</span>texture<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>如果你是使用的 loader来加载纹理贴图集, 使用loader的 resources:</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> sprite <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sprite</span><span class="token punctuation">(</span>
+  resources<span class="token punctuation">[</span><span class="token string">&quot;images/treasureHunter.json&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span>textures<span class="token punctuation">[</span><span class="token string">&quot;frameId.png&quot;</span><span class="token punctuation">]</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>要创建一个精灵需要输入太多东西了! 所以我建议你给纹理贴图集的textures对象创建一个叫做id的别名，象是这样：</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> id <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">.</span>resources<span class="token punctuation">[</span><span class="token string">&quot;images/treasureHunter.json&quot;</span><span class="token punctuation">]</span><span class="token punctuation">.</span>textures<span class="token punctuation">;</span>
+<span class="token comment">//现在你就可以像这样实例化一个精灵了：</span>
+<span class="token keyword">let</span> sprite <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sprite</span><span class="token punctuation">(</span>id<span class="token punctuation">[</span><span class="token string">&quot;frameId.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><h3 id="给精灵分组"><a href="#给精灵分组" aria-hidden="true" class="header-anchor">#</a> 给精灵分组</h3> <p>分组让你能够让你创建游戏场景，并且像一个单一单元那样管理相似的精灵图。Pixi有一个对象叫 Container，它可以帮你做这些工作。让我们弄清楚它是怎么工作的。</p> <p>想象一下你想展示三个精灵：一只猫，一只刺猬和一只老虎。创建它们，然后设置它们的位置 - 但是不要把它们添加到舞台上。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//The cat</span>
+<span class="token keyword">let</span> cat <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sprite</span><span class="token punctuation">(</span>id<span class="token punctuation">[</span><span class="token string">&quot;cat.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+cat<span class="token punctuation">.</span>position<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token number">16</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//The hedgehog</span>
+<span class="token keyword">let</span> hedgehog <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sprite</span><span class="token punctuation">(</span>id<span class="token punctuation">[</span><span class="token string">&quot;hedgehog.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+hedgehog<span class="token punctuation">.</span>position<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token number">32</span><span class="token punctuation">,</span> <span class="token number">32</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//The tiger</span>
+<span class="token keyword">let</span> tiger <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Sprite</span><span class="token punctuation">(</span>id<span class="token punctuation">[</span><span class="token string">&quot;tiger.png&quot;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+tiger<span class="token punctuation">.</span>position<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//然后创建一个animals容器像这样去把他们聚合在一起：</span>
+
+<span class="token keyword">let</span> animals <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Container</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//然后用 addChild 去把精灵图 添加到分组中 。</span>
+
+animals<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>cat<span class="token punctuation">)</span><span class="token punctuation">;</span>
+animals<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>hedgehog<span class="token punctuation">)</span><span class="token punctuation">;</span>
+animals<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>tiger<span class="token punctuation">)</span><span class="token punctuation">;</span>
+最后把分组添加到舞台上。
+
+app<span class="token punctuation">.</span>stage<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>animals<span class="token punctuation">)</span><span class="token punctuation">;</span>
+（stage对象也是一个Container。它是所有Pixi精灵的根容器。）
+</code></pre></div><p>不过你现在可以像对待一个单一单元一样对待animals分组。你可以把Container当作是一个特殊类型的不包含任何纹理的精灵。</p> <p>如果你需要获取animals包含的所有子精灵，你可以用它的children数组获取。</p> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>animals<span class="token punctuation">.</span>children<span class="token punctuation">)</span>
+<span class="token comment">//Displays: Array [Object, Object, Object]</span>
+</code></pre></div><p>因为animals分组跟其他精灵一样，你可以改变它的x和y的值，alpha, scale和其他精灵的属性。</p> <div class="language-js extra-class"><pre class="language-js"><code>animals<span class="token punctuation">.</span>position<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>整个分组的精灵都会向右和向下移动64像素。
+animals分组也有它自己的尺寸，它是以包含的精灵所占的区域计算出来的。你可以像这样来获取width和height的值：</p> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>animals<span class="token punctuation">.</span>width<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//Displays: 112</span>
+</code></pre></div><h5 id="局部位置和全局位置"><a href="#局部位置和全局位置" aria-hidden="true" class="header-anchor">#</a> 局部位置和全局位置</h5> <div class="language-js extra-class"><pre class="language-js"><code>console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>cat<span class="token punctuation">.</span>x<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//Displays: 16//猫咪在animals容器的局部位置</span>
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//parentSprite.toGlobal(childSprite.position)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>animals<span class="token punctuation">.</span><span class="token function">toGlobal</span><span class="token punctuation">(</span>cat<span class="token punctuation">.</span>position<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//Displays: Object {x: 80, y: 80...};</span>
+</code></pre></div><p>如果想知道一个精灵的全局位置，但是不知道精灵的父容器怎么办？每个精灵图有一个属性叫parent 能告诉精灵的父级是什么。在上面的例子中，猫的父级是 animals。这意味着你可以像如下代码一样得到猫的全局位置：</p> <div class="language-js extra-class"><pre class="language-js"><code>cat<span class="token punctuation">.</span>parent<span class="token punctuation">.</span><span class="token function">toGlobal</span><span class="token punctuation">(</span>cat<span class="token punctuation">.</span>position<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>这还有一种方式能够计算出全局位置！而且，它实际上最好的方式，所以听好啦！如果想知道精灵到canvas左上角的距离，但是不知道或者不关心精灵的父亲是谁，用getGlobalPosition方法。这里展示如何用它来找到老虎的全局位置：</p> <div class="language-js extra-class"><pre class="language-js"><code>tiger<span class="token punctuation">.</span><span class="token function">getGlobalPosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>x
+tiger<span class="token punctuation">.</span><span class="token function">getGlobalPosition</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span>y
+</code></pre></div><p>如果想转换全局位置为局部位置怎么办？你可以用toLocal方法。它的工作方式类似，但是通常是这种通用的格式：</p> <div class="language-js extra-class"><pre class="language-js"><code>sprite<span class="token punctuation">.</span><span class="token function">toLocal</span><span class="token punctuation">(</span>sprite<span class="token punctuation">.</span>position<span class="token punctuation">,</span> anyOtherSprite<span class="token punctuation">)</span>
+</code></pre></div><p>用 toLocal 找到一个精灵和其他任何一个精灵之间的距离。这段代码告诉你如何获取老虎的相对于猫头鹰的局部位置。</p> <div class="language-js extra-class"><pre class="language-js"><code>tiger<span class="token punctuation">.</span><span class="token function">toLocal</span><span class="token punctuation">(</span>tiger<span class="token punctuation">.</span>position<span class="token punctuation">,</span> hedgehog<span class="token punctuation">)</span><span class="token punctuation">.</span>x
+tiger<span class="token punctuation">.</span><span class="token function">toLocal</span><span class="token punctuation">(</span>tiger<span class="token punctuation">.</span>position<span class="token punctuation">,</span> hedgehog<span class="token punctuation">)</span><span class="token punctuation">.</span>y
+</code></pre></div><p>上面的代码会返回给你一个32的x值和一个32的y值。你可以在例子中看到老虎的左上角和猫头鹰的左上角距离32像素。</p> <h3 id="绘制图形"><a href="#绘制图形" aria-hidden="true" class="header-anchor">#</a> 绘制图形</h3> <ul><li>矩形
+所有的形状的初始化都是先创造一个Pixi的Graphics的类 (PIXI.Graphics)的实例。</li></ul> <p>let rectangle = new Graphics();
+调用beginFill和一个16进制的颜色值来设置矩形的填充颜色。下面展示如何设置颜色为淡蓝色。</p> <p>rectangle.beginFill(0x66CCFF);
+如果你想要给图形设置一个轮廓，使用lineStyle方法。下面展示如何给矩形设置一个4像素宽alpha值为1的红色轮廓</p> <p>rectangle.lineStyle(4, 0xFF3300, 1);
+调用drawRect方法来画一个矩形。它的四个参数是x, y, width 和 height。</p> <p>rectangle.drawRect(x, y, width, height);
+调用endFill结束绘制。</p> <p>rectangle.endFill();</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> rectangle <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graphics</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+rectangle<span class="token punctuation">.</span><span class="token function">lineStyle</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">0xFF3300</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+rectangle<span class="token punctuation">.</span><span class="token function">beginFill</span><span class="token punctuation">(</span><span class="token number">0x66CCFF</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+rectangle<span class="token punctuation">.</span><span class="token function">drawRect</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">,</span> <span class="token number">64</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+rectangle<span class="token punctuation">.</span><span class="token function">endFill</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+rectangle<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token number">170</span><span class="token punctuation">;</span>
+rectangle<span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token number">170</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span>stage<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>rectangle<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//这些代码可以在（170，170）这个位置创造一个宽高都为64的蓝色的红框矩形。</span>
+</code></pre></div><ul><li>圆形</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">drawCircle</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> radius<span class="token punctuation">)</span>
+</code></pre></div><p>一个圆形的x和y坐标也是它自身的圆点</p> <ul><li>椭圆</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">drawEllipse</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> width<span class="token punctuation">,</span> height<span class="token punctuation">)</span>
+</code></pre></div><p>x/y坐标位置决定了椭圆的左上角（想象椭圆被一个不可见的矩形边界盒包围着-盒的左上角代表了椭圆x/y的锚点位置）。下面是50像素宽20像素高的黄色椭圆。</p> <ul><li>圆角矩形</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token function">drawRoundedRect</span><span class="token punctuation">(</span>x<span class="token punctuation">,</span> y<span class="token punctuation">,</span> width<span class="token punctuation">,</span> height<span class="token punctuation">,</span> cornerRadius<span class="token punctuation">)</span>
+</code></pre></div><ul><li>线段</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> line <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Graphics</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+line<span class="token punctuation">.</span><span class="token function">lineStyle</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">0xFFFFFF</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+line<span class="token punctuation">.</span><span class="token function">moveTo</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+line<span class="token punctuation">.</span><span class="token function">lineTo</span><span class="token punctuation">(</span><span class="token number">80</span><span class="token punctuation">,</span> <span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+line<span class="token punctuation">.</span>x <span class="token operator">=</span> <span class="token number">32</span><span class="token punctuation">;</span>
+line<span class="token punctuation">.</span>y <span class="token operator">=</span> <span class="token number">32</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span>stage<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>line<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>多边形</li> <li>可以使用drawPolygon方法来将线段连接起来并且填充颜色来创造复杂图形。drawPolygon的参数是一个路径数组，数组中的值为决定图形上每个点位置的x/y坐标。</li></ul> <div class="language-JS extra-class"><pre class="language-js"><code><span class="token keyword">let</span> path <span class="token operator">=</span> <span class="token punctuation">[</span>
+  point1X<span class="token punctuation">,</span> point1Y<span class="token punctuation">,</span>
+  point2X<span class="token punctuation">,</span> point2Y<span class="token punctuation">,</span>
+  point3X<span class="token punctuation">,</span> point3Y
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+graphicsObject<span class="token punctuation">.</span><span class="token function">drawPolygon</span><span class="token punctuation">(</span>path<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><ul><li>显示文本</li></ul> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string">&quot;Hello Pixi!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+message<span class="token punctuation">.</span>position<span class="token punctuation">.</span><span class="token keyword">set</span><span class="token punctuation">(</span><span class="token number">54</span><span class="token punctuation">,</span> <span class="token number">96</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+app<span class="token punctuation">.</span>stage<span class="token punctuation">.</span><span class="token function">addChild</span><span class="token punctuation">(</span>message<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>但是如果你想要更绚丽的文字，使用Pixi的TextStyle函数来自定义文字效果。下面展示如何操作：</p> <div class="language-JS extra-class"><pre class="language-js"><code><span class="token keyword">let</span> style <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">TextStyle</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  fontFamily<span class="token punctuation">:</span> <span class="token string">&quot;Arial&quot;</span><span class="token punctuation">,</span>
+  fontSize<span class="token punctuation">:</span> <span class="token number">36</span><span class="token punctuation">,</span>
+  fill<span class="token punctuation">:</span> <span class="token string">&quot;white&quot;</span><span class="token punctuation">,</span>
+  stroke<span class="token punctuation">:</span> <span class="token string">'#ff3300'</span><span class="token punctuation">,</span>
+  strokeThickness<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+  dropShadow<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+  dropShadowColor<span class="token punctuation">:</span> <span class="token string">&quot;#000000&quot;</span><span class="token punctuation">,</span>
+  dropShadowBlur<span class="token punctuation">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+  dropShadowAngle<span class="token punctuation">:</span> Math<span class="token punctuation">.</span><span class="token constant">PI</span> <span class="token operator">/</span> <span class="token number">6</span><span class="token punctuation">,</span>
+  dropShadowDistance<span class="token punctuation">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><p>添加style对象作为Text函数的第二个参数来应用样式到文本上，就像这样：</p> <div class="language-JS extra-class"><pre class="language-js"><code><span class="token keyword">let</span> message <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string">&quot;Hello Pixi!&quot;</span><span class="token punctuation">,</span> style<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div><div class="tip custom-block"><p class="custom-block-title">注意</p> <p>如果上述代码因为某些元素报错，可能是因为没有引入别名</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> Application <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Application<span class="token punctuation">,</span>
+    Container <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Container<span class="token punctuation">,</span>
+    loader <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">,</span>
+    resources <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>loader<span class="token punctuation">.</span>resources<span class="token punctuation">,</span>
+    TextureCache <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>utils<span class="token punctuation">.</span>TextureCache<span class="token punctuation">,</span>
+    Sprite <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Sprite<span class="token punctuation">,</span>
+	Graphics <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Graphics<span class="token punctuation">,</span>
+	Text<span class="token operator">=</span><span class="token constant">PIXI</span><span class="token punctuation">.</span>Text<span class="token punctuation">,</span>
+	TextStyle<span class="token operator">=</span><span class="token constant">PIXI</span><span class="token punctuation">.</span>TextStyle<span class="token punctuation">,</span>
+    Rectangle <span class="token operator">=</span> <span class="token constant">PIXI</span><span class="token punctuation">.</span>Rectangle<span class="token punctuation">;</span>
+</code></pre></div></div> <div><canvas id="canvas11"></canvas></div> <!----></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/canvas/003canvasyourself.html" class="prev">
+          4 canvas互动
+        </a></span> <!----></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.ca8deedc.js" defer></script><script src="/assets/js/48.f100add4.js" defer></script><script src="/assets/js/4.4132e362.js" defer></script><script src="/assets/js/7.8db8a7d0.js" defer></script>
+  </body>
+</html>
