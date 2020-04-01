@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>node常用 | 2020</title>
+    <meta name="description" content="welcome">
+    <meta name="generator" content="VuePress 1.3.1">
+    <link rel="icon" href="/img/logo.jpg">
+    
+    <link rel="preload" href="/assets/css/0.styles.8ed5d367.css" as="style"><link rel="preload" href="/assets/js/app.dbfe902d.js" as="script"><link rel="preload" href="/assets/js/2.6b24eecc.js" as="script"><link rel="preload" href="/assets/js/138.6c2b98f6.js" as="script"><link rel="prefetch" href="/assets/js/10.11b7c1de.js"><link rel="prefetch" href="/assets/js/100.ea31291f.js"><link rel="prefetch" href="/assets/js/101.adcaacf6.js"><link rel="prefetch" href="/assets/js/102.949eca4c.js"><link rel="prefetch" href="/assets/js/103.4dfae651.js"><link rel="prefetch" href="/assets/js/104.5f61e0c5.js"><link rel="prefetch" href="/assets/js/105.7f8a8d29.js"><link rel="prefetch" href="/assets/js/106.565e7f4e.js"><link rel="prefetch" href="/assets/js/107.fe272bb7.js"><link rel="prefetch" href="/assets/js/108.92522b0a.js"><link rel="prefetch" href="/assets/js/109.6701e491.js"><link rel="prefetch" href="/assets/js/11.780482cf.js"><link rel="prefetch" href="/assets/js/110.d00fc64f.js"><link rel="prefetch" href="/assets/js/111.7b56c21a.js"><link rel="prefetch" href="/assets/js/112.bd1c2ece.js"><link rel="prefetch" href="/assets/js/113.616eed6d.js"><link rel="prefetch" href="/assets/js/114.1274e74d.js"><link rel="prefetch" href="/assets/js/115.54917336.js"><link rel="prefetch" href="/assets/js/116.742abcc0.js"><link rel="prefetch" href="/assets/js/117.8bda76da.js"><link rel="prefetch" href="/assets/js/118.6701785d.js"><link rel="prefetch" href="/assets/js/119.571493db.js"><link rel="prefetch" href="/assets/js/12.672af279.js"><link rel="prefetch" href="/assets/js/120.58955ee3.js"><link rel="prefetch" href="/assets/js/121.cf8865da.js"><link rel="prefetch" href="/assets/js/122.ae052adf.js"><link rel="prefetch" href="/assets/js/123.5f75e78e.js"><link rel="prefetch" href="/assets/js/124.f9951599.js"><link rel="prefetch" href="/assets/js/125.682c2a36.js"><link rel="prefetch" href="/assets/js/126.962b7650.js"><link rel="prefetch" href="/assets/js/127.bf6f0dae.js"><link rel="prefetch" href="/assets/js/128.952eedd2.js"><link rel="prefetch" href="/assets/js/129.36cab6d8.js"><link rel="prefetch" href="/assets/js/13.b5cb37be.js"><link rel="prefetch" href="/assets/js/130.772afae4.js"><link rel="prefetch" href="/assets/js/131.9b96acea.js"><link rel="prefetch" href="/assets/js/132.7150e879.js"><link rel="prefetch" href="/assets/js/133.a06720c0.js"><link rel="prefetch" href="/assets/js/134.10551f00.js"><link rel="prefetch" href="/assets/js/135.7b225271.js"><link rel="prefetch" href="/assets/js/136.a14f39c6.js"><link rel="prefetch" href="/assets/js/137.40f748e3.js"><link rel="prefetch" href="/assets/js/139.4c1ea738.js"><link rel="prefetch" href="/assets/js/14.ffd52e9e.js"><link rel="prefetch" href="/assets/js/140.b2171c6f.js"><link rel="prefetch" href="/assets/js/141.c635c2c0.js"><link rel="prefetch" href="/assets/js/142.042fd2a3.js"><link rel="prefetch" href="/assets/js/143.4e8db319.js"><link rel="prefetch" href="/assets/js/144.ae1b10a1.js"><link rel="prefetch" href="/assets/js/145.cf0d41ad.js"><link rel="prefetch" href="/assets/js/146.5b93154f.js"><link rel="prefetch" href="/assets/js/147.4fac621d.js"><link rel="prefetch" href="/assets/js/148.0638c8fb.js"><link rel="prefetch" href="/assets/js/149.08433b4f.js"><link rel="prefetch" href="/assets/js/15.1fbfe68f.js"><link rel="prefetch" href="/assets/js/150.59db6902.js"><link rel="prefetch" href="/assets/js/151.af4a1b28.js"><link rel="prefetch" href="/assets/js/152.93949ba2.js"><link rel="prefetch" href="/assets/js/153.c0c9a3ec.js"><link rel="prefetch" href="/assets/js/154.6f655c27.js"><link rel="prefetch" href="/assets/js/155.9e73a394.js"><link rel="prefetch" href="/assets/js/156.5edf3e68.js"><link rel="prefetch" href="/assets/js/157.28d3d8dc.js"><link rel="prefetch" href="/assets/js/158.6285f360.js"><link rel="prefetch" href="/assets/js/159.4170f0bf.js"><link rel="prefetch" href="/assets/js/16.f1fedb10.js"><link rel="prefetch" href="/assets/js/160.f56631ea.js"><link rel="prefetch" href="/assets/js/161.7fc5f773.js"><link rel="prefetch" href="/assets/js/162.d21c21d9.js"><link rel="prefetch" href="/assets/js/163.5ca880f5.js"><link rel="prefetch" href="/assets/js/164.3d40eb78.js"><link rel="prefetch" href="/assets/js/165.55fca793.js"><link rel="prefetch" href="/assets/js/166.121323d8.js"><link rel="prefetch" href="/assets/js/167.09d4910b.js"><link rel="prefetch" href="/assets/js/168.5a0f32ae.js"><link rel="prefetch" href="/assets/js/169.c08996c5.js"><link rel="prefetch" href="/assets/js/17.9e17c99d.js"><link rel="prefetch" href="/assets/js/170.d02c644f.js"><link rel="prefetch" href="/assets/js/171.a112fc58.js"><link rel="prefetch" href="/assets/js/172.5af8f9ef.js"><link rel="prefetch" href="/assets/js/173.61a81394.js"><link rel="prefetch" href="/assets/js/174.fd366326.js"><link rel="prefetch" href="/assets/js/175.8e6d8988.js"><link rel="prefetch" href="/assets/js/176.357635c2.js"><link rel="prefetch" href="/assets/js/177.322e5f66.js"><link rel="prefetch" href="/assets/js/178.f95d7b60.js"><link rel="prefetch" href="/assets/js/179.9f5a1847.js"><link rel="prefetch" href="/assets/js/18.d3b2ab4d.js"><link rel="prefetch" href="/assets/js/180.dbf1ebc2.js"><link rel="prefetch" href="/assets/js/181.81c31d6f.js"><link rel="prefetch" href="/assets/js/182.d5ef777b.js"><link rel="prefetch" href="/assets/js/183.7cc4822c.js"><link rel="prefetch" href="/assets/js/184.afd5443c.js"><link rel="prefetch" href="/assets/js/185.dc21acaa.js"><link rel="prefetch" href="/assets/js/186.b7338241.js"><link rel="prefetch" href="/assets/js/187.dffd81d7.js"><link rel="prefetch" href="/assets/js/188.95d6a212.js"><link rel="prefetch" href="/assets/js/189.c743337f.js"><link rel="prefetch" href="/assets/js/19.55cbed72.js"><link rel="prefetch" href="/assets/js/190.8ad3595b.js"><link rel="prefetch" href="/assets/js/191.811ac778.js"><link rel="prefetch" href="/assets/js/192.75a090de.js"><link rel="prefetch" href="/assets/js/193.d399e862.js"><link rel="prefetch" href="/assets/js/194.8f4a9f5c.js"><link rel="prefetch" href="/assets/js/195.f6a80603.js"><link rel="prefetch" href="/assets/js/196.60bc5959.js"><link rel="prefetch" href="/assets/js/197.8722a629.js"><link rel="prefetch" href="/assets/js/198.3b235fc3.js"><link rel="prefetch" href="/assets/js/199.d8fa88c5.js"><link rel="prefetch" href="/assets/js/20.25cb0adb.js"><link rel="prefetch" href="/assets/js/200.aaacfd34.js"><link rel="prefetch" href="/assets/js/201.f509c551.js"><link rel="prefetch" href="/assets/js/202.0e5f8f72.js"><link rel="prefetch" href="/assets/js/203.3f984bd2.js"><link rel="prefetch" href="/assets/js/204.d278a54b.js"><link rel="prefetch" href="/assets/js/205.5437e5b5.js"><link rel="prefetch" href="/assets/js/206.5a94f41b.js"><link rel="prefetch" href="/assets/js/207.4cc88ac5.js"><link rel="prefetch" href="/assets/js/208.839487fe.js"><link rel="prefetch" href="/assets/js/209.3981cae5.js"><link rel="prefetch" href="/assets/js/21.ce646f5c.js"><link rel="prefetch" href="/assets/js/210.b007a4ed.js"><link rel="prefetch" href="/assets/js/211.2ea796c5.js"><link rel="prefetch" href="/assets/js/212.4909ac14.js"><link rel="prefetch" href="/assets/js/213.8fa04c31.js"><link rel="prefetch" href="/assets/js/214.d5f6f2ed.js"><link rel="prefetch" href="/assets/js/215.6ca9db4f.js"><link rel="prefetch" href="/assets/js/216.e0190b2f.js"><link rel="prefetch" href="/assets/js/217.1cde14f1.js"><link rel="prefetch" href="/assets/js/218.d52026a3.js"><link rel="prefetch" href="/assets/js/219.e189c213.js"><link rel="prefetch" href="/assets/js/22.0ac02d15.js"><link rel="prefetch" href="/assets/js/220.e1dc5af0.js"><link rel="prefetch" href="/assets/js/221.ff70ea7f.js"><link rel="prefetch" href="/assets/js/222.8388e979.js"><link rel="prefetch" href="/assets/js/223.f3b992f0.js"><link rel="prefetch" href="/assets/js/224.3c3193ce.js"><link rel="prefetch" href="/assets/js/225.3fda3fc0.js"><link rel="prefetch" href="/assets/js/226.91699f39.js"><link rel="prefetch" href="/assets/js/227.92c73822.js"><link rel="prefetch" href="/assets/js/228.e4c635cf.js"><link rel="prefetch" href="/assets/js/229.5e47528d.js"><link rel="prefetch" href="/assets/js/23.26c7b218.js"><link rel="prefetch" href="/assets/js/230.e2935275.js"><link rel="prefetch" href="/assets/js/231.7e84b45e.js"><link rel="prefetch" href="/assets/js/232.24e1aa21.js"><link rel="prefetch" href="/assets/js/233.1c5d58b6.js"><link rel="prefetch" href="/assets/js/234.a29c0960.js"><link rel="prefetch" href="/assets/js/235.ac2299b4.js"><link rel="prefetch" href="/assets/js/236.61a38f86.js"><link rel="prefetch" href="/assets/js/237.b258a0c6.js"><link rel="prefetch" href="/assets/js/238.9fb2d9c1.js"><link rel="prefetch" href="/assets/js/239.f05d6853.js"><link rel="prefetch" href="/assets/js/24.2e633a56.js"><link rel="prefetch" href="/assets/js/240.712284a2.js"><link rel="prefetch" href="/assets/js/241.62196489.js"><link rel="prefetch" href="/assets/js/242.d4ee70d8.js"><link rel="prefetch" href="/assets/js/243.7dfd693e.js"><link rel="prefetch" href="/assets/js/244.72f9a67b.js"><link rel="prefetch" href="/assets/js/245.4ad7b812.js"><link rel="prefetch" href="/assets/js/246.5af28b0f.js"><link rel="prefetch" href="/assets/js/247.5ebc0033.js"><link rel="prefetch" href="/assets/js/248.12c9c5a7.js"><link rel="prefetch" href="/assets/js/249.8d3abfd4.js"><link rel="prefetch" href="/assets/js/25.b96da2d8.js"><link rel="prefetch" href="/assets/js/250.4b50a738.js"><link rel="prefetch" href="/assets/js/251.2dae7446.js"><link rel="prefetch" href="/assets/js/252.c010f94f.js"><link rel="prefetch" href="/assets/js/253.3d107eec.js"><link rel="prefetch" href="/assets/js/254.1a00c4c7.js"><link rel="prefetch" href="/assets/js/255.846fdb44.js"><link rel="prefetch" href="/assets/js/256.8ec0812f.js"><link rel="prefetch" href="/assets/js/257.60ee693a.js"><link rel="prefetch" href="/assets/js/258.6e73c10f.js"><link rel="prefetch" href="/assets/js/259.9bf36dc4.js"><link rel="prefetch" href="/assets/js/26.7513c7a8.js"><link rel="prefetch" href="/assets/js/260.749625d9.js"><link rel="prefetch" href="/assets/js/261.8011abe4.js"><link rel="prefetch" href="/assets/js/262.02710cb8.js"><link rel="prefetch" href="/assets/js/263.909c3c80.js"><link rel="prefetch" href="/assets/js/264.e41bbb4b.js"><link rel="prefetch" href="/assets/js/265.1cb3cbcd.js"><link rel="prefetch" href="/assets/js/266.4f10ebc4.js"><link rel="prefetch" href="/assets/js/267.60fede85.js"><link rel="prefetch" href="/assets/js/268.a1b5a33f.js"><link rel="prefetch" href="/assets/js/269.671676d0.js"><link rel="prefetch" href="/assets/js/27.7e43c258.js"><link rel="prefetch" href="/assets/js/270.c83db38c.js"><link rel="prefetch" href="/assets/js/271.0e9c9333.js"><link rel="prefetch" href="/assets/js/272.a10e8946.js"><link rel="prefetch" href="/assets/js/273.68460d6b.js"><link rel="prefetch" href="/assets/js/274.12c04cb2.js"><link rel="prefetch" href="/assets/js/275.666dc996.js"><link rel="prefetch" href="/assets/js/276.d3d498ae.js"><link rel="prefetch" href="/assets/js/277.ff01ded0.js"><link rel="prefetch" href="/assets/js/278.ed4d3177.js"><link rel="prefetch" href="/assets/js/279.60ded960.js"><link rel="prefetch" href="/assets/js/28.0341fa55.js"><link rel="prefetch" href="/assets/js/280.ba8fc1e9.js"><link rel="prefetch" href="/assets/js/281.76d24706.js"><link rel="prefetch" href="/assets/js/282.40f7b80f.js"><link rel="prefetch" href="/assets/js/283.a848846e.js"><link rel="prefetch" href="/assets/js/284.854a1234.js"><link rel="prefetch" href="/assets/js/285.4dc766fe.js"><link rel="prefetch" href="/assets/js/286.75305d6c.js"><link rel="prefetch" href="/assets/js/287.d129026f.js"><link rel="prefetch" href="/assets/js/288.995dbf4f.js"><link rel="prefetch" href="/assets/js/289.6b0c5386.js"><link rel="prefetch" href="/assets/js/29.c414ffef.js"><link rel="prefetch" href="/assets/js/290.3fa86f57.js"><link rel="prefetch" href="/assets/js/291.f230d2ce.js"><link rel="prefetch" href="/assets/js/292.dff54e20.js"><link rel="prefetch" href="/assets/js/293.e4dab587.js"><link rel="prefetch" href="/assets/js/294.b776fb5e.js"><link rel="prefetch" href="/assets/js/295.7d276102.js"><link rel="prefetch" href="/assets/js/296.d3415b10.js"><link rel="prefetch" href="/assets/js/297.e7075ad4.js"><link rel="prefetch" href="/assets/js/298.e84a6cb2.js"><link rel="prefetch" href="/assets/js/299.b5fc4f4f.js"><link rel="prefetch" href="/assets/js/3.1cf8b2df.js"><link rel="prefetch" href="/assets/js/30.1e4baaa7.js"><link rel="prefetch" href="/assets/js/300.e6f156c0.js"><link rel="prefetch" href="/assets/js/301.a7c886fa.js"><link rel="prefetch" href="/assets/js/302.146a396f.js"><link rel="prefetch" href="/assets/js/303.56675923.js"><link rel="prefetch" href="/assets/js/304.52fb9a2f.js"><link rel="prefetch" href="/assets/js/305.cc2b1155.js"><link rel="prefetch" href="/assets/js/306.ee0c8006.js"><link rel="prefetch" href="/assets/js/307.18e9f8a6.js"><link rel="prefetch" href="/assets/js/308.e3ca4460.js"><link rel="prefetch" href="/assets/js/309.68d1b388.js"><link rel="prefetch" href="/assets/js/31.3b3e2035.js"><link rel="prefetch" href="/assets/js/310.9aeef517.js"><link rel="prefetch" href="/assets/js/311.3044449b.js"><link rel="prefetch" href="/assets/js/312.491f7c71.js"><link rel="prefetch" href="/assets/js/313.43897f2a.js"><link rel="prefetch" href="/assets/js/32.8b8b8860.js"><link rel="prefetch" href="/assets/js/33.47b681b4.js"><link rel="prefetch" href="/assets/js/34.460192c5.js"><link rel="prefetch" href="/assets/js/35.10f79560.js"><link rel="prefetch" href="/assets/js/36.357722c1.js"><link rel="prefetch" href="/assets/js/37.100ad58e.js"><link rel="prefetch" href="/assets/js/38.277b4a0a.js"><link rel="prefetch" href="/assets/js/39.7c7e11f6.js"><link rel="prefetch" href="/assets/js/4.81d75ad7.js"><link rel="prefetch" href="/assets/js/40.f9bb1766.js"><link rel="prefetch" href="/assets/js/41.bd719294.js"><link rel="prefetch" href="/assets/js/42.cd80c210.js"><link rel="prefetch" href="/assets/js/43.be1c2cb1.js"><link rel="prefetch" href="/assets/js/44.a8ebfa75.js"><link rel="prefetch" href="/assets/js/45.89123a38.js"><link rel="prefetch" href="/assets/js/46.3e5f5519.js"><link rel="prefetch" href="/assets/js/47.d095a818.js"><link rel="prefetch" href="/assets/js/48.bc9bdb07.js"><link rel="prefetch" href="/assets/js/49.50eb424a.js"><link rel="prefetch" href="/assets/js/5.ebb903ee.js"><link rel="prefetch" href="/assets/js/50.308b0988.js"><link rel="prefetch" href="/assets/js/51.2d683071.js"><link rel="prefetch" href="/assets/js/52.d38af175.js"><link rel="prefetch" href="/assets/js/53.4585cc42.js"><link rel="prefetch" href="/assets/js/54.21af0d1f.js"><link rel="prefetch" href="/assets/js/55.e241f381.js"><link rel="prefetch" href="/assets/js/56.c52351db.js"><link rel="prefetch" href="/assets/js/57.f7f4f278.js"><link rel="prefetch" href="/assets/js/58.105e1dc6.js"><link rel="prefetch" href="/assets/js/59.65bcb5c0.js"><link rel="prefetch" href="/assets/js/6.e873e482.js"><link rel="prefetch" href="/assets/js/60.73b0e1a7.js"><link rel="prefetch" href="/assets/js/61.1976ee00.js"><link rel="prefetch" href="/assets/js/62.68328241.js"><link rel="prefetch" href="/assets/js/63.e604a484.js"><link rel="prefetch" href="/assets/js/64.37e697f2.js"><link rel="prefetch" href="/assets/js/65.070ee0fd.js"><link rel="prefetch" href="/assets/js/66.16267daa.js"><link rel="prefetch" href="/assets/js/67.15d313d3.js"><link rel="prefetch" href="/assets/js/68.8a64d9d5.js"><link rel="prefetch" href="/assets/js/69.71e3406c.js"><link rel="prefetch" href="/assets/js/7.6c1624f3.js"><link rel="prefetch" href="/assets/js/70.338b5215.js"><link rel="prefetch" href="/assets/js/71.87c11a3e.js"><link rel="prefetch" href="/assets/js/72.a5b85923.js"><link rel="prefetch" href="/assets/js/73.e163f05c.js"><link rel="prefetch" href="/assets/js/74.94125a3c.js"><link rel="prefetch" href="/assets/js/75.94c87a29.js"><link rel="prefetch" href="/assets/js/76.e170f69e.js"><link rel="prefetch" href="/assets/js/77.830a3dc8.js"><link rel="prefetch" href="/assets/js/78.254fb159.js"><link rel="prefetch" href="/assets/js/79.8837390f.js"><link rel="prefetch" href="/assets/js/8.c0de095a.js"><link rel="prefetch" href="/assets/js/80.70b9fd29.js"><link rel="prefetch" href="/assets/js/81.77594105.js"><link rel="prefetch" href="/assets/js/82.78fe56eb.js"><link rel="prefetch" href="/assets/js/83.d7ae4db2.js"><link rel="prefetch" href="/assets/js/84.76279e5d.js"><link rel="prefetch" href="/assets/js/85.010587e2.js"><link rel="prefetch" href="/assets/js/86.f4cc3c24.js"><link rel="prefetch" href="/assets/js/87.9aac4a09.js"><link rel="prefetch" href="/assets/js/88.e772ab11.js"><link rel="prefetch" href="/assets/js/89.3f21a5e5.js"><link rel="prefetch" href="/assets/js/9.3bbf9c23.js"><link rel="prefetch" href="/assets/js/90.7fb7eb91.js"><link rel="prefetch" href="/assets/js/91.8c794c76.js"><link rel="prefetch" href="/assets/js/92.22301d18.js"><link rel="prefetch" href="/assets/js/93.133eb423.js"><link rel="prefetch" href="/assets/js/94.208be30e.js"><link rel="prefetch" href="/assets/js/95.99451e64.js"><link rel="prefetch" href="/assets/js/96.5dfaad80.js"><link rel="prefetch" href="/assets/js/97.8a4fbafc.js"><link rel="prefetch" href="/assets/js/98.c64ed69e.js"><link rel="prefetch" href="/assets/js/99.b4f56e1e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8ed5d367.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">2020</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ajax/" class="nav-link">
+  ajax
+</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link">
+  basic
+</a></li><li class="dropdown-item"><!----> <a href="/canvas/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-item"><!----> <a href="/chart/" class="nav-link">
+  chart
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/fast/" class="nav-link router-link-active">
+  fast
+</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">
+  htmlcss
+</a></li><li class="dropdown-item"><!----> <a href="/jsstore/" class="nav-link">
+  jsstore
+</a></li><li class="dropdown-item"><!----> <a href="/object/" class="nav-link">
+  object
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/" class="nav-link">
+  plugin
+</a></li><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/svg/" class="nav-link">
+  svg
+</a></li><li class="dropdown-item"><!----> <a href="/test/" class="nav-link">
+  test
+</a></li><li class="dropdown-item"><!----> <a href="/typescript/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/ui/" class="nav-link">
+  ui
+</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/webdb/" class="nav-link">
+  webdb
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webrtc/" class="nav-link">
+  webrtc
+</a></li><li class="dropdown-item"><!----> <a href="/wx/" class="nav-link">
+  wx
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-item"><!----> <a href="/mongo/" class="nav-link">
+  mongo
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  other
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/mk/" class="nav-link">
+  mk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  reactnative
+</a></li><li class="dropdown-item"><!----> <a href="/fronttest/" class="nav-link">
+  fronttest
+</a></li><li class="dropdown-item"><!----> <a href="/book/" class="nav-link">
+  book
+</a></li><li class="dropdown-item"><!----> <a href="/confusing/" class="nav-link">
+  confusing
+</a></li><li class="dropdown-item"><!----> <a href="/everyday/" class="nav-link">
+  everyday
+</a></li><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/tool/" class="nav-link">
+  tool
+</a></li><li class="dropdown-item"><!----> <a href="/increase/" class="nav-link">
+  increase
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ajax/" class="nav-link">
+  ajax
+</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link">
+  basic
+</a></li><li class="dropdown-item"><!----> <a href="/canvas/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-item"><!----> <a href="/chart/" class="nav-link">
+  chart
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/fast/" class="nav-link router-link-active">
+  fast
+</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">
+  htmlcss
+</a></li><li class="dropdown-item"><!----> <a href="/jsstore/" class="nav-link">
+  jsstore
+</a></li><li class="dropdown-item"><!----> <a href="/object/" class="nav-link">
+  object
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/" class="nav-link">
+  plugin
+</a></li><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/svg/" class="nav-link">
+  svg
+</a></li><li class="dropdown-item"><!----> <a href="/test/" class="nav-link">
+  test
+</a></li><li class="dropdown-item"><!----> <a href="/typescript/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/ui/" class="nav-link">
+  ui
+</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/webdb/" class="nav-link">
+  webdb
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webrtc/" class="nav-link">
+  webrtc
+</a></li><li class="dropdown-item"><!----> <a href="/wx/" class="nav-link">
+  wx
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-item"><!----> <a href="/mongo/" class="nav-link">
+  mongo
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  other
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/mk/" class="nav-link">
+  mk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  reactnative
+</a></li><li class="dropdown-item"><!----> <a href="/fronttest/" class="nav-link">
+  fronttest
+</a></li><li class="dropdown-item"><!----> <a href="/book/" class="nav-link">
+  book
+</a></li><li class="dropdown-item"><!----> <a href="/confusing/" class="nav-link">
+  confusing
+</a></li><li class="dropdown-item"><!----> <a href="/everyday/" class="nav-link">
+  everyday
+</a></li><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/tool/" class="nav-link">
+  tool
+</a></li><li class="dropdown-item"><!----> <a href="/increase/" class="nav-link">
+  increase
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/fast/" class="sidebar-link">简化</a></li><li><a href="/fast/0001ellipse.html" class="sidebar-link">省略号</a></li><li><a href="/fast/0002color.html" class="sidebar-link">颜色渐变</a></li><li><a href="/fast/0003mobilepx.html" class="sidebar-link">1px</a></li><li><a href="/fast/1001drawer.html" class="sidebar-link">弹框滑出</a></li><li><a href="/fast/1002lazyload.html" class="sidebar-link">懒加载</a></li><li><a href="/fast/1003type.html" class="sidebar-link">判断类型</a></li><li><a href="/fast/1004upload.html" class="sidebar-link">上传图片</a></li><li><a href="/fast/1005rotation.html" class="sidebar-link">轮播图</a></li><li><a href="/fast/2000node.html" class="active sidebar-link">nodejs常用操作</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/fast/2000node.html#node常用" class="sidebar-link">node常用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/fast/2000node.html#dirname-path-resolve" class="sidebar-link">__dirname path.resolve</a></li><li class="sidebar-sub-header"><a href="/fast/2000node.html#http-接口和页面的写法" class="sidebar-link">http 接口和页面的写法</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="node常用"><a href="#node常用" class="header-anchor">#</a> node常用</h2> <h3 id="dirname-path-resolve"><a href="#dirname-path-resolve" class="header-anchor">#</a> __dirname path.resolve</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;fs&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;path&quot;</span><span class="token punctuation">)</span>
+
+<span class="token keyword">let</span> lujing<span class="token operator">=</span>path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span><span class="token string">&quot;kvue.js&quot;</span><span class="token punctuation">)</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">)</span>
+fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span>lujing<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>data</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+		console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><h3 id="http-接口和页面的写法"><a href="#http-接口和页面的写法" class="header-anchor">#</a> http 接口和页面的写法</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">let</span> http<span class="token operator">=</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;http&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> fs<span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;fs&quot;</span><span class="token punctuation">)</span>
+<span class="token keyword">let</span> app <span class="token operator">=</span> http<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">req<span class="token punctuation">,</span>res</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+	
+	<span class="token keyword">const</span> <span class="token punctuation">{</span>method<span class="token punctuation">,</span>url<span class="token punctuation">,</span>headers<span class="token punctuation">}</span><span class="token operator">=</span>req<span class="token punctuation">;</span>
+	<span class="token keyword">if</span><span class="token punctuation">(</span>method<span class="token operator">===</span><span class="token string">&quot;GET&quot;</span><span class="token operator">&amp;</span>url<span class="token operator">===</span><span class="token string">&quot;/favicon.ico&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>method<span class="token operator">===</span><span class="token string">&quot;GET&quot;</span><span class="token operator">&amp;</span>url<span class="token operator">===</span><span class="token string">&quot;/&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		fs<span class="token punctuation">.</span><span class="token function">readFile</span><span class="token punctuation">(</span><span class="token string">&quot;index.html&quot;</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token parameter">err<span class="token punctuation">,</span>data</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+			<span class="token keyword">if</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">{</span>
+				res<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token string">'Content-Type'</span><span class="token operator">:</span><span class="token string">'text/plain;charset=utf-8'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+				<span class="token comment">// res.statusCode = 200;</span>
+				<span class="token comment">// res.setHeader('Content-Type', 'text/html');</span>
+				res<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token string">'Content-Type'</span><span class="token operator">:</span><span class="token string">'text/html;charset=utf-8'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+				res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+			<span class="token punctuation">}</span>
+			
+		<span class="token punctuation">}</span><span class="token punctuation">)</span>
+		
+	<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span><span class="token punctuation">(</span>method<span class="token operator">===</span><span class="token string">&quot;GET&quot;</span><span class="token operator">&amp;</span>url<span class="token operator">===</span><span class="token string">&quot;/json&quot;</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+		res<span class="token punctuation">.</span><span class="token function">writeHead</span><span class="token punctuation">(</span><span class="token number">200</span><span class="token punctuation">,</span> <span class="token punctuation">{</span> <span class="token string">'Content-Type'</span><span class="token operator">:</span> <span class="token string">'application/json'</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token keyword">const</span> json <span class="token operator">=</span><span class="token punctuation">[</span><span class="token punctuation">{</span>name<span class="token operator">:</span><span class="token string">&quot;zhangsan&quot;</span><span class="token punctuation">,</span>age<span class="token operator">:</span><span class="token number">18</span><span class="token punctuation">,</span>job<span class="token operator">:</span><span class="token string">&quot;student&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token punctuation">{</span>name<span class="token operator">:</span><span class="token string">&quot;lisi&quot;</span><span class="token punctuation">,</span>age<span class="token operator">:</span><span class="token number">28</span><span class="token punctuation">,</span>job<span class="token operator">:</span><span class="token string">&quot;teacher&quot;</span><span class="token punctuation">}</span><span class="token punctuation">]</span>
+		res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>json<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token keyword">if</span> <span class="token punctuation">(</span>method <span class="token operator">===</span> <span class="token string">'GET'</span> <span class="token operator">&amp;&amp;</span> headers<span class="token punctuation">.</span>accept<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token string">'image/*'</span><span class="token punctuation">)</span> <span class="token operator">!==</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+		fs<span class="token punctuation">.</span><span class="token function">createReadStream</span><span class="token punctuation">(</span><span class="token string">'.'</span><span class="token operator">+</span>url<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">pipe</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+		res<span class="token punctuation">.</span>statusCode <span class="token operator">=</span> <span class="token number">404</span><span class="token punctuation">;</span>
+		res<span class="token punctuation">.</span><span class="token function">setHeader</span><span class="token punctuation">(</span><span class="token string">'Content-Type'</span><span class="token punctuation">,</span> <span class="token string">'text/plain;charset=utf-8'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		res<span class="token punctuation">.</span><span class="token function">end</span><span class="token punctuation">(</span><span class="token string">'404, 页面没有找到'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>	
+	
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+app<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span><span class="token number">9000</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;server is ok&quot;</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre></div><div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>utf-8<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css">
+			<span class="token selector">#k1</span><span class="token punctuation">{</span>
+				<span class="token property">width</span><span class="token punctuation">:</span>200px<span class="token punctuation">;</span>
+				<span class="token property">height</span><span class="token punctuation">:</span>200px<span class="token punctuation">;</span>
+				<span class="token property">-webkit-box-shadow</span><span class="token punctuation">:</span> inset 0px 1px 1px -1px <span class="token function">rgba</span><span class="token punctuation">(</span>0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0<span class="token punctuation">,</span> 0.5<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			<span class="token selector">.apple</span><span class="token punctuation">{</span>
+				<span class="token property">width</span><span class="token punctuation">:</span>100px<span class="token punctuation">;</span>
+				<span class="token property">display</span><span class="token punctuation">:</span>block<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			<span class="token selector">#btn</span><span class="token punctuation">{</span>
+				<span class="token property">cursor</span><span class="token punctuation">:</span>pointer
+			<span class="token punctuation">}</span>
+		</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>k1<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>t1<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>cccc<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>add<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>apple.jpg<span class="token punctuation">&quot;</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>apple<span class="token punctuation">&quot;</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>apple<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>/json<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>跳转<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+		<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>btn<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>前端界面增加内容<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+	<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>text/javascript<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript">
+	<span class="token keyword">function</span> <span class="token function">ajax</span><span class="token punctuation">(</span><span class="token parameter">url</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        <span class="token keyword">var</span> xhr <span class="token operator">=</span> window<span class="token punctuation">.</span>XMLHttpRequest <span class="token operator">?</span> <span class="token keyword">new</span> <span class="token class-name">XMLHttpRequest</span><span class="token punctuation">(</span><span class="token punctuation">)</span> 
+					<span class="token operator">:</span> <span class="token function">ActiveXObject</span><span class="token punctuation">(</span><span class="token string">&quot;microsoft.XMLHttp&quot;</span><span class="token punctuation">)</span>
+        xhr<span class="token punctuation">.</span><span class="token function">open</span><span class="token punctuation">(</span><span class="token string">&quot;get&quot;</span><span class="token punctuation">,</span>url<span class="token punctuation">,</span><span class="token boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        xhr<span class="token punctuation">.</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+        xhr<span class="token punctuation">.</span><span class="token function-variable function">onreadystatechange</span><span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+			
+            <span class="token keyword">if</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>readyState <span class="token operator">==</span> <span class="token number">4</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+				
+                <span class="token keyword">if</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>status <span class="token operator">==</span> <span class="token number">200</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+					console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>xhr<span class="token punctuation">)</span>
+                    <span class="token keyword">var</span> data <span class="token operator">=</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>xhr<span class="token punctuation">.</span>responseText<span class="token punctuation">)</span> <span class="token punctuation">;</span>
+					<span class="token keyword">let</span> add<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementsByClassName</span><span class="token punctuation">(</span><span class="token string">&quot;add&quot;</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+					<span class="token keyword">let</span> ul<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&quot;ul&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+					
+					<span class="token keyword">for</span><span class="token punctuation">(</span><span class="token keyword">let</span> i <span class="token keyword">in</span> data<span class="token punctuation">)</span><span class="token punctuation">{</span>
+						<span class="token keyword">let</span> li<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">createElement</span><span class="token punctuation">(</span><span class="token string">&quot;li&quot;</span><span class="token punctuation">)</span>
+						console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+						li<span class="token punctuation">.</span>innerHTML<span class="token operator">=</span><span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">stringify</span><span class="token punctuation">(</span>data<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token punctuation">;</span>
+						ul<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>li<span class="token punctuation">)</span>
+						
+					<span class="token punctuation">}</span>
+					add<span class="token punctuation">.</span><span class="token function">appendChild</span><span class="token punctuation">(</span>ul<span class="token punctuation">)</span>
+					
+                    
+                <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+        <span class="token punctuation">}</span>    
+    <span class="token punctuation">}</span>
+	<span class="token keyword">let</span> btn<span class="token operator">=</span>document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">&quot;btn&quot;</span><span class="token punctuation">)</span>
+	btn<span class="token punctuation">.</span><span class="token function-variable function">onclick</span><span class="token operator">=</span> <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+		<span class="token function">ajax</span><span class="token punctuation">(</span><span class="token string">&quot;http://localhost:9000/json&quot;</span><span class="token punctuation">)</span>
+	<span class="token punctuation">}</span>
+
+</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><div class="custom-block tip"><p class="custom-block-title">提示</p> <p>Accept代表发送端（客户端）希望接受的数据类型。 比如：Accept：text/xml; 代表客户端希望
+接受的数据类型是xml类型。
+Content-Type代表发送端（客户端|服务器）发送的实体数据的数据类型。 比如：Content-
+Type：text/html; 代表发送端发送的数据格式是html。
+二者合起来， Accept:text/xml； Content-Type:text/html ，即代表希望接受的数据类型是xml格
+式，本次请求发送的数据的数据格式是html。</p></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/fast/1005rotation.html" class="prev">
+        轮播图
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.dbfe902d.js" defer></script><script src="/assets/js/2.6b24eecc.js" defer></script><script src="/assets/js/138.6c2b98f6.js" defer></script>
+  </body>
+</html>
