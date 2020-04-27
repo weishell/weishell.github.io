@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>小程序原理 | 2020</title>
+    <meta name="description" content="welcome">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="icon" href="/img/logo.jpg">
+    
+    <link rel="preload" href="/assets/css/0.styles.923c744f.css" as="style"><link rel="preload" href="/assets/js/app.05e8bfe6.js" as="script"><link rel="preload" href="/assets/js/2.97032c3c.js" as="script"><link rel="preload" href="/assets/js/319.77a43a2d.js" as="script"><link rel="preload" href="/assets/js/7.6be39b42.js" as="script"><link rel="prefetch" href="/assets/js/10.bc0d0ba0.js"><link rel="prefetch" href="/assets/js/100.832c17fe.js"><link rel="prefetch" href="/assets/js/101.2a267d40.js"><link rel="prefetch" href="/assets/js/102.be5f3d42.js"><link rel="prefetch" href="/assets/js/103.fd7e8fd4.js"><link rel="prefetch" href="/assets/js/104.43df1248.js"><link rel="prefetch" href="/assets/js/105.03813f31.js"><link rel="prefetch" href="/assets/js/106.e267fde5.js"><link rel="prefetch" href="/assets/js/107.515942a5.js"><link rel="prefetch" href="/assets/js/108.70fa5db4.js"><link rel="prefetch" href="/assets/js/109.01478a6a.js"><link rel="prefetch" href="/assets/js/11.3cd28557.js"><link rel="prefetch" href="/assets/js/110.1360737d.js"><link rel="prefetch" href="/assets/js/111.0ebba357.js"><link rel="prefetch" href="/assets/js/112.4e87cfd6.js"><link rel="prefetch" href="/assets/js/113.a93eca9b.js"><link rel="prefetch" href="/assets/js/114.05872213.js"><link rel="prefetch" href="/assets/js/115.23ccb835.js"><link rel="prefetch" href="/assets/js/116.f40ed892.js"><link rel="prefetch" href="/assets/js/117.02cf0ef3.js"><link rel="prefetch" href="/assets/js/118.4fe89d2c.js"><link rel="prefetch" href="/assets/js/119.b3ef603f.js"><link rel="prefetch" href="/assets/js/12.f831f876.js"><link rel="prefetch" href="/assets/js/120.e393bfc0.js"><link rel="prefetch" href="/assets/js/121.7c5e056d.js"><link rel="prefetch" href="/assets/js/122.8e777302.js"><link rel="prefetch" href="/assets/js/123.50d92ae3.js"><link rel="prefetch" href="/assets/js/124.249e8400.js"><link rel="prefetch" href="/assets/js/125.a80c2242.js"><link rel="prefetch" href="/assets/js/126.9ba33feb.js"><link rel="prefetch" href="/assets/js/127.43e5293b.js"><link rel="prefetch" href="/assets/js/128.8956cecf.js"><link rel="prefetch" href="/assets/js/129.ab2d2a86.js"><link rel="prefetch" href="/assets/js/13.750482f5.js"><link rel="prefetch" href="/assets/js/130.427d6772.js"><link rel="prefetch" href="/assets/js/131.7016bc0d.js"><link rel="prefetch" href="/assets/js/132.8b49663a.js"><link rel="prefetch" href="/assets/js/133.831556a8.js"><link rel="prefetch" href="/assets/js/134.2dc5e66f.js"><link rel="prefetch" href="/assets/js/135.e124af73.js"><link rel="prefetch" href="/assets/js/136.2e85221b.js"><link rel="prefetch" href="/assets/js/137.7dbe9370.js"><link rel="prefetch" href="/assets/js/138.de3521a3.js"><link rel="prefetch" href="/assets/js/139.db647b96.js"><link rel="prefetch" href="/assets/js/14.f0b0d053.js"><link rel="prefetch" href="/assets/js/140.8f6728ca.js"><link rel="prefetch" href="/assets/js/141.7ed7aa17.js"><link rel="prefetch" href="/assets/js/142.b1e1eed9.js"><link rel="prefetch" href="/assets/js/143.5cb65588.js"><link rel="prefetch" href="/assets/js/144.e4ef3f7e.js"><link rel="prefetch" href="/assets/js/145.60566aec.js"><link rel="prefetch" href="/assets/js/146.2b39b25e.js"><link rel="prefetch" href="/assets/js/147.5d9a4ad8.js"><link rel="prefetch" href="/assets/js/148.ccd054fd.js"><link rel="prefetch" href="/assets/js/149.4175defe.js"><link rel="prefetch" href="/assets/js/15.52004de8.js"><link rel="prefetch" href="/assets/js/150.9a8e69d3.js"><link rel="prefetch" href="/assets/js/151.7724f75b.js"><link rel="prefetch" href="/assets/js/152.53b3298f.js"><link rel="prefetch" href="/assets/js/153.5502bc80.js"><link rel="prefetch" href="/assets/js/154.282790a2.js"><link rel="prefetch" href="/assets/js/155.fc251f8d.js"><link rel="prefetch" href="/assets/js/156.0f9c355b.js"><link rel="prefetch" href="/assets/js/157.55b76938.js"><link rel="prefetch" href="/assets/js/158.a616b8a7.js"><link rel="prefetch" href="/assets/js/159.2835aa72.js"><link rel="prefetch" href="/assets/js/16.4150e9dc.js"><link rel="prefetch" href="/assets/js/160.650276d7.js"><link rel="prefetch" href="/assets/js/161.692ade38.js"><link rel="prefetch" href="/assets/js/162.21458140.js"><link rel="prefetch" href="/assets/js/163.14da60b9.js"><link rel="prefetch" href="/assets/js/164.443754fd.js"><link rel="prefetch" href="/assets/js/165.07139d3e.js"><link rel="prefetch" href="/assets/js/166.6f78b2e6.js"><link rel="prefetch" href="/assets/js/167.7981ef58.js"><link rel="prefetch" href="/assets/js/168.18af6372.js"><link rel="prefetch" href="/assets/js/169.a32ae307.js"><link rel="prefetch" href="/assets/js/17.c1063deb.js"><link rel="prefetch" href="/assets/js/170.531a4923.js"><link rel="prefetch" href="/assets/js/171.2e7b23a5.js"><link rel="prefetch" href="/assets/js/172.b2291a28.js"><link rel="prefetch" href="/assets/js/173.219a3f2d.js"><link rel="prefetch" href="/assets/js/174.3972c742.js"><link rel="prefetch" href="/assets/js/175.d42df392.js"><link rel="prefetch" href="/assets/js/176.55c77269.js"><link rel="prefetch" href="/assets/js/177.cdd0d259.js"><link rel="prefetch" href="/assets/js/178.f4166147.js"><link rel="prefetch" href="/assets/js/179.10ceb894.js"><link rel="prefetch" href="/assets/js/18.46793a17.js"><link rel="prefetch" href="/assets/js/180.98df82b4.js"><link rel="prefetch" href="/assets/js/181.2684bdfa.js"><link rel="prefetch" href="/assets/js/182.b1a8fcc4.js"><link rel="prefetch" href="/assets/js/183.584b4071.js"><link rel="prefetch" href="/assets/js/184.273b07d2.js"><link rel="prefetch" href="/assets/js/185.d12ed4a2.js"><link rel="prefetch" href="/assets/js/186.a5eda1ad.js"><link rel="prefetch" href="/assets/js/187.5ee515fc.js"><link rel="prefetch" href="/assets/js/188.99d12a73.js"><link rel="prefetch" href="/assets/js/189.e1d24c6a.js"><link rel="prefetch" href="/assets/js/19.37168131.js"><link rel="prefetch" href="/assets/js/190.a9cc3175.js"><link rel="prefetch" href="/assets/js/191.8c5f9638.js"><link rel="prefetch" href="/assets/js/192.dde9921b.js"><link rel="prefetch" href="/assets/js/193.779301a6.js"><link rel="prefetch" href="/assets/js/194.884fa354.js"><link rel="prefetch" href="/assets/js/195.481d1bbf.js"><link rel="prefetch" href="/assets/js/196.d1fda005.js"><link rel="prefetch" href="/assets/js/197.914f5a01.js"><link rel="prefetch" href="/assets/js/198.c148bb1b.js"><link rel="prefetch" href="/assets/js/199.d8f087c4.js"><link rel="prefetch" href="/assets/js/20.155a609d.js"><link rel="prefetch" href="/assets/js/200.61591583.js"><link rel="prefetch" href="/assets/js/201.ab0054c7.js"><link rel="prefetch" href="/assets/js/202.527bcbf1.js"><link rel="prefetch" href="/assets/js/203.d5d01826.js"><link rel="prefetch" href="/assets/js/204.c923b845.js"><link rel="prefetch" href="/assets/js/205.2afcbe90.js"><link rel="prefetch" href="/assets/js/206.cb4247f2.js"><link rel="prefetch" href="/assets/js/207.6ea7f777.js"><link rel="prefetch" href="/assets/js/208.07c29d77.js"><link rel="prefetch" href="/assets/js/209.214f4d09.js"><link rel="prefetch" href="/assets/js/21.91efe1cf.js"><link rel="prefetch" href="/assets/js/210.c91525d3.js"><link rel="prefetch" href="/assets/js/211.551a7126.js"><link rel="prefetch" href="/assets/js/212.76879db0.js"><link rel="prefetch" href="/assets/js/213.6cd2e306.js"><link rel="prefetch" href="/assets/js/214.c0d2effa.js"><link rel="prefetch" href="/assets/js/215.036e34b4.js"><link rel="prefetch" href="/assets/js/216.e11dfff3.js"><link rel="prefetch" href="/assets/js/217.22215dbc.js"><link rel="prefetch" href="/assets/js/218.6624db06.js"><link rel="prefetch" href="/assets/js/219.a2903845.js"><link rel="prefetch" href="/assets/js/22.df51b105.js"><link rel="prefetch" href="/assets/js/220.add92acb.js"><link rel="prefetch" href="/assets/js/221.21044e9b.js"><link rel="prefetch" href="/assets/js/222.0ec48b88.js"><link rel="prefetch" href="/assets/js/223.b826ee76.js"><link rel="prefetch" href="/assets/js/224.6847699e.js"><link rel="prefetch" href="/assets/js/225.16d1e7d1.js"><link rel="prefetch" href="/assets/js/226.55eebdf3.js"><link rel="prefetch" href="/assets/js/227.e66fc60d.js"><link rel="prefetch" href="/assets/js/228.3e0604b1.js"><link rel="prefetch" href="/assets/js/229.3b57d8e7.js"><link rel="prefetch" href="/assets/js/23.1e5fbf5f.js"><link rel="prefetch" href="/assets/js/230.1cd727ad.js"><link rel="prefetch" href="/assets/js/231.2da2ef9c.js"><link rel="prefetch" href="/assets/js/232.0eec1f9e.js"><link rel="prefetch" href="/assets/js/233.7ee51f34.js"><link rel="prefetch" href="/assets/js/234.43ed05d5.js"><link rel="prefetch" href="/assets/js/235.009e682c.js"><link rel="prefetch" href="/assets/js/236.a40a7e81.js"><link rel="prefetch" href="/assets/js/237.f5c7ad9e.js"><link rel="prefetch" href="/assets/js/238.7dee0eb9.js"><link rel="prefetch" href="/assets/js/239.358c58d5.js"><link rel="prefetch" href="/assets/js/24.70b5109f.js"><link rel="prefetch" href="/assets/js/240.121cf139.js"><link rel="prefetch" href="/assets/js/241.7140ef2e.js"><link rel="prefetch" href="/assets/js/242.adf36d1c.js"><link rel="prefetch" href="/assets/js/243.ce0f3c47.js"><link rel="prefetch" href="/assets/js/244.24f48686.js"><link rel="prefetch" href="/assets/js/245.583aece7.js"><link rel="prefetch" href="/assets/js/246.bfadbe7f.js"><link rel="prefetch" href="/assets/js/247.eee0ed65.js"><link rel="prefetch" href="/assets/js/248.90c298d5.js"><link rel="prefetch" href="/assets/js/249.1b0a3589.js"><link rel="prefetch" href="/assets/js/25.f7d584a1.js"><link rel="prefetch" href="/assets/js/250.613699eb.js"><link rel="prefetch" href="/assets/js/251.a2f8bccb.js"><link rel="prefetch" href="/assets/js/252.fa3d575f.js"><link rel="prefetch" href="/assets/js/253.7a6894b6.js"><link rel="prefetch" href="/assets/js/254.1625eba5.js"><link rel="prefetch" href="/assets/js/255.8e6f9160.js"><link rel="prefetch" href="/assets/js/256.7831fee1.js"><link rel="prefetch" href="/assets/js/257.8a035835.js"><link rel="prefetch" href="/assets/js/258.826a3026.js"><link rel="prefetch" href="/assets/js/259.437d8c4f.js"><link rel="prefetch" href="/assets/js/26.53723667.js"><link rel="prefetch" href="/assets/js/260.9f5b22f1.js"><link rel="prefetch" href="/assets/js/261.95452058.js"><link rel="prefetch" href="/assets/js/262.7508a48b.js"><link rel="prefetch" href="/assets/js/263.6abced94.js"><link rel="prefetch" href="/assets/js/264.5892c3c5.js"><link rel="prefetch" href="/assets/js/265.a873bae7.js"><link rel="prefetch" href="/assets/js/266.d1cfd0f0.js"><link rel="prefetch" href="/assets/js/267.016dd146.js"><link rel="prefetch" href="/assets/js/268.c305141c.js"><link rel="prefetch" href="/assets/js/269.49ef516d.js"><link rel="prefetch" href="/assets/js/27.800226ad.js"><link rel="prefetch" href="/assets/js/270.be797c3f.js"><link rel="prefetch" href="/assets/js/271.f00524a1.js"><link rel="prefetch" href="/assets/js/272.239b14c8.js"><link rel="prefetch" href="/assets/js/273.5f2602a0.js"><link rel="prefetch" href="/assets/js/274.082f053b.js"><link rel="prefetch" href="/assets/js/275.8abf9dca.js"><link rel="prefetch" href="/assets/js/276.97a68b59.js"><link rel="prefetch" href="/assets/js/277.94a17aa1.js"><link rel="prefetch" href="/assets/js/278.9536a118.js"><link rel="prefetch" href="/assets/js/279.8d6855af.js"><link rel="prefetch" href="/assets/js/28.6c412f88.js"><link rel="prefetch" href="/assets/js/280.acf52d4c.js"><link rel="prefetch" href="/assets/js/281.aaec8b24.js"><link rel="prefetch" href="/assets/js/282.4ebf9427.js"><link rel="prefetch" href="/assets/js/283.b1eb73a6.js"><link rel="prefetch" href="/assets/js/284.f1f963ab.js"><link rel="prefetch" href="/assets/js/285.770177bd.js"><link rel="prefetch" href="/assets/js/286.1bd69051.js"><link rel="prefetch" href="/assets/js/287.b80f8c29.js"><link rel="prefetch" href="/assets/js/288.120a9eaf.js"><link rel="prefetch" href="/assets/js/289.1ff05f4b.js"><link rel="prefetch" href="/assets/js/29.b934ce62.js"><link rel="prefetch" href="/assets/js/290.a62a56b0.js"><link rel="prefetch" href="/assets/js/291.11939b89.js"><link rel="prefetch" href="/assets/js/292.0c14ca01.js"><link rel="prefetch" href="/assets/js/293.c86e7e54.js"><link rel="prefetch" href="/assets/js/294.36ae884c.js"><link rel="prefetch" href="/assets/js/295.5cdc6974.js"><link rel="prefetch" href="/assets/js/296.bce9dd7d.js"><link rel="prefetch" href="/assets/js/297.9b712196.js"><link rel="prefetch" href="/assets/js/298.e27e53bf.js"><link rel="prefetch" href="/assets/js/299.33c0afae.js"><link rel="prefetch" href="/assets/js/3.5ae537f2.js"><link rel="prefetch" href="/assets/js/30.d8a07170.js"><link rel="prefetch" href="/assets/js/300.3fede2f2.js"><link rel="prefetch" href="/assets/js/301.26ad32ef.js"><link rel="prefetch" href="/assets/js/302.93f7b05b.js"><link rel="prefetch" href="/assets/js/303.564f059a.js"><link rel="prefetch" href="/assets/js/304.fac940f9.js"><link rel="prefetch" href="/assets/js/305.d0e8b531.js"><link rel="prefetch" href="/assets/js/306.e7ed46ac.js"><link rel="prefetch" href="/assets/js/307.c14d3280.js"><link rel="prefetch" href="/assets/js/308.775562e9.js"><link rel="prefetch" href="/assets/js/309.a684555f.js"><link rel="prefetch" href="/assets/js/31.bdd4dd5a.js"><link rel="prefetch" href="/assets/js/310.1ab81bc5.js"><link rel="prefetch" href="/assets/js/311.07888d94.js"><link rel="prefetch" href="/assets/js/312.c35fe411.js"><link rel="prefetch" href="/assets/js/313.d9fe987f.js"><link rel="prefetch" href="/assets/js/314.755fab86.js"><link rel="prefetch" href="/assets/js/315.9564f296.js"><link rel="prefetch" href="/assets/js/316.3df4c6ad.js"><link rel="prefetch" href="/assets/js/317.df9bdde6.js"><link rel="prefetch" href="/assets/js/318.b3a95dfb.js"><link rel="prefetch" href="/assets/js/32.4d23cb7c.js"><link rel="prefetch" href="/assets/js/320.cbc27bac.js"><link rel="prefetch" href="/assets/js/321.cbfea684.js"><link rel="prefetch" href="/assets/js/322.1b3edc59.js"><link rel="prefetch" href="/assets/js/323.f6509eac.js"><link rel="prefetch" href="/assets/js/324.4c7a3b5c.js"><link rel="prefetch" href="/assets/js/33.19134826.js"><link rel="prefetch" href="/assets/js/34.fed184a5.js"><link rel="prefetch" href="/assets/js/35.23c3692c.js"><link rel="prefetch" href="/assets/js/36.2b3ad95b.js"><link rel="prefetch" href="/assets/js/37.aeedd361.js"><link rel="prefetch" href="/assets/js/38.f8480ee8.js"><link rel="prefetch" href="/assets/js/39.d8ae0d09.js"><link rel="prefetch" href="/assets/js/4.d8c82156.js"><link rel="prefetch" href="/assets/js/40.2afde429.js"><link rel="prefetch" href="/assets/js/41.70a0fd48.js"><link rel="prefetch" href="/assets/js/42.89192f88.js"><link rel="prefetch" href="/assets/js/43.5e29a5b5.js"><link rel="prefetch" href="/assets/js/44.0e69763b.js"><link rel="prefetch" href="/assets/js/45.6e8bd3e2.js"><link rel="prefetch" href="/assets/js/46.709f283a.js"><link rel="prefetch" href="/assets/js/47.ee59e0ea.js"><link rel="prefetch" href="/assets/js/48.958f1175.js"><link rel="prefetch" href="/assets/js/49.62c155c4.js"><link rel="prefetch" href="/assets/js/5.5446a01c.js"><link rel="prefetch" href="/assets/js/50.9103b0d2.js"><link rel="prefetch" href="/assets/js/51.81f04bb2.js"><link rel="prefetch" href="/assets/js/52.c17f947d.js"><link rel="prefetch" href="/assets/js/53.5dac2796.js"><link rel="prefetch" href="/assets/js/54.fc9c90ae.js"><link rel="prefetch" href="/assets/js/55.4b8cf72d.js"><link rel="prefetch" href="/assets/js/56.40a652ce.js"><link rel="prefetch" href="/assets/js/57.923b4885.js"><link rel="prefetch" href="/assets/js/58.50909df2.js"><link rel="prefetch" href="/assets/js/59.b127335d.js"><link rel="prefetch" href="/assets/js/6.adbfb292.js"><link rel="prefetch" href="/assets/js/60.68689184.js"><link rel="prefetch" href="/assets/js/61.8795e9c3.js"><link rel="prefetch" href="/assets/js/62.14e4a4a0.js"><link rel="prefetch" href="/assets/js/63.f66900a8.js"><link rel="prefetch" href="/assets/js/64.3e94853c.js"><link rel="prefetch" href="/assets/js/65.8af3f60c.js"><link rel="prefetch" href="/assets/js/66.7b6d80bb.js"><link rel="prefetch" href="/assets/js/67.83a1eefb.js"><link rel="prefetch" href="/assets/js/68.264c7b54.js"><link rel="prefetch" href="/assets/js/69.8ed162e0.js"><link rel="prefetch" href="/assets/js/70.de9aeb88.js"><link rel="prefetch" href="/assets/js/71.e35ae5ee.js"><link rel="prefetch" href="/assets/js/72.e83c34c2.js"><link rel="prefetch" href="/assets/js/73.b16e868b.js"><link rel="prefetch" href="/assets/js/74.8007e6ef.js"><link rel="prefetch" href="/assets/js/75.e5edc210.js"><link rel="prefetch" href="/assets/js/76.ff31c1bd.js"><link rel="prefetch" href="/assets/js/77.1b9d03ec.js"><link rel="prefetch" href="/assets/js/78.9a85027d.js"><link rel="prefetch" href="/assets/js/79.2a40cc29.js"><link rel="prefetch" href="/assets/js/8.1d686a16.js"><link rel="prefetch" href="/assets/js/80.5e93e446.js"><link rel="prefetch" href="/assets/js/81.f250772d.js"><link rel="prefetch" href="/assets/js/82.95340a0f.js"><link rel="prefetch" href="/assets/js/83.1503ceae.js"><link rel="prefetch" href="/assets/js/84.a0c73b4a.js"><link rel="prefetch" href="/assets/js/85.3a384ec2.js"><link rel="prefetch" href="/assets/js/86.b077559b.js"><link rel="prefetch" href="/assets/js/87.c2bbcc25.js"><link rel="prefetch" href="/assets/js/88.654f25b6.js"><link rel="prefetch" href="/assets/js/89.b0c68fe2.js"><link rel="prefetch" href="/assets/js/9.b7fd72a5.js"><link rel="prefetch" href="/assets/js/90.20241473.js"><link rel="prefetch" href="/assets/js/91.63d30e38.js"><link rel="prefetch" href="/assets/js/92.8d24f019.js"><link rel="prefetch" href="/assets/js/93.17f47e8b.js"><link rel="prefetch" href="/assets/js/94.f9a79d45.js"><link rel="prefetch" href="/assets/js/95.6881b4bb.js"><link rel="prefetch" href="/assets/js/96.cc1e846b.js"><link rel="prefetch" href="/assets/js/97.e26aac5b.js"><link rel="prefetch" href="/assets/js/98.51515300.js"><link rel="prefetch" href="/assets/js/99.702e392e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.923c744f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">2020</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ajax/" class="nav-link">
+  ajax
+</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link">
+  basic
+</a></li><li class="dropdown-item"><!----> <a href="/canvas/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-item"><!----> <a href="/chart/" class="nav-link">
+  chart
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/fast/" class="nav-link">
+  fast
+</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">
+  htmlcss
+</a></li><li class="dropdown-item"><!----> <a href="/jsstore/" class="nav-link">
+  jsstore
+</a></li><li class="dropdown-item"><!----> <a href="/object/" class="nav-link">
+  object
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/" class="nav-link">
+  plugin
+</a></li><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/svg/" class="nav-link">
+  svg
+</a></li><li class="dropdown-item"><!----> <a href="/test/" class="nav-link">
+  test
+</a></li><li class="dropdown-item"><!----> <a href="/typescript/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/ui/" class="nav-link">
+  ui
+</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/webdb/" class="nav-link">
+  webdb
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webrtc/" class="nav-link">
+  webrtc
+</a></li><li class="dropdown-item"><!----> <a href="/wx/" class="nav-link router-link-active">
+  wx
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-item"><!----> <a href="/mongo/" class="nav-link">
+  mongo
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  other
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/mk/" class="nav-link">
+  mk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  reactnative
+</a></li><li class="dropdown-item"><!----> <a href="/fronttest/" class="nav-link">
+  fronttest
+</a></li><li class="dropdown-item"><!----> <a href="/book/" class="nav-link">
+  book
+</a></li><li class="dropdown-item"><!----> <a href="/confusing/" class="nav-link">
+  confusing
+</a></li><li class="dropdown-item"><!----> <a href="/everyday/" class="nav-link">
+  everyday
+</a></li><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/tool/" class="nav-link">
+  tool
+</a></li><li class="dropdown-item"><!----> <a href="/increase/" class="nav-link">
+  increase
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ajax/" class="nav-link">
+  ajax
+</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link">
+  basic
+</a></li><li class="dropdown-item"><!----> <a href="/canvas/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-item"><!----> <a href="/chart/" class="nav-link">
+  chart
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/fast/" class="nav-link">
+  fast
+</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">
+  htmlcss
+</a></li><li class="dropdown-item"><!----> <a href="/jsstore/" class="nav-link">
+  jsstore
+</a></li><li class="dropdown-item"><!----> <a href="/object/" class="nav-link">
+  object
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/" class="nav-link">
+  plugin
+</a></li><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/svg/" class="nav-link">
+  svg
+</a></li><li class="dropdown-item"><!----> <a href="/test/" class="nav-link">
+  test
+</a></li><li class="dropdown-item"><!----> <a href="/typescript/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/ui/" class="nav-link">
+  ui
+</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/webdb/" class="nav-link">
+  webdb
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webrtc/" class="nav-link">
+  webrtc
+</a></li><li class="dropdown-item"><!----> <a href="/wx/" class="nav-link router-link-active">
+  wx
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-item"><!----> <a href="/mongo/" class="nav-link">
+  mongo
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  other
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/mk/" class="nav-link">
+  mk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  reactnative
+</a></li><li class="dropdown-item"><!----> <a href="/fronttest/" class="nav-link">
+  fronttest
+</a></li><li class="dropdown-item"><!----> <a href="/book/" class="nav-link">
+  book
+</a></li><li class="dropdown-item"><!----> <a href="/confusing/" class="nav-link">
+  confusing
+</a></li><li class="dropdown-item"><!----> <a href="/everyday/" class="nav-link">
+  everyday
+</a></li><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/tool/" class="nav-link">
+  tool
+</a></li><li class="dropdown-item"><!----> <a href="/increase/" class="nav-link">
+  increase
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/wx/" class="sidebar-link">微信小程序</a></li><li><a href="/wx/001wx.html" class="sidebar-link">微信小程序结构</a></li><li><a href="/wx/002taro.html" class="sidebar-link">taro</a></li><li><a href="/wx/003wxmusic.html" class="sidebar-link">云音乐</a></li><li><a href="/wx/0004api.html" class="sidebar-link">常用组件和api</a></li><li><a href="/wx/0005mp.html" class="active sidebar-link">小程序进阶</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/wx/0005mp.html#小程序原理" class="sidebar-link">小程序原理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/wx/0005mp.html#小程序渲染层和逻辑层" class="sidebar-link">小程序渲染层和逻辑层</a></li><li class="sidebar-sub-header"><a href="/wx/0005mp.html#小程序的运行和更新" class="sidebar-link">小程序的运行和更新</a></li><li class="sidebar-sub-header"><a href="/wx/0005mp.html#场景值scene" class="sidebar-link">场景值scene</a></li><li class="sidebar-sub-header"><a href="/wx/0005mp.html#小程序接口条用凭证-getaccesstoken" class="sidebar-link">小程序接口条用凭证 getAccessToken</a></li><li class="sidebar-sub-header"><a href="/wx/0005mp.html#后台调用小程序云函数云存储云数据库" class="sidebar-link">后台调用小程序云函数云存储云数据库</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="小程序原理"><a href="#小程序原理" class="header-anchor">#</a> 小程序原理</h2> <h3 id="小程序渲染层和逻辑层"><a href="#小程序渲染层和逻辑层" class="header-anchor">#</a> 小程序渲染层和逻辑层</h3> <img src="/beifen/171.png"> <img src="/beifen/172.png"> <img src="/beifen/173.png"> <img src="/beifen/174.png"> <blockquote><p>这就是为什么不频繁使用this.serData的原因，也是如果某些值不显示在界面上，就不要定义在data中</p></blockquote> <h3 id="小程序的运行和更新"><a href="#小程序的运行和更新" class="header-anchor">#</a> 小程序的运行和更新</h3> <h4 id="wx-getupdatemanager"><a href="#wx-getupdatemanager" class="header-anchor">#</a> wx.getUpdateManager</h4> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">//app.js</span>
+<span class="token function">App</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+  <span class="token function-variable function">onLaunch</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">checkUpate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+      wx<span class="token punctuation">.</span>cloud<span class="token punctuation">.</span><span class="token function">init</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+        env<span class="token operator">:</span> <span class="token string">'wx-beakb'</span><span class="token punctuation">,</span>
+        traceUser<span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span>
+      <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function">checkUpate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">const</span> updateManager <span class="token operator">=</span> wx<span class="token punctuation">.</span><span class="token function">getUpdateManager</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token comment">// 检测版本更新</span>
+    updateManager<span class="token punctuation">.</span><span class="token function">onCheckForUpdate</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+      <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>hasUpdate<span class="token punctuation">)</span><span class="token punctuation">{</span>
+        updateManager<span class="token punctuation">.</span><span class="token function">onUpdateReady</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+          wx<span class="token punctuation">.</span><span class="token function">showModal</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            title<span class="token operator">:</span> <span class="token string">'更新提示'</span><span class="token punctuation">,</span>
+            content<span class="token operator">:</span> <span class="token string">'新版本已经准备好，是否重启应用'</span><span class="token punctuation">,</span>
+            <span class="token function">success</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+              <span class="token keyword">if</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>confirm<span class="token punctuation">)</span><span class="token punctuation">{</span>
+                updateManager<span class="token punctuation">.</span><span class="token function">applyUpdate</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+              <span class="token punctuation">}</span>
+            <span class="token punctuation">}</span>
+          <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+      <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+</code></pre></div><ul><li>小程序中定时器全局的，要记得手动回收</li> <li>避免使用:active伪类实现点击态，可使用hover-class</li></ul> <h3 id="场景值scene"><a href="#场景值scene" class="header-anchor">#</a> 场景值scene</h3> <p>记录用户行为 埋点</p> <p>在appjs中的onLaunch和onshow中可以获得</p> <h4 id="sitemap-json"><a href="#sitemap-json" class="header-anchor">#</a> sitemap.json</h4> <p>配置搜索</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;desc&quot;</span><span class="token operator">:</span> <span class="token string">&quot;关于本文件的更多信息，请参考文档 https://developers.weixin.qq.com/miniprogram/dev/framework/sitemap.html&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;rules&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">{</span>
+  <span class="token property">&quot;action&quot;</span><span class="token operator">:</span> <span class="token string">&quot;allow&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;page&quot;</span><span class="token operator">:</span> <span class="token string">&quot;*&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="小程序接口条用凭证-getaccesstoken"><a href="#小程序接口条用凭证-getaccesstoken" class="header-anchor">#</a> 小程序接口条用凭证 getAccessToken</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> rp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'request-promise'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> <span class="token constant">APPID</span> <span class="token operator">=</span> <span class="token string">'wx0xxxx'</span> <span class="token comment">//小程序ID</span>
+<span class="token keyword">const</span> <span class="token constant">APPSECRET</span> <span class="token operator">=</span> <span class="token string">'8xxxf6xx'</span> <span class="token comment">//小程序秘钥</span>
+
+<span class="token keyword">const</span> <span class="token constant">URL</span> <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&amp;appid=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">APPID</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&amp;secret=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">APPSECRET</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
+<span class="token keyword">const</span> <span class="token function-variable function">updateAccessToken</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+	<span class="token keyword">const</span> resStr <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">rp</span><span class="token punctuation">(</span><span class="token constant">URL</span><span class="token punctuation">)</span>
+	<span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>resStr<span class="token punctuation">)</span>
+	console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token function">updateAccessToken</span> <span class="token punctuation">(</span><span class="token punctuation">)</span>
+ <span class="token comment">// { access_token:</span>
+ <span class="token comment">//   '32_tvjUhkhyUPurKxxxxjlAFKiAAADIN',</span>
+ <span class="token comment">//  expires_in: 7200 }</span>
+</code></pre></div><h3 id="后台调用小程序云函数云存储云数据库"><a href="#后台调用小程序云函数云存储云数据库" class="header-anchor">#</a> 后台调用小程序云函数云存储云数据库</h3> <img src="/beifen/175.png"> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> getAccessToken <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./getAccessToken.js'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> rp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'request-promise'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">callCloudFn</span> <span class="token operator">=</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">,</span> fnName<span class="token punctuation">,</span> params</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token constant">ACCESS_TOKEN</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">getAccessToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+	<span class="token comment">//缓存的token env云环境 fnname云函数名称</span>
+    <span class="token keyword">const</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
+        method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+        uri<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://api.weixin.qq.com/tcb/invokecloudfunction?access_token=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">ACCESS_TOKEN</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&amp;env=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>ctx<span class="token punctuation">.</span>state<span class="token punctuation">.</span>env<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">&amp;name=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>fnName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+        body<span class="token operator">:</span> <span class="token punctuation">{</span>
+            <span class="token operator">...</span>params
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        json<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// Automatically stringifies the body to JSON</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token keyword">await</span> <span class="token function">rp</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> res
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> callCloudFn
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> getAccessToken <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./getAccessToken.js'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> rp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'request-promise'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> <span class="token function-variable function">callCloudDB</span> <span class="token operator">=</span> <span class="token keyword">async</span><span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">,</span> fnName<span class="token punctuation">,</span> query <span class="token operator">=</span> <span class="token punctuation">{</span><span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> <span class="token constant">ACCESS_TOKEN</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">getAccessToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
+        method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+        uri<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://api.weixin.qq.com/tcb/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>fnName<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">?access_token=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">ACCESS_TOKEN</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+        body<span class="token operator">:</span> <span class="token punctuation">{</span>
+            query<span class="token punctuation">,</span>
+            env<span class="token operator">:</span> ctx<span class="token punctuation">.</span>state<span class="token punctuation">.</span>env<span class="token punctuation">,</span>
+        <span class="token punctuation">}</span><span class="token punctuation">,</span>
+        json<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// Automatically stringifies the body to JSON</span>
+    <span class="token punctuation">}</span>
+
+    <span class="token keyword">return</span> <span class="token keyword">await</span> <span class="token function">rp</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+            <span class="token keyword">return</span> res
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> callCloudDB
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> getAccessToken <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./getAccessToken.js'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> rp <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'request-promise'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> fs <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'fs'</span><span class="token punctuation">)</span>
+
+<span class="token keyword">const</span> cloudStorage <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">async</span> <span class="token function">download</span><span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">,</span> fileList</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> <span class="token constant">ACCESS_TOKEN</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">getAccessToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
+            method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+            uri<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://api.weixin.qq.com/tcb/batchdownloadfile?access_token=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">ACCESS_TOKEN</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+            body<span class="token operator">:</span> <span class="token punctuation">{</span>
+                env<span class="token operator">:</span> ctx<span class="token punctuation">.</span>state<span class="token punctuation">.</span>env<span class="token punctuation">,</span>
+                file_list<span class="token operator">:</span> fileList
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            json<span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> <span class="token keyword">await</span> <span class="token function">rp</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> res
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token keyword">async</span> <span class="token function">upload</span><span class="token punctuation">(</span><span class="token parameter">ctx</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token comment">// 1、请求地址</span>
+        <span class="token keyword">const</span> <span class="token constant">ACCESS_TOKEN</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">getAccessToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">const</span> file <span class="token operator">=</span> ctx<span class="token punctuation">.</span>request<span class="token punctuation">.</span>files<span class="token punctuation">.</span>file
+        <span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">swiper/</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>Date<span class="token punctuation">.</span><span class="token function">now</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>Math<span class="token punctuation">.</span><span class="token function">random</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>file<span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
+        <span class="token keyword">const</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
+            method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+            uri<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://api.weixin.qq.com/tcb/uploadfile?access_token=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">ACCESS_TOKEN</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span>
+            body<span class="token operator">:</span> <span class="token punctuation">{</span>
+                path<span class="token punctuation">,</span>
+                env<span class="token operator">:</span> ctx<span class="token punctuation">.</span>state<span class="token punctuation">.</span>env<span class="token punctuation">,</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            json<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token comment">// Automatically stringifies the body to JSON</span>
+        <span class="token punctuation">}</span><span class="token punctuation">;</span>
+        <span class="token comment">//  请求参数的</span>
+        <span class="token keyword">const</span> info <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">rp</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> res
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+        console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>info<span class="token punctuation">)</span>
+        <span class="token comment">// 2、上传图片</span>
+        <span class="token keyword">const</span> params <span class="token operator">=</span> <span class="token punctuation">{</span>
+            method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+            headers<span class="token operator">:</span> <span class="token punctuation">{</span>
+                <span class="token string">'content-type'</span><span class="token operator">:</span> <span class="token string">'multipart/form-data'</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            uri<span class="token operator">:</span> info<span class="token punctuation">.</span>url<span class="token punctuation">,</span>
+            formData<span class="token operator">:</span> <span class="token punctuation">{</span>
+                key<span class="token operator">:</span> path<span class="token punctuation">,</span>
+                Signature<span class="token operator">:</span> info<span class="token punctuation">.</span>authorization<span class="token punctuation">,</span>
+                <span class="token string">'x-cos-security-token'</span><span class="token operator">:</span> info<span class="token punctuation">.</span>token<span class="token punctuation">,</span>
+                <span class="token string">'x-cos-meta-fileid'</span><span class="token operator">:</span> info<span class="token punctuation">.</span>cos_file_id<span class="token punctuation">,</span>
+                file<span class="token operator">:</span> fs<span class="token punctuation">.</span><span class="token function">createReadStream</span><span class="token punctuation">(</span>file<span class="token punctuation">.</span>path<span class="token punctuation">)</span>
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            json<span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+        <span class="token keyword">await</span> <span class="token function">rp</span><span class="token punctuation">(</span>params<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> info<span class="token punctuation">.</span>file_id
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token keyword">async</span> <span class="token keyword">delete</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> fileid_list<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">const</span> <span class="token constant">ACCESS_TOKEN</span> <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">getAccessToken</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+		
+        <span class="token keyword">const</span> options <span class="token operator">=</span> <span class="token punctuation">{</span>
+            method<span class="token operator">:</span> <span class="token string">'POST'</span><span class="token punctuation">,</span>
+            uri<span class="token operator">:</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">https://api.weixin.qq.com/tcb/batchdeletefile?access_token=</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span><span class="token constant">ACCESS_TOKEN</span><span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span><span class="token punctuation">,</span><span class="token comment">//TOKEN</span>
+            body<span class="token operator">:</span> <span class="token punctuation">{</span>
+                env<span class="token operator">:</span> ctx<span class="token punctuation">.</span>state<span class="token punctuation">.</span>env<span class="token punctuation">,</span><span class="token comment">//ENV</span>
+                fileid_list<span class="token operator">:</span> fileid_list
+            <span class="token punctuation">}</span><span class="token punctuation">,</span>
+            json<span class="token operator">:</span> <span class="token boolean">true</span>
+        <span class="token punctuation">}</span>
+
+        <span class="token keyword">return</span> <span class="token keyword">await</span> <span class="token function">rp</span><span class="token punctuation">(</span>options<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">res</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                <span class="token keyword">return</span> res
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+                console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> cloudStorage
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> Router <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'koa-router'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> router <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Router</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> callCloudFn <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../utils/callCloudFn'</span><span class="token punctuation">)</span>
+<span class="token keyword">const</span> callCloudDB <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'../utils/callCloudDB.js'</span><span class="token punctuation">)</span>
+<span class="token comment">// get post</span>
+router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/list'</span><span class="token punctuation">,</span> <span class="token keyword">async</span> <span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> query <span class="token operator">=</span> ctx<span class="token punctuation">.</span>request<span class="token punctuation">.</span>query
+    <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">callCloudFn</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> <span class="token string">'music'</span><span class="token punctuation">,</span> <span class="token punctuation">{</span>
+        $url<span class="token operator">:</span> <span class="token string">'playlist'</span><span class="token punctuation">,</span>
+        start<span class="token operator">:</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>query<span class="token punctuation">.</span>start<span class="token punctuation">)</span><span class="token punctuation">,</span>
+        count<span class="token operator">:</span> <span class="token function">parseInt</span><span class="token punctuation">(</span>query<span class="token punctuation">.</span>count<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token keyword">let</span> data <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span>res<span class="token punctuation">.</span>resp_data<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        data <span class="token operator">=</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>resp_data<span class="token punctuation">)</span><span class="token punctuation">.</span>data
+    <span class="token punctuation">}</span>
+    ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token punctuation">{</span>
+        data<span class="token punctuation">,</span>
+        code<span class="token operator">:</span> <span class="token number">20000</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/getById'</span><span class="token punctuation">,</span> <span class="token keyword">async</span><span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">const</span> query <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">db.collection('playlist').doc('</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>ctx<span class="token punctuation">.</span>request<span class="token punctuation">.</span>query<span class="token punctuation">.</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">').get()</span><span class="token template-punctuation string">`</span></span>
+    <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">callCloudDB</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> <span class="token string">'databasequery'</span><span class="token punctuation">,</span> query<span class="token punctuation">)</span>
+    ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token punctuation">{</span>
+        code<span class="token operator">:</span> <span class="token number">20000</span><span class="token punctuation">,</span>
+        data<span class="token operator">:</span> <span class="token constant">JSON</span><span class="token punctuation">.</span><span class="token function">parse</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>data<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+router<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/updatePlaylist'</span><span class="token punctuation">,</span> <span class="token keyword">async</span><span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">const</span> params <span class="token operator">=</span> ctx<span class="token punctuation">.</span>request<span class="token punctuation">.</span>body
+    <span class="token keyword">const</span> query <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+        db.collection('playlist').doc('</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>params<span class="token punctuation">.</span>_id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">').update({
+            data: {
+                name: '</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>params<span class="token punctuation">.</span>name<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">',
+                copywriter: '</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>params<span class="token punctuation">.</span>copywriter<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">'
+            }
+        })
+    </span><span class="token template-punctuation string">`</span></span>
+    <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">callCloudDB</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> <span class="token string">'databaseupdate'</span><span class="token punctuation">,</span> query<span class="token punctuation">)</span>
+    ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token punctuation">{</span>
+        code<span class="token operator">:</span> <span class="token number">20000</span><span class="token punctuation">,</span>
+        data<span class="token operator">:</span> res
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+router<span class="token punctuation">.</span><span class="token function">get</span><span class="token punctuation">(</span><span class="token string">'/del'</span><span class="token punctuation">,</span> <span class="token keyword">async</span><span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+    <span class="token keyword">const</span> params <span class="token operator">=</span> ctx<span class="token punctuation">.</span>request<span class="token punctuation">.</span>query
+    <span class="token keyword">const</span> query <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">db.collection('playlist').doc('</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>params<span class="token punctuation">.</span>id<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">').remove()</span><span class="token template-punctuation string">`</span></span>
+    <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">callCloudDB</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> <span class="token string">'databasedelete'</span><span class="token punctuation">,</span> query<span class="token punctuation">)</span>
+    ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token punctuation">{</span>
+        code<span class="token operator">:</span> <span class="token number">20000</span><span class="token punctuation">,</span>
+        data<span class="token operator">:</span> res
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> router
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code>router<span class="token punctuation">.</span><span class="token function">post</span><span class="token punctuation">(</span><span class="token string">'/upload'</span><span class="token punctuation">,</span> <span class="token keyword">async</span><span class="token punctuation">(</span><span class="token parameter">ctx<span class="token punctuation">,</span> next</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+   <span class="token keyword">const</span> fileid <span class="token operator">=</span>  <span class="token keyword">await</span> cloudStorage<span class="token punctuation">.</span><span class="token function">upload</span><span class="token punctuation">(</span>ctx<span class="token punctuation">)</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;-------------------------&quot;</span><span class="token punctuation">)</span>
+   console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>fileid<span class="token punctuation">)</span>
+   <span class="token comment">// 写数据库</span>
+    <span class="token keyword">const</span> query <span class="token operator">=</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token string">
+        db.collection('swiper').add({
+            data: {
+                fileid: '</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>fileid<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">'
+            }
+        })
+    </span><span class="token template-punctuation string">`</span></span>
+   <span class="token keyword">const</span> res <span class="token operator">=</span> <span class="token keyword">await</span> <span class="token function">callCloudDB</span><span class="token punctuation">(</span>ctx<span class="token punctuation">,</span> <span class="token string">'databaseadd'</span><span class="token punctuation">,</span> query<span class="token punctuation">)</span>
+   ctx<span class="token punctuation">.</span>body <span class="token operator">=</span> <span class="token punctuation">{</span>
+       code<span class="token operator">:</span> <span class="token number">20000</span><span class="token punctuation">,</span>
+       id_list<span class="token operator">:</span> res<span class="token punctuation">.</span>id_list
+   <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><a href="https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html" target="_blank" rel="noopener noreferrer">云开发文档<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></p> <!----></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/wx/0004api.html" class="prev">
+        常用组件和api
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.05e8bfe6.js" defer></script><script src="/assets/js/2.97032c3c.js" defer></script><script src="/assets/js/319.77a43a2d.js" defer></script><script src="/assets/js/7.6be39b42.js" defer></script>
+  </body>
+</html>
