@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>webrtc继续学习 | 2020</title>
+    <meta name="generator" content="VuePress 1.5.0">
+    <link rel="icon" href="/img/logo.jpg">
+    <meta name="description" content="welcome">
+    <link rel="preload" href="/assets/css/0.styles.84c9d137.css" as="style"><link rel="preload" href="/assets/js/app.61d5d7c7.js" as="script"><link rel="preload" href="/assets/js/2.662cea8a.js" as="script"><link rel="preload" href="/assets/js/330.7731f068.js" as="script"><link rel="prefetch" href="/assets/js/10.a0f72e2e.js"><link rel="prefetch" href="/assets/js/100.bb347db4.js"><link rel="prefetch" href="/assets/js/101.8295ce1e.js"><link rel="prefetch" href="/assets/js/102.122dd6e9.js"><link rel="prefetch" href="/assets/js/103.185b926b.js"><link rel="prefetch" href="/assets/js/104.a535990d.js"><link rel="prefetch" href="/assets/js/105.f5b3977a.js"><link rel="prefetch" href="/assets/js/106.dfd07f5c.js"><link rel="prefetch" href="/assets/js/107.b07e19c0.js"><link rel="prefetch" href="/assets/js/108.d75126b7.js"><link rel="prefetch" href="/assets/js/109.2929fe6d.js"><link rel="prefetch" href="/assets/js/11.f380ab0b.js"><link rel="prefetch" href="/assets/js/110.7f7e6f82.js"><link rel="prefetch" href="/assets/js/111.6aa0895b.js"><link rel="prefetch" href="/assets/js/112.e10e9ea5.js"><link rel="prefetch" href="/assets/js/113.999e05c2.js"><link rel="prefetch" href="/assets/js/114.20ac6db3.js"><link rel="prefetch" href="/assets/js/115.ee13a778.js"><link rel="prefetch" href="/assets/js/116.b26cb442.js"><link rel="prefetch" href="/assets/js/117.cc300224.js"><link rel="prefetch" href="/assets/js/118.8df4bf0e.js"><link rel="prefetch" href="/assets/js/119.396320a5.js"><link rel="prefetch" href="/assets/js/12.6513c758.js"><link rel="prefetch" href="/assets/js/120.084ef7b5.js"><link rel="prefetch" href="/assets/js/121.30c41cfc.js"><link rel="prefetch" href="/assets/js/122.c02746e9.js"><link rel="prefetch" href="/assets/js/123.7354977b.js"><link rel="prefetch" href="/assets/js/124.f767dc0f.js"><link rel="prefetch" href="/assets/js/125.936d0a32.js"><link rel="prefetch" href="/assets/js/126.78033c15.js"><link rel="prefetch" href="/assets/js/127.8c61792b.js"><link rel="prefetch" href="/assets/js/128.6beb329d.js"><link rel="prefetch" href="/assets/js/129.0fe4e949.js"><link rel="prefetch" href="/assets/js/13.fcc60ec4.js"><link rel="prefetch" href="/assets/js/130.012b6063.js"><link rel="prefetch" href="/assets/js/131.5bd49a39.js"><link rel="prefetch" href="/assets/js/132.0e55926d.js"><link rel="prefetch" href="/assets/js/133.56ca3d60.js"><link rel="prefetch" href="/assets/js/134.967138fa.js"><link rel="prefetch" href="/assets/js/135.b6fe3784.js"><link rel="prefetch" href="/assets/js/136.d1d9dfab.js"><link rel="prefetch" href="/assets/js/137.1ac107b4.js"><link rel="prefetch" href="/assets/js/138.ea4ec42b.js"><link rel="prefetch" href="/assets/js/139.bec762c3.js"><link rel="prefetch" href="/assets/js/14.be3668d2.js"><link rel="prefetch" href="/assets/js/140.9abd575f.js"><link rel="prefetch" href="/assets/js/141.e1ee62b1.js"><link rel="prefetch" href="/assets/js/142.7fcdc601.js"><link rel="prefetch" href="/assets/js/143.5acf01a0.js"><link rel="prefetch" href="/assets/js/144.641d3576.js"><link rel="prefetch" href="/assets/js/145.ba84c837.js"><link rel="prefetch" href="/assets/js/146.15d3dd59.js"><link rel="prefetch" href="/assets/js/147.7b09ca14.js"><link rel="prefetch" href="/assets/js/148.16550e74.js"><link rel="prefetch" href="/assets/js/149.91058f74.js"><link rel="prefetch" href="/assets/js/15.0dd52bb8.js"><link rel="prefetch" href="/assets/js/150.d1532158.js"><link rel="prefetch" href="/assets/js/151.7e3d56e0.js"><link rel="prefetch" href="/assets/js/152.84929b8a.js"><link rel="prefetch" href="/assets/js/153.faa6f1ce.js"><link rel="prefetch" href="/assets/js/154.31e6a444.js"><link rel="prefetch" href="/assets/js/155.15e40f1f.js"><link rel="prefetch" href="/assets/js/156.5a9d76f9.js"><link rel="prefetch" href="/assets/js/157.02b7b8e6.js"><link rel="prefetch" href="/assets/js/158.56fa8cf2.js"><link rel="prefetch" href="/assets/js/159.2df7e6b4.js"><link rel="prefetch" href="/assets/js/16.ffc0891a.js"><link rel="prefetch" href="/assets/js/160.ad704ae0.js"><link rel="prefetch" href="/assets/js/161.40af75d0.js"><link rel="prefetch" href="/assets/js/162.d09917c6.js"><link rel="prefetch" href="/assets/js/163.74754ca7.js"><link rel="prefetch" href="/assets/js/164.6d190227.js"><link rel="prefetch" href="/assets/js/165.5d8e661e.js"><link rel="prefetch" href="/assets/js/166.0aaacac7.js"><link rel="prefetch" href="/assets/js/167.bda47a41.js"><link rel="prefetch" href="/assets/js/168.9e5bffcf.js"><link rel="prefetch" href="/assets/js/169.c9696d89.js"><link rel="prefetch" href="/assets/js/17.e5241267.js"><link rel="prefetch" href="/assets/js/170.5476fa06.js"><link rel="prefetch" href="/assets/js/171.8a6f133d.js"><link rel="prefetch" href="/assets/js/172.6ed13420.js"><link rel="prefetch" href="/assets/js/173.1b26d8d9.js"><link rel="prefetch" href="/assets/js/174.c064a9aa.js"><link rel="prefetch" href="/assets/js/175.069e93b3.js"><link rel="prefetch" href="/assets/js/176.0618fbb4.js"><link rel="prefetch" href="/assets/js/177.bf6d8bc7.js"><link rel="prefetch" href="/assets/js/178.6ee84ef9.js"><link rel="prefetch" href="/assets/js/179.37a3d451.js"><link rel="prefetch" href="/assets/js/18.96dbbe20.js"><link rel="prefetch" href="/assets/js/180.ad008fda.js"><link rel="prefetch" href="/assets/js/181.a5ae79f9.js"><link rel="prefetch" href="/assets/js/182.8c310edf.js"><link rel="prefetch" href="/assets/js/183.4112ee19.js"><link rel="prefetch" href="/assets/js/184.0ec93261.js"><link rel="prefetch" href="/assets/js/185.61960db9.js"><link rel="prefetch" href="/assets/js/186.33daea74.js"><link rel="prefetch" href="/assets/js/187.735acbde.js"><link rel="prefetch" href="/assets/js/188.6d23c78e.js"><link rel="prefetch" href="/assets/js/189.5baec19b.js"><link rel="prefetch" href="/assets/js/19.b69ba860.js"><link rel="prefetch" href="/assets/js/190.40fb93b3.js"><link rel="prefetch" href="/assets/js/191.b8232d2f.js"><link rel="prefetch" href="/assets/js/192.fe4ffc8f.js"><link rel="prefetch" href="/assets/js/193.2917718f.js"><link rel="prefetch" href="/assets/js/194.975b7c10.js"><link rel="prefetch" href="/assets/js/195.9dd76cf7.js"><link rel="prefetch" href="/assets/js/196.0af754d7.js"><link rel="prefetch" href="/assets/js/197.2abd874d.js"><link rel="prefetch" href="/assets/js/198.ea48e779.js"><link rel="prefetch" href="/assets/js/199.aece0cb4.js"><link rel="prefetch" href="/assets/js/20.122d58cd.js"><link rel="prefetch" href="/assets/js/200.24829891.js"><link rel="prefetch" href="/assets/js/201.beac1e4b.js"><link rel="prefetch" href="/assets/js/202.03a4042b.js"><link rel="prefetch" href="/assets/js/203.84629aa2.js"><link rel="prefetch" href="/assets/js/204.f8621265.js"><link rel="prefetch" href="/assets/js/205.ce4947af.js"><link rel="prefetch" href="/assets/js/206.a35666ec.js"><link rel="prefetch" href="/assets/js/207.c92960d8.js"><link rel="prefetch" href="/assets/js/208.26731fc2.js"><link rel="prefetch" href="/assets/js/209.7a232003.js"><link rel="prefetch" href="/assets/js/21.8c6d77e6.js"><link rel="prefetch" href="/assets/js/210.f672d383.js"><link rel="prefetch" href="/assets/js/211.2bf8955a.js"><link rel="prefetch" href="/assets/js/212.ffc42b8b.js"><link rel="prefetch" href="/assets/js/213.82413b6e.js"><link rel="prefetch" href="/assets/js/214.c72b5c02.js"><link rel="prefetch" href="/assets/js/215.0f775271.js"><link rel="prefetch" href="/assets/js/216.f19e5a3b.js"><link rel="prefetch" href="/assets/js/217.566374cf.js"><link rel="prefetch" href="/assets/js/218.e8c8568d.js"><link rel="prefetch" href="/assets/js/219.ff1b0995.js"><link rel="prefetch" href="/assets/js/22.4111a1d4.js"><link rel="prefetch" href="/assets/js/220.d9999116.js"><link rel="prefetch" href="/assets/js/221.3941c526.js"><link rel="prefetch" href="/assets/js/222.3e0c2817.js"><link rel="prefetch" href="/assets/js/223.a5dd9685.js"><link rel="prefetch" href="/assets/js/224.666f0773.js"><link rel="prefetch" href="/assets/js/225.791a6a09.js"><link rel="prefetch" href="/assets/js/226.8486c335.js"><link rel="prefetch" href="/assets/js/227.f680193f.js"><link rel="prefetch" href="/assets/js/228.d1157b43.js"><link rel="prefetch" href="/assets/js/229.11dca3c9.js"><link rel="prefetch" href="/assets/js/23.959a5c07.js"><link rel="prefetch" href="/assets/js/230.3ecdfe3c.js"><link rel="prefetch" href="/assets/js/231.c7af6dcb.js"><link rel="prefetch" href="/assets/js/232.da3461db.js"><link rel="prefetch" href="/assets/js/233.d72faae9.js"><link rel="prefetch" href="/assets/js/234.8ecb3b0b.js"><link rel="prefetch" href="/assets/js/235.d8cbd473.js"><link rel="prefetch" href="/assets/js/236.8153cd81.js"><link rel="prefetch" href="/assets/js/237.0810a4c7.js"><link rel="prefetch" href="/assets/js/238.ed8982b2.js"><link rel="prefetch" href="/assets/js/239.02b4deb3.js"><link rel="prefetch" href="/assets/js/24.1c081f52.js"><link rel="prefetch" href="/assets/js/240.cd5997f4.js"><link rel="prefetch" href="/assets/js/241.6a14a87a.js"><link rel="prefetch" href="/assets/js/242.abf2c203.js"><link rel="prefetch" href="/assets/js/243.2642abb7.js"><link rel="prefetch" href="/assets/js/244.0815947c.js"><link rel="prefetch" href="/assets/js/245.59bab1be.js"><link rel="prefetch" href="/assets/js/246.4d62852a.js"><link rel="prefetch" href="/assets/js/247.3fe427c8.js"><link rel="prefetch" href="/assets/js/248.d9e53fb8.js"><link rel="prefetch" href="/assets/js/249.a8c534e7.js"><link rel="prefetch" href="/assets/js/25.423202c7.js"><link rel="prefetch" href="/assets/js/250.0d5147d0.js"><link rel="prefetch" href="/assets/js/251.3e74a304.js"><link rel="prefetch" href="/assets/js/252.0b84e6c1.js"><link rel="prefetch" href="/assets/js/253.c0528b9f.js"><link rel="prefetch" href="/assets/js/254.8ffe8f1f.js"><link rel="prefetch" href="/assets/js/255.0a5394d9.js"><link rel="prefetch" href="/assets/js/256.f9ec65f2.js"><link rel="prefetch" href="/assets/js/257.1be6bcc8.js"><link rel="prefetch" href="/assets/js/258.0bcacf47.js"><link rel="prefetch" href="/assets/js/259.d06a2370.js"><link rel="prefetch" href="/assets/js/26.0a64d072.js"><link rel="prefetch" href="/assets/js/260.1a026664.js"><link rel="prefetch" href="/assets/js/261.c61cf012.js"><link rel="prefetch" href="/assets/js/262.062894df.js"><link rel="prefetch" href="/assets/js/263.9122f1fa.js"><link rel="prefetch" href="/assets/js/264.72e940db.js"><link rel="prefetch" href="/assets/js/265.7c1368ca.js"><link rel="prefetch" href="/assets/js/266.27cc6e83.js"><link rel="prefetch" href="/assets/js/267.e0c96ced.js"><link rel="prefetch" href="/assets/js/268.71ebe700.js"><link rel="prefetch" href="/assets/js/269.89ae8db4.js"><link rel="prefetch" href="/assets/js/27.c5cea8bd.js"><link rel="prefetch" href="/assets/js/270.22519397.js"><link rel="prefetch" href="/assets/js/271.bcb38595.js"><link rel="prefetch" href="/assets/js/272.51f36f8e.js"><link rel="prefetch" href="/assets/js/273.da08c022.js"><link rel="prefetch" href="/assets/js/274.9e4c0ce8.js"><link rel="prefetch" href="/assets/js/275.60cfcf2f.js"><link rel="prefetch" href="/assets/js/276.75895924.js"><link rel="prefetch" href="/assets/js/277.809dea8a.js"><link rel="prefetch" href="/assets/js/278.fc8890fb.js"><link rel="prefetch" href="/assets/js/279.f9e0a704.js"><link rel="prefetch" href="/assets/js/28.066a3692.js"><link rel="prefetch" href="/assets/js/280.0a162383.js"><link rel="prefetch" href="/assets/js/281.f00a44a2.js"><link rel="prefetch" href="/assets/js/282.ff3faa68.js"><link rel="prefetch" href="/assets/js/283.151e66d1.js"><link rel="prefetch" href="/assets/js/284.d50d05b0.js"><link rel="prefetch" href="/assets/js/285.a8c90e6a.js"><link rel="prefetch" href="/assets/js/286.890c997c.js"><link rel="prefetch" href="/assets/js/287.3d52b56a.js"><link rel="prefetch" href="/assets/js/288.0d29e5eb.js"><link rel="prefetch" href="/assets/js/289.4f58c366.js"><link rel="prefetch" href="/assets/js/29.a5a59431.js"><link rel="prefetch" href="/assets/js/290.2bcef384.js"><link rel="prefetch" href="/assets/js/291.68896363.js"><link rel="prefetch" href="/assets/js/292.d7531744.js"><link rel="prefetch" href="/assets/js/293.267b52b4.js"><link rel="prefetch" href="/assets/js/294.f6f4b1da.js"><link rel="prefetch" href="/assets/js/295.fcf62bcb.js"><link rel="prefetch" href="/assets/js/296.84d52045.js"><link rel="prefetch" href="/assets/js/297.c40d8751.js"><link rel="prefetch" href="/assets/js/298.ee57fb9b.js"><link rel="prefetch" href="/assets/js/299.775de069.js"><link rel="prefetch" href="/assets/js/3.94a7f223.js"><link rel="prefetch" href="/assets/js/30.968f7517.js"><link rel="prefetch" href="/assets/js/300.688d55e8.js"><link rel="prefetch" href="/assets/js/301.148cc4a1.js"><link rel="prefetch" href="/assets/js/302.426a45de.js"><link rel="prefetch" href="/assets/js/303.bb93ff80.js"><link rel="prefetch" href="/assets/js/304.cd57569c.js"><link rel="prefetch" href="/assets/js/305.a93b5ab7.js"><link rel="prefetch" href="/assets/js/306.47c95cf3.js"><link rel="prefetch" href="/assets/js/307.046f6396.js"><link rel="prefetch" href="/assets/js/308.f428c7f7.js"><link rel="prefetch" href="/assets/js/309.7887f9d5.js"><link rel="prefetch" href="/assets/js/31.3d98a830.js"><link rel="prefetch" href="/assets/js/310.b4c9887b.js"><link rel="prefetch" href="/assets/js/311.5a0b6714.js"><link rel="prefetch" href="/assets/js/312.d73ab667.js"><link rel="prefetch" href="/assets/js/313.25bdb63c.js"><link rel="prefetch" href="/assets/js/314.7fe73eea.js"><link rel="prefetch" href="/assets/js/315.fbdc90c3.js"><link rel="prefetch" href="/assets/js/316.9db012eb.js"><link rel="prefetch" href="/assets/js/317.af348be1.js"><link rel="prefetch" href="/assets/js/318.29625b5d.js"><link rel="prefetch" href="/assets/js/319.38d7a61d.js"><link rel="prefetch" href="/assets/js/32.edb6817f.js"><link rel="prefetch" href="/assets/js/320.f0dfa16b.js"><link rel="prefetch" href="/assets/js/321.9a7b2128.js"><link rel="prefetch" href="/assets/js/322.7538b69b.js"><link rel="prefetch" href="/assets/js/323.8c49b0e4.js"><link rel="prefetch" href="/assets/js/324.92b7ad9d.js"><link rel="prefetch" href="/assets/js/325.85873f27.js"><link rel="prefetch" href="/assets/js/326.344c0483.js"><link rel="prefetch" href="/assets/js/327.9a694b2a.js"><link rel="prefetch" href="/assets/js/328.02ce6977.js"><link rel="prefetch" href="/assets/js/329.c46c9868.js"><link rel="prefetch" href="/assets/js/33.ce51fc03.js"><link rel="prefetch" href="/assets/js/331.bd534021.js"><link rel="prefetch" href="/assets/js/332.9a03aaa1.js"><link rel="prefetch" href="/assets/js/333.aeed747e.js"><link rel="prefetch" href="/assets/js/334.d5a2056a.js"><link rel="prefetch" href="/assets/js/335.54d984bc.js"><link rel="prefetch" href="/assets/js/336.d720450f.js"><link rel="prefetch" href="/assets/js/337.4995d388.js"><link rel="prefetch" href="/assets/js/338.0e94dc29.js"><link rel="prefetch" href="/assets/js/339.848fb3a7.js"><link rel="prefetch" href="/assets/js/34.9790e555.js"><link rel="prefetch" href="/assets/js/340.9daf2a52.js"><link rel="prefetch" href="/assets/js/341.61adc56c.js"><link rel="prefetch" href="/assets/js/342.30693772.js"><link rel="prefetch" href="/assets/js/343.f5c7b4c8.js"><link rel="prefetch" href="/assets/js/35.aa4e02c0.js"><link rel="prefetch" href="/assets/js/36.90d35055.js"><link rel="prefetch" href="/assets/js/37.0b7b0f8a.js"><link rel="prefetch" href="/assets/js/38.ceecf604.js"><link rel="prefetch" href="/assets/js/39.38915f33.js"><link rel="prefetch" href="/assets/js/4.84e161a6.js"><link rel="prefetch" href="/assets/js/40.0075655f.js"><link rel="prefetch" href="/assets/js/41.acddb95f.js"><link rel="prefetch" href="/assets/js/42.b6b64d4e.js"><link rel="prefetch" href="/assets/js/43.429d7e12.js"><link rel="prefetch" href="/assets/js/44.d3c831b4.js"><link rel="prefetch" href="/assets/js/45.26e1b136.js"><link rel="prefetch" href="/assets/js/46.3d5de8f9.js"><link rel="prefetch" href="/assets/js/47.54737d3d.js"><link rel="prefetch" href="/assets/js/48.d8abb210.js"><link rel="prefetch" href="/assets/js/49.1e225bb8.js"><link rel="prefetch" href="/assets/js/5.7e5b4b0a.js"><link rel="prefetch" href="/assets/js/50.87e8beab.js"><link rel="prefetch" href="/assets/js/51.dfdd1812.js"><link rel="prefetch" href="/assets/js/52.60d2d938.js"><link rel="prefetch" href="/assets/js/53.1bd07572.js"><link rel="prefetch" href="/assets/js/54.e1c71c53.js"><link rel="prefetch" href="/assets/js/55.76987a45.js"><link rel="prefetch" href="/assets/js/56.3aece61e.js"><link rel="prefetch" href="/assets/js/57.cc028990.js"><link rel="prefetch" href="/assets/js/58.b4045858.js"><link rel="prefetch" href="/assets/js/59.f494ba21.js"><link rel="prefetch" href="/assets/js/6.d7be1597.js"><link rel="prefetch" href="/assets/js/60.d6f9dd86.js"><link rel="prefetch" href="/assets/js/61.61c5e5d7.js"><link rel="prefetch" href="/assets/js/62.a885bdbd.js"><link rel="prefetch" href="/assets/js/63.008ef9ae.js"><link rel="prefetch" href="/assets/js/64.2473497f.js"><link rel="prefetch" href="/assets/js/65.5dfe13e4.js"><link rel="prefetch" href="/assets/js/66.fe7910a7.js"><link rel="prefetch" href="/assets/js/67.d573670d.js"><link rel="prefetch" href="/assets/js/68.0be5b23a.js"><link rel="prefetch" href="/assets/js/69.53b4ba6f.js"><link rel="prefetch" href="/assets/js/7.4244510a.js"><link rel="prefetch" href="/assets/js/70.cb61b82f.js"><link rel="prefetch" href="/assets/js/71.e897a06a.js"><link rel="prefetch" href="/assets/js/72.f67347f9.js"><link rel="prefetch" href="/assets/js/73.6d753bb1.js"><link rel="prefetch" href="/assets/js/74.89611295.js"><link rel="prefetch" href="/assets/js/75.98036858.js"><link rel="prefetch" href="/assets/js/76.aa2590e4.js"><link rel="prefetch" href="/assets/js/77.fad8e32c.js"><link rel="prefetch" href="/assets/js/78.5f930aa9.js"><link rel="prefetch" href="/assets/js/79.577214f5.js"><link rel="prefetch" href="/assets/js/8.9d4a5ec1.js"><link rel="prefetch" href="/assets/js/80.a8a79cec.js"><link rel="prefetch" href="/assets/js/81.071bdecb.js"><link rel="prefetch" href="/assets/js/82.91d81aea.js"><link rel="prefetch" href="/assets/js/83.79cc3ac8.js"><link rel="prefetch" href="/assets/js/84.ba295cff.js"><link rel="prefetch" href="/assets/js/85.9ea34afe.js"><link rel="prefetch" href="/assets/js/86.6e1fc618.js"><link rel="prefetch" href="/assets/js/87.3efe1acd.js"><link rel="prefetch" href="/assets/js/88.c3ea3dd5.js"><link rel="prefetch" href="/assets/js/89.34565c98.js"><link rel="prefetch" href="/assets/js/9.1d5efe47.js"><link rel="prefetch" href="/assets/js/90.25122f00.js"><link rel="prefetch" href="/assets/js/91.364a2a8b.js"><link rel="prefetch" href="/assets/js/92.37361ed3.js"><link rel="prefetch" href="/assets/js/93.d28d7139.js"><link rel="prefetch" href="/assets/js/94.ef0b7cf6.js"><link rel="prefetch" href="/assets/js/95.1d095813.js"><link rel="prefetch" href="/assets/js/96.bacddac1.js"><link rel="prefetch" href="/assets/js/97.ea35a7e9.js"><link rel="prefetch" href="/assets/js/98.69bc42ef.js"><link rel="prefetch" href="/assets/js/99.2cdefb1b.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.84c9d137.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">2020</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ajax/" class="nav-link">
+  ajax
+</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link">
+  basic
+</a></li><li class="dropdown-item"><!----> <a href="/canvas/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-item"><!----> <a href="/chart/" class="nav-link">
+  chart
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/fast/" class="nav-link">
+  fast
+</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">
+  htmlcss
+</a></li><li class="dropdown-item"><!----> <a href="/jsstore/" class="nav-link">
+  jsstore
+</a></li><li class="dropdown-item"><!----> <a href="/object/" class="nav-link">
+  object
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/" class="nav-link">
+  plugin
+</a></li><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/svg/" class="nav-link">
+  svg
+</a></li><li class="dropdown-item"><!----> <a href="/test/" class="nav-link">
+  test
+</a></li><li class="dropdown-item"><!----> <a href="/typescript/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/ui/" class="nav-link">
+  ui
+</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/webdb/" class="nav-link">
+  webdb
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webrtc/" class="nav-link router-link-active">
+  webrtc
+</a></li><li class="dropdown-item"><!----> <a href="/wx/" class="nav-link">
+  wx
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-item"><!----> <a href="/mongo/" class="nav-link">
+  mongo
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  other
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/mk/" class="nav-link">
+  mk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  reactnative
+</a></li><li class="dropdown-item"><!----> <a href="/fronttest/" class="nav-link">
+  fronttest
+</a></li><li class="dropdown-item"><!----> <a href="/book/" class="nav-link">
+  book
+</a></li><li class="dropdown-item"><!----> <a href="/confusing/" class="nav-link">
+  confusing
+</a></li><li class="dropdown-item"><!----> <a href="/everyday/" class="nav-link">
+  everyday
+</a></li><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/tool/" class="nav-link">
+  tool
+</a></li><li class="dropdown-item"><!----> <a href="/increase/" class="nav-link">
+  increase
+</a></li><li class="dropdown-item"><!----> <a href="/write/" class="nav-link">
+  write
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ajax/" class="nav-link">
+  ajax
+</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link">
+  basic
+</a></li><li class="dropdown-item"><!----> <a href="/canvas/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-item"><!----> <a href="/chart/" class="nav-link">
+  chart
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/fast/" class="nav-link">
+  fast
+</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">
+  htmlcss
+</a></li><li class="dropdown-item"><!----> <a href="/jsstore/" class="nav-link">
+  jsstore
+</a></li><li class="dropdown-item"><!----> <a href="/object/" class="nav-link">
+  object
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/" class="nav-link">
+  plugin
+</a></li><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/svg/" class="nav-link">
+  svg
+</a></li><li class="dropdown-item"><!----> <a href="/test/" class="nav-link">
+  test
+</a></li><li class="dropdown-item"><!----> <a href="/typescript/" class="nav-link">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/ui/" class="nav-link">
+  ui
+</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/webdb/" class="nav-link">
+  webdb
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webrtc/" class="nav-link router-link-active">
+  webrtc
+</a></li><li class="dropdown-item"><!----> <a href="/wx/" class="nav-link">
+  wx
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-item"><!----> <a href="/mongo/" class="nav-link">
+  mongo
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  other
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/mk/" class="nav-link">
+  mk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  reactnative
+</a></li><li class="dropdown-item"><!----> <a href="/fronttest/" class="nav-link">
+  fronttest
+</a></li><li class="dropdown-item"><!----> <a href="/book/" class="nav-link">
+  book
+</a></li><li class="dropdown-item"><!----> <a href="/confusing/" class="nav-link">
+  confusing
+</a></li><li class="dropdown-item"><!----> <a href="/everyday/" class="nav-link">
+  everyday
+</a></li><li class="dropdown-item"><!----> <a href="/project/" class="nav-link">
+  project
+</a></li><li class="dropdown-item"><!----> <a href="/tool/" class="nav-link">
+  tool
+</a></li><li class="dropdown-item"><!----> <a href="/increase/" class="nav-link">
+  increase
+</a></li><li class="dropdown-item"><!----> <a href="/write/" class="nav-link">
+  write
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/webrtc/" aria-current="page" class="sidebar-link"> webrtc和websocket</a></li><li><a href="/webrtc/001websocket.html" class="sidebar-link"> websocket</a></li><li><a href="/webrtc/002socketio.html" class="sidebar-link"> socketio</a></li><li><a href="/webrtc/003webrtc.html" class="sidebar-link"> webrtc</a></li><li><a href="/webrtc/004webrtc-next.html" class="sidebar-link">webrtc1</a></li><li><a href="/webrtc/005webrtc3.html" aria-current="page" class="active sidebar-link">webrtc2</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/webrtc/005webrtc3.html#webrtc继续学习" class="sidebar-link">webrtc继续学习</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/webrtc/005webrtc3.html#webrtc信令服务器" class="sidebar-link">webrtc信令服务器</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="webrtc继续学习"><a href="#webrtc继续学习" class="header-anchor">#</a> webrtc继续学习</h2> <p>先看<a href="/webrtc/002socketio.html#socket-io基本使用">socketio</a></p> <h4 id="发消息"><a href="#发消息" class="header-anchor">#</a> 发消息</h4> <ul><li>socket.emit() 给本次连接发消息</li> <li>io.in(room).emit() 给某个房间内所有人发消息</li> <li>socket.to(room).emit() 除本连接外，给某个房间内所有人发消息</li> <li>socket.broadcast.emit() 除本连接外，给所有人发消息</li></ul> <h4 id="收到消息"><a href="#收到消息" class="header-anchor">#</a> 收到消息</h4> <ul><li>S：socket.emit(&quot;action&quot;,data1,data2)//data可不需要,，也可以是个函数</li> <li>C：socket.on(&quot;action&quot;,function(data1,data2){。。。})</li></ul> <h3 id="webrtc信令服务器"><a href="#webrtc信令服务器" class="header-anchor">#</a> webrtc信令服务器</h3> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">var</span> https <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'https'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">var</span> express <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'express'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//https server</span>
+<span class="token keyword">var</span> https_server <span class="token operator">=</span> https<span class="token punctuation">.</span><span class="token function">createServer</span><span class="token punctuation">(</span>options<span class="token punctuation">,</span> app<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//bind socket.io with https_server</span>
+<span class="token keyword">var</span> io <span class="token operator">=</span> socketIo<span class="token punctuation">.</span><span class="token function">listen</span><span class="token punctuation">(</span>https_server<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">//connection</span>
+io<span class="token punctuation">.</span>sockets<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'connection'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">socket</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+
+	socket<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'message'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">room<span class="token punctuation">,</span> data</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span><span class="token punctuation">{</span>
+		socket<span class="token punctuation">.</span><span class="token function">to</span><span class="token punctuation">(</span>room<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'message'</span><span class="token punctuation">,</span> room<span class="token punctuation">,</span> data<span class="token punctuation">)</span><span class="token comment">//房间内所有人,除自己外</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+	<span class="token comment">//该函数应该加锁</span>
+	socket<span class="token punctuation">.</span><span class="token function">on</span><span class="token punctuation">(</span><span class="token string">'join'</span><span class="token punctuation">,</span> <span class="token punctuation">(</span><span class="token parameter">room</span><span class="token punctuation">)</span><span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+		socket<span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span>room<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//进入房间</span>
+		<span class="token keyword">var</span> myRoom <span class="token operator">=</span> io<span class="token punctuation">.</span>sockets<span class="token punctuation">.</span>adapter<span class="token punctuation">.</span>rooms<span class="token punctuation">[</span>room<span class="token punctuation">]</span><span class="token punctuation">;</span><span class="token comment">//获取房间</span>
+		<span class="token keyword">var</span> users <span class="token operator">=</span> Object<span class="token punctuation">.</span><span class="token function">keys</span><span class="token punctuation">(</span>myRoom<span class="token punctuation">.</span>sockets<span class="token punctuation">)</span><span class="token punctuation">.</span>length<span class="token punctuation">;</span><span class="token comment">//获取人数</span>
+		logger<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'the number of user in room is: '</span> <span class="token operator">+</span> users<span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token comment">//在这里可以控制进入房间的人数,现在一个房间最多 3个人</span>
+		<span class="token comment">//为了便于客户端控制，如果是多人的话，应该将目前房间里</span>
+		<span class="token comment">//人的个数当做数据下发下去。</span>
+		<span class="token keyword">if</span><span class="token punctuation">(</span>users <span class="token operator">&lt;</span> <span class="token number">4</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+			socket<span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'joined'</span><span class="token punctuation">,</span> room<span class="token punctuation">,</span> socket<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>	
+			<span class="token keyword">if</span> <span class="token punctuation">(</span>users <span class="token operator">&gt;</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				socket<span class="token punctuation">.</span><span class="token function">to</span><span class="token punctuation">(</span>room<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'otherjoin'</span><span class="token punctuation">,</span> room<span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//除自己之外</span>
+			<span class="token punctuation">}</span>
+		<span class="token punctuation">}</span><span class="token keyword">else</span> <span class="token punctuation">{</span>
+			socket<span class="token punctuation">.</span><span class="token function">leave</span><span class="token punctuation">(</span>room<span class="token punctuation">)</span><span class="token punctuation">;</span>
+			socket<span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'full'</span><span class="token punctuation">,</span> room<span class="token punctuation">,</span> socket<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span>	
+		<span class="token punctuation">}</span>
+		io<span class="token punctuation">.</span><span class="token function">in</span><span class="token punctuation">(</span>room<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">emit</span><span class="token punctuation">(</span><span class="token string">'joined'</span><span class="token punctuation">,</span> room<span class="token punctuation">,</span> socket<span class="token punctuation">.</span>id<span class="token punctuation">)</span><span class="token comment">//房间内所有人</span>
+	 	<span class="token comment">//socket.broadcast.emit('joined', room, socket.id);//除自己，全部站点	</span>
+	<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+</code></pre></div><blockquote><p>注意：前端还需要引入socket.io.js</p></blockquote></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/webrtc/004webrtc-next.html" class="prev">
+        webrtc1
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.61d5d7c7.js" defer></script><script src="/assets/js/2.662cea8a.js" defer></script><script src="/assets/js/330.7731f068.js" defer></script>
+  </body>
+</html>
