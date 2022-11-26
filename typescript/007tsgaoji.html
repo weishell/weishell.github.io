@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ts高级特性 | web</title>
+    <meta name="generator" content="VuePress 1.9.5">
+    <link rel="icon" href="/img/logo.jpg">
+    <meta name="description" content="welcome">
+    
+    <link rel="preload" href="/assets/css/0.styles.8229e88b.css" as="style"><link rel="preload" href="/assets/js/app.748cfb2e.js" as="script"><link rel="preload" href="/assets/js/2.1a953b48.js" as="script"><link rel="preload" href="/assets/js/342.f82c9d1f.js" as="script"><link rel="preload" href="/assets/js/10.6b3060cc.js" as="script"><link rel="prefetch" href="/assets/js/100.32aeb81f.js"><link rel="prefetch" href="/assets/js/101.316783a6.js"><link rel="prefetch" href="/assets/js/102.5d160aaa.js"><link rel="prefetch" href="/assets/js/103.d46998b7.js"><link rel="prefetch" href="/assets/js/104.dd48f139.js"><link rel="prefetch" href="/assets/js/105.4b67daca.js"><link rel="prefetch" href="/assets/js/106.3b68ab24.js"><link rel="prefetch" href="/assets/js/107.7b654970.js"><link rel="prefetch" href="/assets/js/108.145f7164.js"><link rel="prefetch" href="/assets/js/109.bd35f00e.js"><link rel="prefetch" href="/assets/js/11.f91df393.js"><link rel="prefetch" href="/assets/js/110.56573578.js"><link rel="prefetch" href="/assets/js/111.1e65f0d6.js"><link rel="prefetch" href="/assets/js/112.ac7bae6d.js"><link rel="prefetch" href="/assets/js/113.60094524.js"><link rel="prefetch" href="/assets/js/114.226609c1.js"><link rel="prefetch" href="/assets/js/115.b50efc35.js"><link rel="prefetch" href="/assets/js/116.fd2b9ad9.js"><link rel="prefetch" href="/assets/js/117.0ba7ddc7.js"><link rel="prefetch" href="/assets/js/118.95f5a22a.js"><link rel="prefetch" href="/assets/js/119.03178710.js"><link rel="prefetch" href="/assets/js/12.edca37f2.js"><link rel="prefetch" href="/assets/js/120.922ae6b1.js"><link rel="prefetch" href="/assets/js/121.d1eee34d.js"><link rel="prefetch" href="/assets/js/122.cd97b39e.js"><link rel="prefetch" href="/assets/js/123.cb04c468.js"><link rel="prefetch" href="/assets/js/124.d1073d33.js"><link rel="prefetch" href="/assets/js/125.5ed4bdef.js"><link rel="prefetch" href="/assets/js/126.4cbd4e93.js"><link rel="prefetch" href="/assets/js/127.144ec0ef.js"><link rel="prefetch" href="/assets/js/128.882cd453.js"><link rel="prefetch" href="/assets/js/129.4ed4e9e4.js"><link rel="prefetch" href="/assets/js/13.d2d788db.js"><link rel="prefetch" href="/assets/js/130.8dac8923.js"><link rel="prefetch" href="/assets/js/131.f22396d5.js"><link rel="prefetch" href="/assets/js/132.05aa61e9.js"><link rel="prefetch" href="/assets/js/133.7b5d5d8e.js"><link rel="prefetch" href="/assets/js/134.97b862b2.js"><link rel="prefetch" href="/assets/js/135.fdc5890c.js"><link rel="prefetch" href="/assets/js/136.4ed1bc66.js"><link rel="prefetch" href="/assets/js/137.6244097a.js"><link rel="prefetch" href="/assets/js/138.76f1fd22.js"><link rel="prefetch" href="/assets/js/139.0989a287.js"><link rel="prefetch" href="/assets/js/14.c561889f.js"><link rel="prefetch" href="/assets/js/140.1dc6a1ad.js"><link rel="prefetch" href="/assets/js/141.f15cfedf.js"><link rel="prefetch" href="/assets/js/142.ff537fc8.js"><link rel="prefetch" href="/assets/js/143.1e17b6dd.js"><link rel="prefetch" href="/assets/js/144.b2944ea0.js"><link rel="prefetch" href="/assets/js/145.de876282.js"><link rel="prefetch" href="/assets/js/146.b97bba1b.js"><link rel="prefetch" href="/assets/js/147.1fea1d6c.js"><link rel="prefetch" href="/assets/js/148.9483e04d.js"><link rel="prefetch" href="/assets/js/149.d4f8c5df.js"><link rel="prefetch" href="/assets/js/15.977544a1.js"><link rel="prefetch" href="/assets/js/150.c02c93ec.js"><link rel="prefetch" href="/assets/js/151.ec9c3717.js"><link rel="prefetch" href="/assets/js/152.299d3851.js"><link rel="prefetch" href="/assets/js/153.0306cd36.js"><link rel="prefetch" href="/assets/js/154.0908dca3.js"><link rel="prefetch" href="/assets/js/155.ba44b33e.js"><link rel="prefetch" href="/assets/js/156.451e6392.js"><link rel="prefetch" href="/assets/js/157.1ced9613.js"><link rel="prefetch" href="/assets/js/158.daf5c0ac.js"><link rel="prefetch" href="/assets/js/159.f23566ee.js"><link rel="prefetch" href="/assets/js/16.23c8640b.js"><link rel="prefetch" href="/assets/js/160.80359a44.js"><link rel="prefetch" href="/assets/js/161.955e60eb.js"><link rel="prefetch" href="/assets/js/162.b60e2ea4.js"><link rel="prefetch" href="/assets/js/163.5b993541.js"><link rel="prefetch" href="/assets/js/164.715a1da9.js"><link rel="prefetch" href="/assets/js/165.f7c57fdd.js"><link rel="prefetch" href="/assets/js/166.a0167a43.js"><link rel="prefetch" href="/assets/js/167.ccdcbf32.js"><link rel="prefetch" href="/assets/js/168.ec0fdfc0.js"><link rel="prefetch" href="/assets/js/169.6ad9be56.js"><link rel="prefetch" href="/assets/js/17.a1940e3f.js"><link rel="prefetch" href="/assets/js/170.2fb33ffd.js"><link rel="prefetch" href="/assets/js/171.2efe60f0.js"><link rel="prefetch" href="/assets/js/172.9b781215.js"><link rel="prefetch" href="/assets/js/173.eb0bced9.js"><link rel="prefetch" href="/assets/js/174.07497878.js"><link rel="prefetch" href="/assets/js/175.541d7b3c.js"><link rel="prefetch" href="/assets/js/176.c60906bb.js"><link rel="prefetch" href="/assets/js/177.6120718e.js"><link rel="prefetch" href="/assets/js/178.76d5760b.js"><link rel="prefetch" href="/assets/js/179.f8252b1e.js"><link rel="prefetch" href="/assets/js/18.20c3e096.js"><link rel="prefetch" href="/assets/js/180.12b99bc7.js"><link rel="prefetch" href="/assets/js/181.a92cc1a5.js"><link rel="prefetch" href="/assets/js/182.66a406ca.js"><link rel="prefetch" href="/assets/js/183.aa49106e.js"><link rel="prefetch" href="/assets/js/184.db99b79b.js"><link rel="prefetch" href="/assets/js/185.1bac3ac8.js"><link rel="prefetch" href="/assets/js/186.c7c0f151.js"><link rel="prefetch" href="/assets/js/187.20333748.js"><link rel="prefetch" href="/assets/js/188.21f774e0.js"><link rel="prefetch" href="/assets/js/189.72ec80e6.js"><link rel="prefetch" href="/assets/js/19.74e6104f.js"><link rel="prefetch" href="/assets/js/190.95d2bb91.js"><link rel="prefetch" href="/assets/js/191.e80f919f.js"><link rel="prefetch" href="/assets/js/192.034d8a7e.js"><link rel="prefetch" href="/assets/js/193.411bfc4e.js"><link rel="prefetch" href="/assets/js/194.9e841fc4.js"><link rel="prefetch" href="/assets/js/195.36c149ce.js"><link rel="prefetch" href="/assets/js/196.544f946d.js"><link rel="prefetch" href="/assets/js/197.ab04b7cf.js"><link rel="prefetch" href="/assets/js/198.a914c890.js"><link rel="prefetch" href="/assets/js/199.be15da3e.js"><link rel="prefetch" href="/assets/js/20.7cbe9c4d.js"><link rel="prefetch" href="/assets/js/200.e40a173b.js"><link rel="prefetch" href="/assets/js/201.1f276cbf.js"><link rel="prefetch" href="/assets/js/202.d8b73751.js"><link rel="prefetch" href="/assets/js/203.3d2fa3ce.js"><link rel="prefetch" href="/assets/js/204.d3b0f9bb.js"><link rel="prefetch" href="/assets/js/205.38786aeb.js"><link rel="prefetch" href="/assets/js/206.bf224438.js"><link rel="prefetch" href="/assets/js/207.245208cf.js"><link rel="prefetch" href="/assets/js/208.0a296c75.js"><link rel="prefetch" href="/assets/js/209.bbda03f7.js"><link rel="prefetch" href="/assets/js/21.036f6efb.js"><link rel="prefetch" href="/assets/js/210.b4848e6d.js"><link rel="prefetch" href="/assets/js/211.0493b3bd.js"><link rel="prefetch" href="/assets/js/212.d0792674.js"><link rel="prefetch" href="/assets/js/213.1b9c7b14.js"><link rel="prefetch" href="/assets/js/214.10aff938.js"><link rel="prefetch" href="/assets/js/215.53aadea8.js"><link rel="prefetch" href="/assets/js/216.d2d9334c.js"><link rel="prefetch" href="/assets/js/217.1286e468.js"><link rel="prefetch" href="/assets/js/218.37b4fd59.js"><link rel="prefetch" href="/assets/js/219.917f0d78.js"><link rel="prefetch" href="/assets/js/22.30ea717c.js"><link rel="prefetch" href="/assets/js/220.e808e735.js"><link rel="prefetch" href="/assets/js/221.9f29c88b.js"><link rel="prefetch" href="/assets/js/222.14afeee6.js"><link rel="prefetch" href="/assets/js/223.f22c1e1d.js"><link rel="prefetch" href="/assets/js/224.a99ebe93.js"><link rel="prefetch" href="/assets/js/225.3c72ef24.js"><link rel="prefetch" href="/assets/js/226.5c15cd8f.js"><link rel="prefetch" href="/assets/js/227.64a111ee.js"><link rel="prefetch" href="/assets/js/228.2824ca8d.js"><link rel="prefetch" href="/assets/js/229.a948c0cf.js"><link rel="prefetch" href="/assets/js/23.e2314e7b.js"><link rel="prefetch" href="/assets/js/230.96e41295.js"><link rel="prefetch" href="/assets/js/231.bd473c8e.js"><link rel="prefetch" href="/assets/js/232.a939583d.js"><link rel="prefetch" href="/assets/js/233.e395503d.js"><link rel="prefetch" href="/assets/js/234.a9fe813e.js"><link rel="prefetch" href="/assets/js/235.9d1ee36b.js"><link rel="prefetch" href="/assets/js/236.b037fca5.js"><link rel="prefetch" href="/assets/js/237.0192ac82.js"><link rel="prefetch" href="/assets/js/238.372092c9.js"><link rel="prefetch" href="/assets/js/239.ad711003.js"><link rel="prefetch" href="/assets/js/24.dff159f7.js"><link rel="prefetch" href="/assets/js/240.ae2d4c24.js"><link rel="prefetch" href="/assets/js/241.d96b8aca.js"><link rel="prefetch" href="/assets/js/242.061efe3d.js"><link rel="prefetch" href="/assets/js/243.6d176571.js"><link rel="prefetch" href="/assets/js/244.b26b5163.js"><link rel="prefetch" href="/assets/js/245.f2d346d2.js"><link rel="prefetch" href="/assets/js/246.b0d5d6ba.js"><link rel="prefetch" href="/assets/js/247.1d94948c.js"><link rel="prefetch" href="/assets/js/248.51f5a42c.js"><link rel="prefetch" href="/assets/js/249.be6a4108.js"><link rel="prefetch" href="/assets/js/25.09e99b33.js"><link rel="prefetch" href="/assets/js/250.83ad59b3.js"><link rel="prefetch" href="/assets/js/251.4a1fe992.js"><link rel="prefetch" href="/assets/js/252.d3bfb11a.js"><link rel="prefetch" href="/assets/js/253.26f63f9d.js"><link rel="prefetch" href="/assets/js/254.07f63b07.js"><link rel="prefetch" href="/assets/js/255.7e54d536.js"><link rel="prefetch" href="/assets/js/256.cf066235.js"><link rel="prefetch" href="/assets/js/257.6e7944cd.js"><link rel="prefetch" href="/assets/js/258.e435dcbc.js"><link rel="prefetch" href="/assets/js/259.2013b9eb.js"><link rel="prefetch" href="/assets/js/26.c4f5de96.js"><link rel="prefetch" href="/assets/js/260.7c35cda5.js"><link rel="prefetch" href="/assets/js/261.1d3a14a6.js"><link rel="prefetch" href="/assets/js/262.c6242b41.js"><link rel="prefetch" href="/assets/js/263.12528c1b.js"><link rel="prefetch" href="/assets/js/264.f321b777.js"><link rel="prefetch" href="/assets/js/265.7817dfc1.js"><link rel="prefetch" href="/assets/js/266.8cb47e07.js"><link rel="prefetch" href="/assets/js/267.52ba4414.js"><link rel="prefetch" href="/assets/js/268.aa1154de.js"><link rel="prefetch" href="/assets/js/269.a5ff5157.js"><link rel="prefetch" href="/assets/js/27.ba0f01c7.js"><link rel="prefetch" href="/assets/js/270.900d98f4.js"><link rel="prefetch" href="/assets/js/271.d5ead68d.js"><link rel="prefetch" href="/assets/js/272.b6fb3054.js"><link rel="prefetch" href="/assets/js/273.cc2e92b6.js"><link rel="prefetch" href="/assets/js/274.fa1181d0.js"><link rel="prefetch" href="/assets/js/275.073397bb.js"><link rel="prefetch" href="/assets/js/276.616cf65b.js"><link rel="prefetch" href="/assets/js/277.74c5453f.js"><link rel="prefetch" href="/assets/js/278.a44ca627.js"><link rel="prefetch" href="/assets/js/279.814a5d72.js"><link rel="prefetch" href="/assets/js/28.1ff4c4cf.js"><link rel="prefetch" href="/assets/js/280.aec5c14c.js"><link rel="prefetch" href="/assets/js/281.2dc321d3.js"><link rel="prefetch" href="/assets/js/282.178c51b8.js"><link rel="prefetch" href="/assets/js/283.905b74d4.js"><link rel="prefetch" href="/assets/js/284.ce7b1945.js"><link rel="prefetch" href="/assets/js/285.1092d1db.js"><link rel="prefetch" href="/assets/js/286.a47dc243.js"><link rel="prefetch" href="/assets/js/287.5f2b3cf0.js"><link rel="prefetch" href="/assets/js/288.0a94ec06.js"><link rel="prefetch" href="/assets/js/289.4c00b608.js"><link rel="prefetch" href="/assets/js/29.a2f13103.js"><link rel="prefetch" href="/assets/js/290.18101cb9.js"><link rel="prefetch" href="/assets/js/291.f90a28da.js"><link rel="prefetch" href="/assets/js/292.50ac7dfc.js"><link rel="prefetch" href="/assets/js/293.4690f7e6.js"><link rel="prefetch" href="/assets/js/294.6d05e6bb.js"><link rel="prefetch" href="/assets/js/295.7b09e403.js"><link rel="prefetch" href="/assets/js/296.268b50c7.js"><link rel="prefetch" href="/assets/js/297.d1f820f9.js"><link rel="prefetch" href="/assets/js/298.106517bf.js"><link rel="prefetch" href="/assets/js/299.b0952557.js"><link rel="prefetch" href="/assets/js/3.3df7a992.js"><link rel="prefetch" href="/assets/js/30.43bca04a.js"><link rel="prefetch" href="/assets/js/300.817e2367.js"><link rel="prefetch" href="/assets/js/301.b43ee6c6.js"><link rel="prefetch" href="/assets/js/302.8135b210.js"><link rel="prefetch" href="/assets/js/303.11d7e4a8.js"><link rel="prefetch" href="/assets/js/304.c5d5efbf.js"><link rel="prefetch" href="/assets/js/305.960c2b1d.js"><link rel="prefetch" href="/assets/js/306.1123723d.js"><link rel="prefetch" href="/assets/js/307.c86e6ac4.js"><link rel="prefetch" href="/assets/js/308.cbc07a2c.js"><link rel="prefetch" href="/assets/js/309.fadd185c.js"><link rel="prefetch" href="/assets/js/31.d1161700.js"><link rel="prefetch" href="/assets/js/310.cde464e6.js"><link rel="prefetch" href="/assets/js/311.67361ce2.js"><link rel="prefetch" href="/assets/js/312.1b980065.js"><link rel="prefetch" href="/assets/js/313.4c5073f1.js"><link rel="prefetch" href="/assets/js/314.8779bd30.js"><link rel="prefetch" href="/assets/js/315.238421ef.js"><link rel="prefetch" href="/assets/js/316.f724d6cf.js"><link rel="prefetch" href="/assets/js/317.7ad1b508.js"><link rel="prefetch" href="/assets/js/318.9d2bbfdb.js"><link rel="prefetch" href="/assets/js/319.6e117e7b.js"><link rel="prefetch" href="/assets/js/32.a4e51833.js"><link rel="prefetch" href="/assets/js/320.1a4955bd.js"><link rel="prefetch" href="/assets/js/321.27345970.js"><link rel="prefetch" href="/assets/js/322.aed85a30.js"><link rel="prefetch" href="/assets/js/323.2125666d.js"><link rel="prefetch" href="/assets/js/324.bf7031f1.js"><link rel="prefetch" href="/assets/js/325.9f8eaca9.js"><link rel="prefetch" href="/assets/js/326.549482f8.js"><link rel="prefetch" href="/assets/js/327.ba3bb096.js"><link rel="prefetch" href="/assets/js/328.852372ce.js"><link rel="prefetch" href="/assets/js/329.8a71a49f.js"><link rel="prefetch" href="/assets/js/33.10b652be.js"><link rel="prefetch" href="/assets/js/330.d95ea2f2.js"><link rel="prefetch" href="/assets/js/331.667272e9.js"><link rel="prefetch" href="/assets/js/332.cdc575ce.js"><link rel="prefetch" href="/assets/js/333.6b3b5b1c.js"><link rel="prefetch" href="/assets/js/334.1ab77221.js"><link rel="prefetch" href="/assets/js/335.4a57a165.js"><link rel="prefetch" href="/assets/js/336.287216a3.js"><link rel="prefetch" href="/assets/js/337.4bb8cfa6.js"><link rel="prefetch" href="/assets/js/338.5614bf0d.js"><link rel="prefetch" href="/assets/js/339.c9f036dd.js"><link rel="prefetch" href="/assets/js/34.59b3d9b5.js"><link rel="prefetch" href="/assets/js/340.a5b2043d.js"><link rel="prefetch" href="/assets/js/341.2556ac92.js"><link rel="prefetch" href="/assets/js/343.f1bf4618.js"><link rel="prefetch" href="/assets/js/344.b3300517.js"><link rel="prefetch" href="/assets/js/345.32f837ec.js"><link rel="prefetch" href="/assets/js/346.e94c54d5.js"><link rel="prefetch" href="/assets/js/347.88e980f6.js"><link rel="prefetch" href="/assets/js/348.76d4bdde.js"><link rel="prefetch" href="/assets/js/349.89864eba.js"><link rel="prefetch" href="/assets/js/35.6b584098.js"><link rel="prefetch" href="/assets/js/350.046b99d6.js"><link rel="prefetch" href="/assets/js/351.04077b19.js"><link rel="prefetch" href="/assets/js/352.1fd54ec8.js"><link rel="prefetch" href="/assets/js/353.c439f3f6.js"><link rel="prefetch" href="/assets/js/354.15113b9a.js"><link rel="prefetch" href="/assets/js/355.ec114777.js"><link rel="prefetch" href="/assets/js/356.12836cb0.js"><link rel="prefetch" href="/assets/js/357.399dc7ed.js"><link rel="prefetch" href="/assets/js/358.447cd3fb.js"><link rel="prefetch" href="/assets/js/359.2f20aa34.js"><link rel="prefetch" href="/assets/js/36.87c8e929.js"><link rel="prefetch" href="/assets/js/360.0cfa7bc8.js"><link rel="prefetch" href="/assets/js/361.4f847b5d.js"><link rel="prefetch" href="/assets/js/362.ec309cae.js"><link rel="prefetch" href="/assets/js/363.df40a654.js"><link rel="prefetch" href="/assets/js/364.7422afd5.js"><link rel="prefetch" href="/assets/js/365.d6222e0e.js"><link rel="prefetch" href="/assets/js/366.678af5ba.js"><link rel="prefetch" href="/assets/js/367.3fa9b453.js"><link rel="prefetch" href="/assets/js/368.46a42655.js"><link rel="prefetch" href="/assets/js/369.1bf78ef6.js"><link rel="prefetch" href="/assets/js/37.b190d4e3.js"><link rel="prefetch" href="/assets/js/370.1ddd1dbc.js"><link rel="prefetch" href="/assets/js/371.e3922847.js"><link rel="prefetch" href="/assets/js/372.a2e32526.js"><link rel="prefetch" href="/assets/js/373.17a485d7.js"><link rel="prefetch" href="/assets/js/374.99e786c1.js"><link rel="prefetch" href="/assets/js/375.aba73706.js"><link rel="prefetch" href="/assets/js/376.44f264f5.js"><link rel="prefetch" href="/assets/js/377.133f6556.js"><link rel="prefetch" href="/assets/js/378.fd68bac4.js"><link rel="prefetch" href="/assets/js/379.335f46f7.js"><link rel="prefetch" href="/assets/js/38.1bf99f7f.js"><link rel="prefetch" href="/assets/js/380.6136cc2e.js"><link rel="prefetch" href="/assets/js/381.10e7ca8b.js"><link rel="prefetch" href="/assets/js/382.452c7e49.js"><link rel="prefetch" href="/assets/js/383.4f376fab.js"><link rel="prefetch" href="/assets/js/384.785255f8.js"><link rel="prefetch" href="/assets/js/385.ea5fe899.js"><link rel="prefetch" href="/assets/js/386.7f6ed88a.js"><link rel="prefetch" href="/assets/js/387.74c548fb.js"><link rel="prefetch" href="/assets/js/388.57928f22.js"><link rel="prefetch" href="/assets/js/389.28121905.js"><link rel="prefetch" href="/assets/js/39.52e6ed18.js"><link rel="prefetch" href="/assets/js/390.5faeb3c1.js"><link rel="prefetch" href="/assets/js/391.6824b8a6.js"><link rel="prefetch" href="/assets/js/392.6636631e.js"><link rel="prefetch" href="/assets/js/393.10e35901.js"><link rel="prefetch" href="/assets/js/394.66ae185c.js"><link rel="prefetch" href="/assets/js/395.c4e22272.js"><link rel="prefetch" href="/assets/js/396.34a74ee5.js"><link rel="prefetch" href="/assets/js/397.b37700cd.js"><link rel="prefetch" href="/assets/js/398.990f8414.js"><link rel="prefetch" href="/assets/js/399.6e9b47a1.js"><link rel="prefetch" href="/assets/js/4.1a0a5adf.js"><link rel="prefetch" href="/assets/js/40.c958465d.js"><link rel="prefetch" href="/assets/js/400.c321664c.js"><link rel="prefetch" href="/assets/js/401.fed9a232.js"><link rel="prefetch" href="/assets/js/402.6a47582f.js"><link rel="prefetch" href="/assets/js/403.81053ed9.js"><link rel="prefetch" href="/assets/js/404.280878af.js"><link rel="prefetch" href="/assets/js/405.ed046346.js"><link rel="prefetch" href="/assets/js/406.7d2fe32e.js"><link rel="prefetch" href="/assets/js/407.d1129e94.js"><link rel="prefetch" href="/assets/js/408.9e9a82d0.js"><link rel="prefetch" href="/assets/js/409.51fc8660.js"><link rel="prefetch" href="/assets/js/41.4aa52013.js"><link rel="prefetch" href="/assets/js/410.83f8c1a2.js"><link rel="prefetch" href="/assets/js/411.864b556c.js"><link rel="prefetch" href="/assets/js/412.0e9edf2c.js"><link rel="prefetch" href="/assets/js/413.390c92b2.js"><link rel="prefetch" href="/assets/js/414.7b7b2f22.js"><link rel="prefetch" href="/assets/js/415.363f65b8.js"><link rel="prefetch" href="/assets/js/416.f965c305.js"><link rel="prefetch" href="/assets/js/417.7f45a5c3.js"><link rel="prefetch" href="/assets/js/418.883e7c2d.js"><link rel="prefetch" href="/assets/js/419.b957f551.js"><link rel="prefetch" href="/assets/js/42.a12c2b2c.js"><link rel="prefetch" href="/assets/js/420.efea081e.js"><link rel="prefetch" href="/assets/js/421.62683408.js"><link rel="prefetch" href="/assets/js/422.06762db8.js"><link rel="prefetch" href="/assets/js/423.a67b4085.js"><link rel="prefetch" href="/assets/js/424.f38e4b81.js"><link rel="prefetch" href="/assets/js/425.b2139cec.js"><link rel="prefetch" href="/assets/js/426.539cb4f4.js"><link rel="prefetch" href="/assets/js/427.45d01969.js"><link rel="prefetch" href="/assets/js/428.3c16db69.js"><link rel="prefetch" href="/assets/js/43.c71f5b97.js"><link rel="prefetch" href="/assets/js/44.56b987f3.js"><link rel="prefetch" href="/assets/js/45.cac795fb.js"><link rel="prefetch" href="/assets/js/46.b1fb1198.js"><link rel="prefetch" href="/assets/js/47.a2b08eb3.js"><link rel="prefetch" href="/assets/js/48.2280a577.js"><link rel="prefetch" href="/assets/js/49.ab0fc17e.js"><link rel="prefetch" href="/assets/js/5.a278916b.js"><link rel="prefetch" href="/assets/js/50.028eb849.js"><link rel="prefetch" href="/assets/js/51.06a5edce.js"><link rel="prefetch" href="/assets/js/52.e4f18faa.js"><link rel="prefetch" href="/assets/js/53.19478fea.js"><link rel="prefetch" href="/assets/js/54.2841acd6.js"><link rel="prefetch" href="/assets/js/55.cc7f3d4b.js"><link rel="prefetch" href="/assets/js/56.f155e282.js"><link rel="prefetch" href="/assets/js/57.ea55f3a1.js"><link rel="prefetch" href="/assets/js/58.e6a9c064.js"><link rel="prefetch" href="/assets/js/59.8e38e550.js"><link rel="prefetch" href="/assets/js/6.a415c088.js"><link rel="prefetch" href="/assets/js/60.de22113b.js"><link rel="prefetch" href="/assets/js/61.bbfe5611.js"><link rel="prefetch" href="/assets/js/62.1470e003.js"><link rel="prefetch" href="/assets/js/63.785534ac.js"><link rel="prefetch" href="/assets/js/64.87fb13b9.js"><link rel="prefetch" href="/assets/js/65.4087fca2.js"><link rel="prefetch" href="/assets/js/66.097270aa.js"><link rel="prefetch" href="/assets/js/67.05e6b3db.js"><link rel="prefetch" href="/assets/js/68.497a7ce4.js"><link rel="prefetch" href="/assets/js/69.4c5b4151.js"><link rel="prefetch" href="/assets/js/7.9a2c6a4f.js"><link rel="prefetch" href="/assets/js/70.37e9de03.js"><link rel="prefetch" href="/assets/js/71.b093c6c9.js"><link rel="prefetch" href="/assets/js/72.486f8201.js"><link rel="prefetch" href="/assets/js/73.a34ae124.js"><link rel="prefetch" href="/assets/js/74.5a0264df.js"><link rel="prefetch" href="/assets/js/75.039531fc.js"><link rel="prefetch" href="/assets/js/76.84e3fd43.js"><link rel="prefetch" href="/assets/js/77.23c89e5d.js"><link rel="prefetch" href="/assets/js/78.3f96455d.js"><link rel="prefetch" href="/assets/js/79.e70782b1.js"><link rel="prefetch" href="/assets/js/8.b49a1311.js"><link rel="prefetch" href="/assets/js/80.5cf4b3e0.js"><link rel="prefetch" href="/assets/js/81.f29538df.js"><link rel="prefetch" href="/assets/js/82.fd78ad5f.js"><link rel="prefetch" href="/assets/js/83.685d0998.js"><link rel="prefetch" href="/assets/js/84.5f7e2cd2.js"><link rel="prefetch" href="/assets/js/85.c41dd692.js"><link rel="prefetch" href="/assets/js/86.0bfe278f.js"><link rel="prefetch" href="/assets/js/87.fb09cdfb.js"><link rel="prefetch" href="/assets/js/88.a7d1dcfb.js"><link rel="prefetch" href="/assets/js/89.301c80e1.js"><link rel="prefetch" href="/assets/js/9.ae395fc5.js"><link rel="prefetch" href="/assets/js/90.c44001f8.js"><link rel="prefetch" href="/assets/js/91.6896dadc.js"><link rel="prefetch" href="/assets/js/92.d1ea2d3d.js"><link rel="prefetch" href="/assets/js/93.01f4e747.js"><link rel="prefetch" href="/assets/js/94.3a1e13ff.js"><link rel="prefetch" href="/assets/js/95.85941b14.js"><link rel="prefetch" href="/assets/js/96.2c7fcf0e.js"><link rel="prefetch" href="/assets/js/97.65e1fe9b.js"><link rel="prefetch" href="/assets/js/98.78af3c54.js"><link rel="prefetch" href="/assets/js/99.f95d0d37.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8229e88b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">web</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ajax/" class="nav-link">
+  ajax
+</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link">
+  basic
+</a></li><li class="dropdown-item"><!----> <a href="/canvas/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-item"><!----> <a href="/chart/" class="nav-link">
+  chart
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/d3/" class="nav-link">
+  d3
+</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/fast/" class="nav-link">
+  fast
+</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">
+  htmlcss
+</a></li><li class="dropdown-item"><!----> <a href="/jsstore/" class="nav-link">
+  jsstore
+</a></li><li class="dropdown-item"><!----> <a href="/object/" class="nav-link">
+  object
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/" class="nav-link">
+  plugin
+</a></li><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/svg/" class="nav-link">
+  svg
+</a></li><li class="dropdown-item"><!----> <a href="/ssr/" class="nav-link">
+  ssr
+</a></li><li class="dropdown-item"><!----> <a href="/test/" class="nav-link">
+  test
+</a></li><li class="dropdown-item"><!----> <a href="/typescript/" class="nav-link router-link-active">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/ui/" class="nav-link">
+  ui
+</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/webdb/" class="nav-link">
+  webdb
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webrtc/" class="nav-link">
+  webrtc
+</a></li><li class="dropdown-item"><!----> <a href="/wx/" class="nav-link">
+  wx
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-item"><!----> <a href="/mongo/" class="nav-link">
+  mongo
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  other
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/mk/" class="nav-link">
+  mk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  reactnative
+</a></li><li class="dropdown-item"><!----> <a href="/book/" class="nav-link">
+  book
+</a></li><li class="dropdown-item"><!----> <a href="/confusing/" class="nav-link">
+  confusing
+</a></li><li class="dropdown-item"><!----> <a href="/tool/" class="nav-link">
+  tool
+</a></li><li class="dropdown-item"><!----> <a href="/increase/" class="nav-link">
+  increase
+</a></li><li class="dropdown-item"><!----> <a href="/write/" class="nav-link">
+  write
+</a></li><li class="dropdown-item"><!----> <a href="/interview/" class="nav-link">
+  interview
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/ajax/" class="nav-link">
+  ajax
+</a></li><li class="dropdown-item"><!----> <a href="/basic/" class="nav-link">
+  basic
+</a></li><li class="dropdown-item"><!----> <a href="/canvas/" class="nav-link">
+  canvas
+</a></li><li class="dropdown-item"><!----> <a href="/chart/" class="nav-link">
+  chart
+</a></li><li class="dropdown-item"><!----> <a href="/css/" class="nav-link">
+  css
+</a></li><li class="dropdown-item"><!----> <a href="/d3/" class="nav-link">
+  d3
+</a></li><li class="dropdown-item"><!----> <a href="/es6/" class="nav-link">
+  es6
+</a></li><li class="dropdown-item"><!----> <a href="/fast/" class="nav-link">
+  fast
+</a></li><li class="dropdown-item"><!----> <a href="/htmlcss/" class="nav-link">
+  htmlcss
+</a></li><li class="dropdown-item"><!----> <a href="/jsstore/" class="nav-link">
+  jsstore
+</a></li><li class="dropdown-item"><!----> <a href="/object/" class="nav-link">
+  object
+</a></li><li class="dropdown-item"><!----> <a href="/plugin/" class="nav-link">
+  plugin
+</a></li><li class="dropdown-item"><!----> <a href="/react/" class="nav-link">
+  react
+</a></li><li class="dropdown-item"><!----> <a href="/svg/" class="nav-link">
+  svg
+</a></li><li class="dropdown-item"><!----> <a href="/ssr/" class="nav-link">
+  ssr
+</a></li><li class="dropdown-item"><!----> <a href="/test/" class="nav-link">
+  test
+</a></li><li class="dropdown-item"><!----> <a href="/typescript/" class="nav-link router-link-active">
+  Typescript
+</a></li><li class="dropdown-item"><!----> <a href="/ui/" class="nav-link">
+  ui
+</a></li><li class="dropdown-item"><!----> <a href="/vue/" class="nav-link">
+  vue
+</a></li><li class="dropdown-item"><!----> <a href="/webdb/" class="nav-link">
+  webdb
+</a></li><li class="dropdown-item"><!----> <a href="/webpack/" class="nav-link">
+  webpack
+</a></li><li class="dropdown-item"><!----> <a href="/webrtc/" class="nav-link">
+  webrtc
+</a></li><li class="dropdown-item"><!----> <a href="/wx/" class="nav-link">
+  wx
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/" class="nav-link">
+  node
+</a></li><li class="dropdown-item"><!----> <a href="/koa/" class="nav-link">
+  koa
+</a></li><li class="dropdown-item"><!----> <a href="/mongo/" class="nav-link">
+  mongo
+</a></li><li class="dropdown-item"><!----> <a href="/mysql/" class="nav-link">
+  mysql
+</a></li><li class="dropdown-item"><!----> <a href="/http/" class="nav-link">
+  http
+</a></li><li class="dropdown-item"><!----> <a href="/nginx/" class="nav-link">
+  nginx
+</a></li><li class="dropdown-item"><!----> <a href="/other/" class="nav-link">
+  other
+</a></li><li class="dropdown-item"><!----> <a href="/python/" class="nav-link">
+  python
+</a></li><li class="dropdown-item"><!----> <a href="/mk/" class="nav-link">
+  mk
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他" class="dropdown-title"><span class="title">其他</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他" class="mobile-dropdown-title"><span class="title">其他</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/reactnative/" class="nav-link">
+  reactnative
+</a></li><li class="dropdown-item"><!----> <a href="/book/" class="nav-link">
+  book
+</a></li><li class="dropdown-item"><!----> <a href="/confusing/" class="nav-link">
+  confusing
+</a></li><li class="dropdown-item"><!----> <a href="/tool/" class="nav-link">
+  tool
+</a></li><li class="dropdown-item"><!----> <a href="/increase/" class="nav-link">
+  increase
+</a></li><li class="dropdown-item"><!----> <a href="/write/" class="nav-link">
+  write
+</a></li><li class="dropdown-item"><!----> <a href="/interview/" class="nav-link">
+  interview
+</a></li><li class="dropdown-item"><!----> <a href="https://github.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://gitee.com/weishell/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  gitee
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/typescript/" aria-current="page" class="sidebar-link"> ts</a></li><li><a href="/typescript/001tsbasic.html" class="sidebar-link"> ts环境搭建</a></li><li><a href="/typescript/002tsbasic.html" class="sidebar-link"> ts引用类型</a></li><li><a href="/typescript/003tsbasic.html" class="sidebar-link"> ts面向对象</a></li><li><a href="/typescript/004vue2&amp;ts.html" class="sidebar-link">vue2使用ts写法</a></li><li><a href="/typescript/005interface.html" class="sidebar-link">ts之接口</a></li><li><a href="/typescript/006configts.html" class="sidebar-link">tsconfig.json</a></li><li><a href="/typescript/007tsgaoji.html" aria-current="page" class="active sidebar-link">TS高级特性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/typescript/007tsgaoji.html#ts高级特性" class="sidebar-link">ts高级特性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/typescript/007tsgaoji.html#keyof" class="sidebar-link">keyof</a></li><li class="sidebar-sub-header"><a href="/typescript/007tsgaoji.html#record" class="sidebar-link">Record</a></li><li class="sidebar-sub-header"><a href="/typescript/007tsgaoji.html#pick" class="sidebar-link">Pick</a></li><li class="sidebar-sub-header"><a href="/typescript/007tsgaoji.html#partial" class="sidebar-link">Partial</a></li><li class="sidebar-sub-header"><a href="/typescript/007tsgaoji.html#required" class="sidebar-link">Required</a></li><li class="sidebar-sub-header"><a href="/typescript/007tsgaoji.html#readonly" class="sidebar-link">Readonly</a></li><li class="sidebar-sub-header"><a href="/typescript/007tsgaoji.html#exclude" class="sidebar-link">Exclude</a></li><li class="sidebar-sub-header"><a href="/typescript/007tsgaoji.html#extract" class="sidebar-link">Extract</a></li><li class="sidebar-sub-header"><a href="/typescript/007tsgaoji.html#omit" class="sidebar-link">Omit</a></li><li class="sidebar-sub-header"><a href="/typescript/007tsgaoji.html#nonnullable" class="sidebar-link">NonNullable</a></li><li class="sidebar-sub-header"><a href="/typescript/007tsgaoji.html#typeof在ts中的应用" class="sidebar-link">typeof在ts中的应用</a></li></ul></li></ul></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="ts高级特性"><a href="#ts高级特性" class="header-anchor">#</a> ts高级特性</h2> <h3 id="keyof"><a href="#keyof" class="header-anchor">#</a> keyof</h3> <ol><li>keyof运算符采用对象类型，并生成其键的字符串或数字文本联合</li> <li>如果类型具有字符串或数字索引签名，则keyof将返回这些类型</li></ol> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">interface</span> <span class="token class-name">IPeople</span> <span class="token punctuation">{</span>
+name<span class="token operator">:</span><span class="token builtin">string</span><span class="token punctuation">,</span>
+age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span>
+sex<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">type</span> <span class="token class-name"><span class="token constant">T</span></span> <span class="token operator">=</span> <span class="token keyword">keyof</span> IPeople
+
+<span class="token comment">// 等同于</span>
+<span class="token comment">//type T = &quot;name&quot; | &quot;age&quot; | &quot;sex&quot;</span>
+</code></pre></div><div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> <span class="token class-name">Mapish</span> <span class="token operator">=</span> <span class="token punctuation">{</span> <span class="token punctuation">[</span>k<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token builtin">boolean</span> <span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token keyword">type</span> <span class="token class-name"><span class="token constant">M</span></span> <span class="token operator">=</span> <span class="token keyword">keyof</span> Mapish<span class="token punctuation">;</span>
+<span class="token comment">//type M = string | number</span>
+</code></pre></div><blockquote><p>在本例中，M是字符串|数字-这是因为JavaScript对象键始终被强制为字符串，因此obj[0]始终与obj['0']相同。</p></blockquote> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>type TAny = keyof any</p> <p>// 等同于</p> <p>// type TAny = string | number | symbol //不包括 boolean object等</p></div> <h3 id="record"><a href="#record" class="header-anchor">#</a> Record</h3> <p>将 K 中的所有属性值都转换为 T 类型，并返回新的对象类型</p> <ul><li>keyof any: 等同于 string | number | symbol ，也就是说 K 只能是这三种类型</li> <li>P in K: 指循环 K 类型</li></ul> <div class="language-ts extra-class"><pre class="language-ts"><code> <span class="token keyword">type</span> <span class="token class-name">Record<span class="token operator">&lt;</span><span class="token constant">K</span> <span class="token keyword">extends</span> <span class="token keyword">keyof</span> <span class="token builtin">any</span><span class="token punctuation">,</span> <span class="token constant">T</span><span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token constant">P</span> <span class="token keyword">in</span> <span class="token constant">K</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">type</span> <span class="token class-name">TKeys</span> <span class="token operator">=</span> <span class="token string">'A'</span> <span class="token operator">|</span> <span class="token string">'B'</span> <span class="token operator">|</span> <span class="token string">'C'</span>
+
+  <span class="token keyword">interface</span> <span class="token class-name">IPeople</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token builtin">string</span><span class="token punctuation">,</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span>
+    sex<span class="token operator">:</span> <span class="token builtin">string</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">type</span> <span class="token class-name">TRecord</span> <span class="token operator">=</span> Record<span class="token operator">&lt;</span>TKeys<span class="token punctuation">,</span> IPeople<span class="token operator">&gt;</span>
+  
+  <span class="token comment">// 等同于</span>
+<span class="token comment">//   type TRecord = {</span>
+<span class="token comment">//     B: IPeople;</span>
+<span class="token comment">//     C: IPeople;</span>
+<span class="token comment">//     A: IPeople;</span>
+<span class="token comment">//   }</span>
+
+</code></pre></div><h3 id="pick"><a href="#pick" class="header-anchor">#</a> Pick</h3> <p>从 T 类型中选取部分 K 类型，并返回新的类型，这里 T 常用于对象类型</p> <ul><li>keyof T 获取 T 中所有的 key 属性</li> <li>K extends keyof T K 必须继承于 keyof T ,如果 K 中的属性有不属于 keyof T 的则会报错</li></ul> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> <span class="token class-name">Pick<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token punctuation">,</span> <span class="token constant">K</span> <span class="token keyword">extends</span> <span class="token keyword">keyof</span> <span class="token constant">T</span><span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token constant">P</span> <span class="token keyword">in</span> <span class="token constant">K</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">[</span><span class="token constant">P</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">interface</span> <span class="token class-name">IPeople</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token builtin">string</span><span class="token punctuation">,</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span>
+    sex<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+  
+  <span class="token keyword">type</span> <span class="token class-name">TPick</span> <span class="token operator">=</span> Pick<span class="token operator">&lt;</span>IPeople<span class="token punctuation">,</span> <span class="token string">'name'</span> <span class="token operator">|</span> <span class="token string">'age'</span><span class="token operator">&gt;</span>
+  
+<span class="token comment">// 等同于</span>
+<span class="token comment">//   type TPick = {</span>
+<span class="token comment">//     name: string;</span>
+<span class="token comment">//     age?: number | undefined;</span>
+<span class="token comment">//   }</span>
+</code></pre></div><blockquote><p>注意： 如果想生成的 TPick 包含自定义属性，则需要在 IPeople 中添加 [key: string]: any</p></blockquote> <div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">interface</span> <span class="token class-name">IPeople</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token builtin">string</span><span class="token punctuation">,</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span>
+    sex<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+    <span class="token punctuation">[</span>key<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token builtin">any</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">type</span> <span class="token class-name">TPick</span> <span class="token operator">=</span> Pick<span class="token operator">&lt;</span>IPeople<span class="token punctuation">,</span> <span class="token string">'name'</span> <span class="token operator">|</span> <span class="token string">'age'</span> <span class="token operator">|</span> <span class="token string">'color'</span><span class="token operator">&gt;</span>
+
+<span class="token comment">//   等同于</span>
+<span class="token comment">//   type TPick = {</span>
+<span class="token comment">//     name: string;</span>
+<span class="token comment">//     age?: number | undefined;</span>
+<span class="token comment">//     color: any;</span>
+<span class="token comment">//   }</span>
+</code></pre></div><h3 id="partial"><a href="#partial" class="header-anchor">#</a> Partial</h3> <p>将T中的所有属性设置为可选</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> <span class="token class-name">Partial<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token constant">P</span> <span class="token keyword">in</span> <span class="token keyword">keyof</span> <span class="token constant">T</span><span class="token punctuation">]</span><span class="token operator">?</span><span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">[</span><span class="token constant">P</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+</code></pre></div><div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">interface</span> <span class="token class-name">IPeople</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token builtin">string</span><span class="token punctuation">,</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span>
+    sex<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">type</span> <span class="token class-name">TPartial</span> <span class="token operator">=</span> Partial<span class="token operator">&lt;</span>IPeople<span class="token operator">&gt;</span>
+  
+  <span class="token comment">// 等同于</span>
+<span class="token comment">//   type TPartial = {</span>
+<span class="token comment">//     name?: string | undefined;</span>
+<span class="token comment">//     age?: number | undefined;</span>
+<span class="token comment">//     sex?: string | undefined;</span>
+<span class="token comment">//   }</span>
+
+</code></pre></div><h3 id="required"><a href="#required" class="header-anchor">#</a> Required</h3> <p>使 T 中的所有属性都变成必需的</p> <ul><li><code>-?</code>: 通过 -? 把所有属性变成 必需的</li></ul> <div class="language-ts extra-class"><pre class="language-ts"><code> <span class="token keyword">type</span> <span class="token class-name">Required<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token punctuation">[</span><span class="token constant">P</span> <span class="token keyword">in</span> <span class="token keyword">keyof</span> <span class="token constant">T</span><span class="token punctuation">]</span><span class="token operator">-</span><span class="token operator">?</span><span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">[</span><span class="token constant">P</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">interface</span> <span class="token class-name">IPeople</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token builtin">string</span><span class="token punctuation">,</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span>
+    sex<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">type</span> <span class="token class-name">TRequired</span> <span class="token operator">=</span> Required<span class="token operator">&lt;</span>IPeople<span class="token operator">&gt;</span>
+
+  <span class="token comment">// 等同于</span>
+<span class="token comment">//   type TRequired = {</span>
+<span class="token comment">//     name: string;</span>
+<span class="token comment">//     age: number;</span>
+<span class="token comment">//     sex: string;</span>
+<span class="token comment">//   }</span>
+
+</code></pre></div><h3 id="readonly"><a href="#readonly" class="header-anchor">#</a> Readonly</h3> <p>将 T 中的所有属性设为只读</p> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> <span class="token class-name">Readonly<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token keyword">readonly</span> <span class="token punctuation">[</span><span class="token constant">P</span> <span class="token keyword">in</span> <span class="token keyword">keyof</span> <span class="token constant">T</span><span class="token punctuation">]</span><span class="token operator">:</span> <span class="token constant">T</span><span class="token punctuation">[</span><span class="token constant">P</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">interface</span> <span class="token class-name">IPeople</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token builtin">string</span><span class="token punctuation">,</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span>
+    sex<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">type</span> <span class="token class-name">TReadonly</span> <span class="token operator">=</span> Readonly<span class="token operator">&lt;</span>IPeople<span class="token operator">&gt;</span>
+
+<span class="token comment">//   // 等同于</span>
+<span class="token comment">//   type TReadonly = {</span>
+<span class="token comment">//      readonly name: string;</span>
+<span class="token comment">//      readonly age?: number | undefined;</span>
+<span class="token comment">//      readonly sex: string;</span>
+<span class="token comment">//   }</span>
+</code></pre></div><h3 id="exclude"><a href="#exclude" class="header-anchor">#</a> Exclude</h3> <p>从T中剔除可以赋值给U的类型</p> <ul><li>当 T 是联合类型时，则会循环 T 类型即： (T1 extends U ? never : T1) ｜ (T2 extends U ? never : T2) | …</li></ul> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> <span class="token class-name">Exclude<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token punctuation">,</span> <span class="token constant">U</span><span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token class-name"><span class="token constant">U</span></span> <span class="token operator">?</span> <span class="token builtin">never</span> <span class="token operator">:</span> <span class="token constant">T</span>
+</code></pre></div><div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> <span class="token class-name">TExclude1</span> <span class="token operator">=</span> Exclude<span class="token operator">&lt;</span><span class="token string">&quot;a&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;a&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;c&quot;</span><span class="token operator">&gt;</span>
+<span class="token comment">// 等同于</span>
+<span class="token keyword">type</span> <span class="token class-name">TExclude1</span> <span class="token operator">=</span> <span class="token string">&quot;b&quot;</span>
+
+<span class="token keyword">type</span> <span class="token class-name">TExclude2</span> <span class="token operator">=</span> Exclude<span class="token operator">&lt;</span><span class="token builtin">number</span> <span class="token operator">|</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token builtin">boolean</span><span class="token punctuation">,</span> <span class="token builtin">string</span><span class="token operator">&gt;</span>
+<span class="token comment">// 等同于</span>
+<span class="token keyword">type</span> <span class="token class-name">TExclude2</span> <span class="token operator">=</span> <span class="token builtin">number</span> <span class="token operator">|</span> <span class="token builtin">boolean</span>
+</code></pre></div><h3 id="extract"><a href="#extract" class="header-anchor">#</a> Extract</h3> <p>提取T中可以赋值给U的类型</p> <ul><li>当 T 是联合类型时，则会循环 T 类型即： (T1 extends U ? T1 : never ) ｜ (T2 extends U ? T2 : never ) | …</li></ul> <div class="language-ts extra-class"><pre class="language-ts"><code> <span class="token keyword">type</span> <span class="token class-name">Extract<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token punctuation">,</span> <span class="token constant">U</span><span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token class-name"><span class="token constant">U</span></span> <span class="token operator">?</span> <span class="token constant">T</span> <span class="token operator">:</span> <span class="token builtin">never</span>
+</code></pre></div><div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> <span class="token class-name">TExtract1</span> <span class="token operator">=</span> Extract<span class="token operator">&lt;</span><span class="token string">&quot;a&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;b&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;a&quot;</span> <span class="token operator">|</span> <span class="token string">&quot;c&quot;</span><span class="token operator">&gt;</span>
+<span class="token comment">// 等同于</span>
+<span class="token keyword">type</span> <span class="token class-name">TExtract1</span> <span class="token operator">=</span> <span class="token string">&quot;a&quot;</span>
+
+<span class="token keyword">type</span> <span class="token class-name">TExtract2</span> <span class="token operator">=</span> Extract<span class="token operator">&lt;</span><span class="token builtin">number</span> <span class="token operator">|</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token builtin">boolean</span><span class="token punctuation">,</span> <span class="token builtin">string</span><span class="token operator">&gt;</span>
+<span class="token comment">// 等同于</span>
+<span class="token keyword">type</span> <span class="token class-name">TExtract2</span> <span class="token operator">=</span> <span class="token builtin">string</span>
+
+<span class="token keyword">type</span> <span class="token class-name">TExtract3</span> <span class="token operator">=</span> Extract<span class="token operator">&lt;</span><span class="token builtin">number</span> <span class="token operator">|</span> <span class="token builtin">string</span> <span class="token operator">|</span> <span class="token builtin">boolean</span><span class="token punctuation">,</span> object<span class="token operator">&gt;</span>
+<span class="token comment">// 等同于</span>
+<span class="token keyword">type</span> <span class="token class-name">TExtract3</span> <span class="token operator">=</span> <span class="token builtin">never</span>
+</code></pre></div><h3 id="omit"><a href="#omit" class="header-anchor">#</a> Omit</h3> <p>获取 T 中不包含 K 属性的 新类型</p> <ol><li>keyof any 等同于 string | number | symbol ，也就是说 K 只能是这三种类型</li> <li>keyof T 获取 T 的所有属性</li> <li>Exclude 从T中剔除可以赋值给U的类型</li> <li>Pick 从 T 类型中选取部分 K 类型，并返回新的类型，这里 T 常用于对象类型</li></ol> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> <span class="token class-name">Omit<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token punctuation">,</span> <span class="token constant">K</span> <span class="token keyword">extends</span> <span class="token keyword">keyof</span> <span class="token builtin">any</span><span class="token operator">&gt;</span></span> <span class="token operator">=</span> Pick<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token punctuation">,</span> Exclude<span class="token operator">&lt;</span><span class="token keyword">keyof</span> <span class="token constant">T</span><span class="token punctuation">,</span> <span class="token constant">K</span><span class="token operator">&gt;&gt;</span>
+</code></pre></div><blockquote><p>说明：先通过 Exclued 获取 T 中不包含 K 属性的新类型， 再通过 Pick 获取 T 中包含 K 属性的新类型</p></blockquote> <div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">interface</span> <span class="token class-name">IPeople</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span><span class="token builtin">string</span><span class="token punctuation">,</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span>
+    sex<span class="token operator">:</span> <span class="token builtin">string</span><span class="token punctuation">,</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">type</span> <span class="token class-name">TOmit</span> <span class="token operator">=</span> Omit<span class="token operator">&lt;</span>IPeople<span class="token punctuation">,</span> <span class="token string">'name'</span> <span class="token operator">|</span> <span class="token string">'sex'</span> <span class="token operator">|</span> <span class="token string">'color'</span><span class="token operator">&gt;</span>
+
+  <span class="token comment">// 等同于</span>
+  <span class="token keyword">type</span> <span class="token class-name">TOmit</span> <span class="token operator">=</span> <span class="token punctuation">{</span>
+    age<span class="token operator">?</span><span class="token operator">:</span> <span class="token builtin">number</span> <span class="token operator">|</span> <span class="token keyword">undefined</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+</code></pre></div><h3 id="nonnullable"><a href="#nonnullable" class="header-anchor">#</a> NonNullable</h3> <p>去除 null 和 undefined 后的新类型</p> <ul><li>当 T 是联合类型时，则会循环 T 类型即： (T1 extends U ? never : T1) ｜ (T2 extends U ? never : T2) | …</li></ul> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">type</span> <span class="token class-name">NonNullable<span class="token operator">&lt;</span><span class="token constant">T</span><span class="token operator">&gt;</span></span> <span class="token operator">=</span> <span class="token constant">T</span> <span class="token keyword">extends</span> <span class="token class-name"><span class="token keyword">null</span></span> <span class="token operator">|</span> <span class="token keyword">undefined</span> <span class="token operator">?</span> <span class="token builtin">never</span> <span class="token operator">:</span> <span class="token constant">T</span>
+</code></pre></div><div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">type</span> <span class="token class-name">TType</span><span class="token operator">=</span> <span class="token builtin">number</span> <span class="token operator">|</span> <span class="token keyword">null</span> <span class="token operator">|</span> <span class="token keyword">undefined</span>
+  <span class="token keyword">type</span> <span class="token class-name">TNonNullable</span> <span class="token operator">=</span> NonNullable<span class="token operator">&lt;</span>TType<span class="token operator">&gt;</span>
+  <span class="token comment">// 等同于</span>
+  <span class="token comment">// type TNonNullable = number</span>
+</code></pre></div><h3 id="typeof在ts中的应用"><a href="#typeof在ts中的应用" class="header-anchor">#</a> typeof在ts中的应用</h3> <ol><li>自动生成对象的类型，如果对象上有类型则使用定义的类型</li></ol> <div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">const</span> people <span class="token operator">=</span> <span class="token punctuation">{</span>
+    name<span class="token operator">:</span> <span class="token string">&quot;liuyz&quot;</span><span class="token punctuation">,</span>
+    age<span class="token operator">:</span> <span class="token number">20</span><span class="token punctuation">,</span>
+    info<span class="token operator">:</span> <span class="token punctuation">{</span>
+      sex<span class="token operator">:</span> <span class="token string">&quot;man&quot;</span><span class="token punctuation">,</span>
+      hobby<span class="token operator">:</span> <span class="token string">&quot;sleep&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">}</span>
+   <span class="token punctuation">}</span>
+  
+  <span class="token keyword">type</span> <span class="token class-name">IPeople</span> <span class="token operator">=</span> <span class="token keyword">typeof</span> people
+  <span class="token comment">// 等同于</span>
+  <span class="token comment">// type IPeople = {</span>
+  <span class="token comment">//   name: string</span>
+  <span class="token comment">//   age: number</span>
+  <span class="token comment">//   info: {</span>
+  <span class="token comment">//     sex: string</span>
+  <span class="token comment">//     hobby: string</span>
+  <span class="token comment">//   }</span>
+  <span class="token comment">// }</span>
+  
+  <span class="token keyword">type</span> <span class="token class-name">IPeople1</span> <span class="token operator">=</span> <span class="token keyword">keyof</span> <span class="token keyword">typeof</span> people  <span class="token comment">// keyof 只会获取数据类型的第一级属性key</span>
+  <span class="token comment">// 等同于</span>
+  <span class="token comment">// type IPeople1 = &quot;name&quot; | &quot;age&quot; | &quot;info&quot;</span>
+</code></pre></div><ol start="2"><li>函数使用</li></ol> <div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">const</span> add <span class="token operator">=</span> <span class="token punctuation">(</span>a<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">,</span> b<span class="token operator">:</span> <span class="token builtin">number</span><span class="token punctuation">)</span><span class="token operator">:</span> <span class="token builtin">number</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> a <span class="token operator">+</span> b
+  <span class="token punctuation">}</span>
+  
+  <span class="token keyword">type</span> <span class="token class-name">TFunType</span> <span class="token operator">=</span> <span class="token keyword">typeof</span> add <span class="token comment">// 获取函数类型</span>
+  <span class="token comment">// 等同于</span>
+  <span class="token comment">// type TFunType = (a: number, b: number) =&gt; number</span>
+  <span class="token keyword">type</span> <span class="token class-name">TReturnType</span> <span class="token operator">=</span> ReturnType<span class="token operator">&lt;</span>TFunType<span class="token operator">&gt;</span> <span class="token comment">// 获取函数返回值类型</span>
+  <span class="token comment">// 等同于</span>
+  <span class="token comment">// type TReturnType = number</span>
+  <span class="token keyword">type</span> <span class="token class-name">TParamsType</span> <span class="token operator">=</span> Parameters<span class="token operator">&lt;</span>TFunType<span class="token operator">&gt;</span> <span class="token comment">// 获取函数参数类型，转变为元组类型</span>
+  <span class="token comment">// 等同于</span>
+  <span class="token comment">// type TParamsType = [a: number, b: number] // 元组类型</span>
+
+</code></pre></div><ol start="3"><li>数组使用</li></ol> <div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'liu'</span><span class="token punctuation">,</span> <span class="token string">'y'</span><span class="token punctuation">,</span> <span class="token string">'z'</span><span class="token punctuation">]</span>
+  <span class="token keyword">type</span> <span class="token class-name">IArr</span> <span class="token operator">=</span> <span class="token keyword">typeof</span> arr
+  <span class="token comment">// 等同于</span>
+  <span class="token comment">// type IArr = string[]</span>
+    
+  <span class="token keyword">const</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'liu'</span><span class="token punctuation">,</span> <span class="token string">'y'</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">]</span>
+  <span class="token keyword">type</span> <span class="token class-name">IArr</span> <span class="token operator">=</span> <span class="token keyword">typeof</span> arr
+  <span class="token comment">// 等同于</span>
+  <span class="token comment">// type IArr = (string | number)[] // 字符串或数字 数组</span>
+    
+  <span class="token keyword">type</span> <span class="token class-name">IKey</span> <span class="token operator">=</span> <span class="token keyword">keyof</span> <span class="token keyword">typeof</span> arr
+  <span class="token comment">// 等同于</span>
+  <span class="token comment">// type IKey = keyof string[]</span>
+
+</code></pre></div><blockquote><p>注意：数组上使用 keyof typeof arr 是没有意义的</p></blockquote> <ol start="4"><li>枚举使用</li></ol> <div class="language-ts extra-class"><pre class="language-ts"><code><span class="token keyword">enum</span> EDirection <span class="token punctuation">{</span>
+<span class="token constant">UP</span> <span class="token operator">=</span> <span class="token string">&quot;UP&quot;</span><span class="token punctuation">,</span>
+<span class="token constant">DOWN</span> <span class="token operator">=</span> <span class="token string">&quot;DOWN&quot;</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">type</span> <span class="token class-name">TDirection</span> <span class="token operator">=</span> <span class="token keyword">typeof</span> EDirection
+
+<span class="token keyword">const</span> direction<span class="token operator">:</span> TDirection <span class="token operator">=</span> <span class="token punctuation">{</span>
+<span class="token constant">UP</span><span class="token operator">:</span> EDirection<span class="token punctuation">.</span><span class="token constant">UP</span><span class="token punctuation">,</span>
+<span class="token constant">DOWN</span><span class="token operator">:</span> EDirection<span class="token punctuation">.</span><span class="token constant">DOWN</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+
+<span class="token builtin">console</span><span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>direction<span class="token punctuation">)</span> <span class="token comment">// { UP: 'UP', DOWN: 'DOWN' }</span>
+
+<span class="token keyword">type</span> <span class="token class-name">TNewDirection</span> <span class="token operator">=</span> <span class="token keyword">keyof</span> <span class="token keyword">typeof</span> direction
+<span class="token comment">// 等同于</span>
+<span class="token comment">// type TNewDirection = &quot;UP&quot; | &quot;DOWN&quot;</span>
+
+<span class="token keyword">let</span> newDirection<span class="token operator">:</span> TNewDirection <span class="token operator">=</span> <span class="token string">&quot;DOWN&quot;</span> <span class="token comment">// 这里只能取值 UP 或 DOWN</span>
+</code></pre></div><p>5.基本类型使用: 并没有什么意义</p> <div class="language-ts extra-class"><pre class="language-ts"><code>  <span class="token keyword">const</span> bool <span class="token operator">=</span> <span class="token boolean">true</span>
+  <span class="token keyword">type</span> <span class="token class-name">TBool</span> <span class="token operator">=</span> <span class="token keyword">typeof</span> bool
+  <span class="token comment">// 等同于</span>
+  <span class="token comment">// type TBool = true</span>
+  <span class="token keyword">let</span> newBool<span class="token operator">:</span> TBool <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token comment">// 此时 newBool 只能赋值 true，否则报错</span>
+    
+  <span class="token keyword">const</span> str <span class="token operator">=</span> <span class="token string">&quot;test&quot;</span>
+  <span class="token keyword">type</span> <span class="token class-name">IStr</span> <span class="token operator">=</span> <span class="token keyword">typeof</span> str
+  <span class="token comment">// 等同于</span>
+  <span class="token comment">// type IStr = &quot;test&quot;</span>
+  <span class="token keyword">let</span> newStr<span class="token operator">:</span> IStr <span class="token operator">=</span> <span class="token string">&quot;test&quot;</span> <span class="token comment">// 此时 newStr 只能赋值 test，否则报错</span>
+    
+  <span class="token keyword">const</span> num <span class="token operator">=</span> <span class="token number">10</span>
+  <span class="token keyword">type</span> <span class="token class-name">INum</span> <span class="token operator">=</span> <span class="token keyword">typeof</span> num
+  <span class="token comment">// 等同于</span>
+  <span class="token comment">// type INum = 10</span>
+  <span class="token keyword">let</span> newNum<span class="token operator">:</span> INum <span class="token operator">=</span> <span class="token number">10</span> <span class="token comment">// 此时 newNum 只能赋值 10，否则报错</span>
+</code></pre></div><!----></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最后更新:</span> <span class="time">11/26/2022, 9:25:57 AM</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/typescript/006configts.html" class="prev">
+        tsconfig.json
+      </a></span> <!----></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.748cfb2e.js" defer></script><script src="/assets/js/2.1a953b48.js" defer></script><script src="/assets/js/342.f82c9d1f.js" defer></script><script src="/assets/js/10.6b3060cc.js" defer></script>
+  </body>
+</html>
