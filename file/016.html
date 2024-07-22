@@ -1,0 +1,52 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>动态SVG路径文本</title>  
+</head>  
+<body>  
+    <svg width="400" height="200" viewBox="0 0 400 200">  
+        <defs>  
+            <path id="path1" d="M 10 50 C 40 10, 65 10, 95 50 S 150 150, 200 100" fill="none" stroke="black" stroke-width="2"/>  
+            <path id="path2" d="M 10 150 C 40 190, 65 190, 95 150 S 150 50, 200 100" fill="none" stroke="black" stroke-width="2"/>  
+        </defs>  
+  
+        <!-- 初始时不显示文本 -->  
+        <text id="textOnPath" style="display: none;">  
+            <textPath id="textPath" xlink:href="#" startOffset="50%">  
+                沿着路径显示的文本  
+            </textPath>  
+        </text>  
+  
+        <!-- 显示两个路径 -->  
+        <use xlink:href="#path1" />  
+        <use xlink:href="#path2" />  
+  
+       
+  
+       
+    </svg>
+	  <!-- 控制按钮 -->
+	  <button onclick="addTextToPath('path1', 'red')">添加到路径1（红色）</button>  
+	  <button onclick="addTextToPath('path2', 'blue')">添加到路径2（蓝色）</button>  
+</body>  
+</html>
+ <script>
+			function addTextToPath(pathId, color) {  
+			    var text = document.getElementById('textOnPath');  
+			    var textPath = document.getElementById('textPath');  
+			  
+			    // 隐藏之前的文本（如果有的话）  
+			    text.style.display = 'none';  
+			  
+			    // 设置textPath的xlink:href属性为指定的路径ID  
+			    textPath.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', '#' + pathId);  
+			  
+			    // 设置文本颜色  
+			    textPath.style.fill = color;  
+			  
+			    // 显示文本  
+			    text.style.display = 'block';  
+			}
+		</script>  
