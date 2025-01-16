@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[43],{436:function(t,e,n){"use strict";n.r(e);var s={props:["name"],data:()=>({url:""}),mounted(){switch(name){case"test":this.url="/img/interview.png"}}},i=n(16),r=Object(i.a)(s,(function(){return(0,this._self._c)("img",{attrs:{src:this.url,alt:""}})}),[],!1,null,"6758e478",null);e.default=r.exports}}]);
